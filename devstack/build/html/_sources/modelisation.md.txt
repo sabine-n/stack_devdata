@@ -1,1 +1,33 @@
-# modelisation
+# Modélisation d'une base de donnée
+
+1. Définition/Cadrage du projet
+
+1.1. Cahier des charges
+1.1.1. Briefing
+       rencontre client, prise de note
+       analyse du besoin/problème
+       objectif projet
+1.1.2. Cadrage
+       organisation du projet
+       definition d'équipe
+
+1.2. Recensement des données
+(intro)
+1.2.1. Dictionnaire de données
+       métadonnées
+       type
+       taille
+       commentaire
+1.2.2. Règle de gestion
+       numéro
+       description
+       restrictions
+
+
+2. Modèle conceptuel de donnée (MCD)
+
+2.1. Le Modèle Entité/Association
+2.1.1. Entité
+2.1.2. Association
+2.1.3. 
+       

@@ -10,6 +10,20 @@ Welcome to Stack DevData's documentation!
    :maxdepth: 2
    :caption: Contents:
 
+   Python	    
+	     
+.. toctree::
+   :numbered:
+
+   histoire_de_python
+   que_faire_avec_python
+   python
+   anaconda
+   interface_de_developpement
+   bugs
+   licence
+   aide
+
 
 
 Indices and tables
