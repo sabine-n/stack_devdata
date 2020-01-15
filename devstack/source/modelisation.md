@@ -80,9 +80,9 @@
    
    	4.2.1. Creation de table
 	
-     	4.2.2. Les attributs: clés primaires, types et taille d'attributs
+	4.2.2. Les attributs: clés primaires, types et taille d'attributs
 	
-     	4.2.3. Associations et clés étrangères
+	4.2.3. Associations et clés étrangères
 	
    4.3. Du modèle physique à la base de donnée
 
