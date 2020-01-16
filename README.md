@@ -10,7 +10,7 @@ Le travail est répartis en groupe de 5 de la manière suivante:
 
 3. Le thème Formats de fichier de données (.csv, .xls, .sql) et Tableur Google Sheets sera développé par **Hachem**, **Yacine** et **Lotfi**. **Hachem** est le chef d'équipe.
 
-4. Le thème de Modélisation de Base de donnée sera abordé par **Romain** et **Sabine**. **Romain** est le chef d'équipe.
+4. Le thème de Modélisation de Base de donnée sera abordé par **Romain** et **Sabine** et **Noémie**. **Romain** est le chef d'équipe.
 
 5. Le thème d'environnement Linux, Ubuntu, Github, Jupyter et Anaconda sera développé par **Amaria**, **Inès** et **Djoumbé**. **Djoumbé** est le chef d'équipe.
 
