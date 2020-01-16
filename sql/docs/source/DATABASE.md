@@ -9,4 +9,8 @@ Les bases de données sont utilisées par de nombreuses entreprises dans toutes 
 
 ## SON HISTOIRE 
 
+L’histoire des bases de données remonte aux années 1960, avec l’apparition des bases de données réseau et des bases de données hiérarchiques. Dans les années 1980, ce sont les bases de données object-oriented qui ont fait leur apparition. Aujourd’hui, les bases de données prédominantes sont les SQL, NoSQL et bases de données cloud.
 
+Il est aussi possible de classer les bases de données en fonction de leur contenu : bibliographique, textes, nombres ou images. Toutefois, en informatique, on classe généralement les bases de données en fonction de leur approche organisationnelle. Il existe de nombreux types de bases de données différentes : relationnelle, distribuée, cloud, NoSQL… Voici les différents types de bases de données.
+
+## 

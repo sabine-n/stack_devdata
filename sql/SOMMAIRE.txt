@@ -17,8 +17,8 @@ plusieurs tables (jointures), gestion utilisateurs
   2.2 MODELISATION
   2.3 SON HISTOIRE 
   2.4 TYPE 
-  2.5
-4 GESTION 
+  2.5 
+4 GESTION UTILISATEUR
   4.1 INTRO 
   4.2 
   4.3
