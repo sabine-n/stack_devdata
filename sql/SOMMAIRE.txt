@@ -14,10 +14,11 @@ plusieurs tables (jointures), gestion utilisateurs
   3.4 phpMyAdmin
 3 BASE DE DONNE
   2.1 INTRO
-  2.2 MODELISATION
-  2.3 SON HISTOIRE 
+  2.2 SON HISTOIRE 
+  2.3 MODELISATION
   2.4 TYPE 
-  2.5 
+  2.5 RELATION OR NOT 
+  2.6 CLOUD 
 4 GESTION UTILISATEUR
   4.1 INTRO 
   4.2 
