@@ -11,6 +11,7 @@ Welcome to sql's documentation!
 
    SQL
    SGBD
+   DATABASE
 	
 
 
