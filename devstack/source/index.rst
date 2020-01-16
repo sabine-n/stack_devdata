@@ -16,14 +16,11 @@ Python
 .. toctree::
    :numbered:
 
-   histoire_de_python
-   que_faire_avec_python
+   sql
    python
-   anaconda
-   interface_de_developpement
-   bugs
-   licence
-   aide
+   format_fichier
+   modelisation
+   environnement
 
 
 
