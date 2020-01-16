@@ -29,7 +29,10 @@ De plus, il a plusieurs avantages consequents :
 
 
 COMMANDES DE BASE
+<<<<<<< HEAD
 -----------------
+=======
+>>>>>>> Yoann
 
 Select :
 La commande **SELECT** permet de récupérer des données stockées dans une ou plusieurs table(s).
