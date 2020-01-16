@@ -81,8 +81,5 @@ Ne vous en faites : il est possible de traduire directement un mot dans le table
 
 Remarque : la langue source et la langue de destination doivent être indiquées par un code de deux lettres (par exemple « en » pour l’anglais ou « fr » pour le français).
 
-..image: https://www.codeur.com/blog/wp-content/uploads/2018/05/astuce-google-sheets-7.gif
-width: 500 
-
 Pour la langue source, vous pouvez aussi indiquer « auto » pour que Google Traduction détermine automatiquement la langue.
 
