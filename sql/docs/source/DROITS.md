@@ -10,17 +10,18 @@ INTRO
 LES COMMANDES ET PRIVILEGES
 ----------
 
-```GRANT```: autorisation d'un utilisateur à effectuer une action ;
-```DENY``` : interdiction à un utilisateur d'effectuer une action ;
-```REVOKE``` : annulation d'une commande de contrôle de données précédente ;
-```COMMIT``` : validation d'une transaction en cours ;
-```ROLLBACK``` : annulation d'une transaction en cours ;
+```GRANT```: autorisation d'un utilisateur à effectuer une action.
+```DENY``` : interdiction à un utilisateur d'effectuer une action.
+```REVOKE``` : annulation d'une commande de contrôle de données précédente.
+```COMMIT``` : validation d'une transaction en cours.
+```ROLLBACK``` : annulation d'une transaction en cours.
 ```LOCK``` : verrouillage sur une structure de données.
 
 Privilèges du CRUD :
 Les privilèges ```SELECT```, ```INSERT```, ```UPDATE```  et ```DELETE```  permettent aux utilisateurs d'utiliser ces mêmes commandes.
 
 ```CREATE TABLE``` : Création de tables
+
 ```CREATE TEMPORARY TABLE``` :Création de tables temporaires
 ```CREATE VIEW``` : Création de vues (il faut également avoir le privilège SELECTsur les colonnes sélectionnées par la vue)
 ```ALTER``` : Modification de tables (avec ALTER TABLE)
@@ -37,18 +38,24 @@ EXEMPLE DE REQUÊTES
 -------
 
 ***Autorisation d'un utilisateur à effectuer une action :***
-``GRANT UPDATE (nom, prenom) ON eleves
+```
+GRANT UPDATE (nom, prenom) ON eleves
 TO enseignant
-WITH GRANT OPTION;``
+WITH GRANT OPTION;
+```
 
 ***Interdiction d'un utilisateur à effectuer une action :***
-``DENY DELETE
-TO enseignant``
+```
+DENY DELETE
+TO enseignant
+```
 
 ***Annulation d'une commande de contrôle de données précédente :***
-``REVOKE UPDATE (nom, prenom)
+```
+REVOKE UPDATE (nom, prenom)
 ON eleves
-FROM enseignant``
+FROM enseignant
+```
 
 ***Verrouillage d'une structure de données :***
 ```LOCK TABLE eleves IN EXCLUSIVE MODE;```
