@@ -4,7 +4,7 @@ Vous trouverez dans ce répertoire une documentation détaillée de la Stack Dev
 
 Le travail est répartis en groupe de 5 de la manière suivante:
 
-1. Le thème SQL, MySQL, Création de base de données, tables, requêtes sur des tables et gestion d'utilisateur sera à la charge de **Joshua**, **Xavier** et **Yoann**. **Joshua** est le chef d'équipe.
+1. Le thème SQL, MySQL, Création de base de données, tables, requêtes sur des tables et gestion d'utilisateur sera à la charge de **Joshua**, **Xavier**, **Yoann** et **Daniel**. **Joshua** est le chef d'équipe.
 
 2. Le thème de Python 3 et les bibliothèques NumPy, Pandas et Matplotlib a été développé par Hachem et sera intégré dès le départ à la documentation.
 
