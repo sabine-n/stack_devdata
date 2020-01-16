@@ -10,8 +10,9 @@ Welcome to Stack DevData's documentation!
    :maxdepth: 2
    :caption: Contents:
 
-   Python	    
-	     
+Python	    
+=======
+
 .. toctree::
    :numbered:
 
