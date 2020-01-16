@@ -1,10 +1,3 @@
----
-title: "Untitled"
-author: yoannlucido
-date: 16/01/2020
-output: rmarkdown::html_vignette
----
-
 SQL
 ===
 
@@ -36,6 +29,7 @@ De plus, il a plusieurs avantages consequents :
 
 
 COMMANDES DE BASE
+-----------------
 
 Select :
 La commande **SELECT** permet de récupérer des données stockées dans une ou plusieurs table(s).

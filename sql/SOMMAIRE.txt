@@ -11,7 +11,7 @@ plusieurs tables (jointures), gestion utilisateurs
   3.1 INTRO
   3.2 MySQL
   3.3 Django 
-  3.4 phpMyAdmin
+  3.4 phpMyAdmin 
 3 BASE DE DONNE
   2.1 INTRO
   2.2 SON HISTOIRE 
