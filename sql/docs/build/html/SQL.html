@@ -4,7 +4,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
     <meta charset="utf-8" />
-    <title>1. SQL &#8212; sql 0.1 documentation</title>
+    <title>1. title: “Untitled” author: yoannlucido date: 16/01/2020 output: rmarkdown::html_vignette &#8212; sql 0.1 documentation</title>
     <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
@@ -14,7 +14,7 @@
     <script type="text/javascript" src="_static/language_data.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="2. SGBD" href="SGBD.html" />
+    <link rel="next" title="3. Les Systèmes de Gestion de Base de Donnée" href="SGBD.html" />
     <link rel="prev" title="Welcome to sql’s documentation!" href="index.html" />
    
   <link rel="stylesheet" href="_static/custom.css" type="text/css" />
@@ -32,29 +32,95 @@
 
           <div class="body" role="main">
             
-  <div class="section" id="sql">
-<h1><span class="section-number">1. </span>SQL<a class="headerlink" href="#sql" title="Permalink to this headline">¶</a></h1>
-<p><strong>SQL aussi appeler SEQUEL veut dire Langage de requête structurée : Structured Query Language</strong></p>
-<p><strong>C’est un langage informatique utilisé pour exploiter des bases de données. Il permet de façon générale la définition, la manipulation et le contrôle sécurisé des données ainsi que sa structure.</strong></p>
-<div class="section" id="definition">
-<h2><span class="section-number">1.1. </span>DEFINITION<a class="headerlink" href="#definition" title="Permalink to this headline">¶</a></h2>
-<p>SQL aussi appeler SEQUEL veut dire Langage de requête structurée : Structured Query Language</p>
-<p>C’est un langage informatique utilisé pour exploiter des bases de données. Il permet de façon générale la définition, la manipulation et le contrôle sécurisé des données ainsi que sa structure.</p>
+  <hr class="docutils" />
+<div class="section" id="title-untitled-author-yoannlucido-date-16-01-2020-output-rmarkdown-html-vignette">
+<h1><span class="section-number">1. </span>title: “Untitled”
+author: yoannlucido
+date: 16/01/2020
+output: rmarkdown::html_vignette<a class="headerlink" href="#title-untitled-author-yoannlucido-date-16-01-2020-output-rmarkdown-html-vignette" title="Permalink to this headline">¶</a></h1>
 </div>
-<div class="section" id="requete">
-<h2><span class="section-number">1.2. </span>REQUETE<a class="headerlink" href="#requete" title="Permalink to this headline">¶</a></h2>
-<p>SQL aussi appeler SEQUEL veut dire Langage de requête structurée : Structured Query Language</p>
-<p><strong>C’est un langage informatique utilisé pour exploiter des bases de données. Il permet de façon générale la définition, la manipulation et le contrôle sécurisé des données ainsi que sa structure.</strong></p>
+<div class="section" id="sql">
+<h1><span class="section-number">2. </span>SQL<a class="headerlink" href="#sql" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="intro">
+<h2><span class="section-number">2.1. </span>INTRO<a class="headerlink" href="#intro" title="Permalink to this headline">¶</a></h2>
+<p>SQL veut dire Langage de requête structurée : Structured Query Language</p>
+<p>C’est un langage informatique utilisé pour exploiter des bases de données. Il permet de façon générale la définition, la manipulation et le contrôle de sécurité de données.</p>
+<p>Créé en 1974, normalisé depuis 1986, le langage est reconnu par la grande majorité des systèmes de gestion de bases de données relationnelles</p>
 </div>
-<div class="section" id="wow">
-<h2><span class="section-number">1.3. </span>WOW<a class="headerlink" href="#wow" title="Permalink to this headline">¶</a></h2>
-<p><strong>SQL aussi appeler SEQUEL veut dire Langage de requête structurée : Structured Query Language</strong></p>
-<p><strong>C’est un langage informatique utilisé pour exploiter des bases de données. Il permet de façon générale la définition, la manipulation et le contrôle sécurisé des données ainsi que sa structure.</strong></p>
+<div class="section" id="a-quoi-ca-sert">
+<h2><span class="section-number">2.2. </span>A QUOI CA SERT<a class="headerlink" href="#a-quoi-ca-sert" title="Permalink to this headline">¶</a></h2>
+<p>Pour que les différents logiciels et le moteur de base de données puissent se comprendre, ils utilisent un langage appelé SQL.</p>
+<p>il est utilisé pour :</p>
+<ul class="simple">
+<li><p>Lire les données</p></li>
+<li><p>Écrire les données</p></li>
+<li><p>Modifier les données</p></li>
+<li><p>Supprimer les données</p></li>
+<li><p>Modifier la structure d’une base de donnée</p></li>
+</ul>
+<p>De plus, il a plusieurs avantages consequents :</p>
+<ul class="simple">
+<li><p>Il peut fonctionner avec n’importe quelle base de données. Il suffira de lui indiquer avec quelle base de données il doit dialoguer.</p></li>
+<li><p>C’est un langage international</p></li>
+<li><p>Si on doit changer la base, il suffit de modifier la relation entre le logiciel et la base de données.</p></li>
+</ul>
+<p>COMMANDES DE BASE</p>
+<p>Select :
+La commande <strong>SELECT</strong> permet de récupérer des données stockées dans une ou plusieurs table(s).
+ex :
+<strong>SELECT</strong> *
+<strong>FROM</strong> personne
+<strong>WHERE</strong> (taille &gt; 170) ;</p>
+<p>Insert :
+La commande <strong>INSERT</strong> permet d’ajouter des données dans une table existante.
+ex :
+<strong>INSERT INTO</strong> personne <strong>VALUES</strong> (50, “Dupont”, “Pierre”, 25, “Sans emploi”, 0, 174)</p>
+<p>Update :
+La commande <strong>UPDATE</strong> permet de modifier les données contenues dans la table
+ex :
+<strong>UPDATE</strong> table
+<strong>SET</strong> colonne_1 = ‘valeur 1’, colonne_2 = ‘valeur 2’, colonne_3 = ‘valeur 3’
+WHERE condition ;</p>
+<p>Delete :
+La commande <strong>DELETE</strong> permet de supprimer une partie ou la totalité des données de la table
+ex :
+<strong>DELETE FROM</strong> nom_table ;</p>
+<p>Commit :
+<strong>COMMIT</strong> valide la transaction en cours. Tout le monde peut désormais voir les modifications réalisées au cours de la transaction.
+ex :</p>
+<p>Create Table :
+La commande <strong>CREATE TABLE</strong> permet de créer une table nommée nom_sql comportant un ou plusieurs champ.
+ex :
+create table <strong>PERSONNE</strong>
+(
+<strong>ID_PERSONNE</strong> int not null ,
+<strong>NOM</strong> varchar not null ,
+<strong>PRENOM</strong> varchar not null ,
+<strong>AGE</strong> int ,
+<strong>CATEGORIE_PROFESSIONNELLE</strong> varchar ,
+<strong>NOMBRE_ENFANTS</strong> int ,
+<strong>TAILLE</strong> float ,</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">primary</span> <span class="n">key</span> <span class="p">(</span><span class="n">ID_PERSONNE</span><span class="p">)</span> <span class="p">,</span>
+</pre></div>
 </div>
-<div class="section" id="damn">
-<h2><span class="section-number">1.4. </span>DAMN<a class="headerlink" href="#damn" title="Permalink to this headline">¶</a></h2>
-<p><strong>SQL aussi appeler SEQUEL veut dire Langage de requête structurée : Structured Query Language</strong></p>
-<p><strong>C’est un langage informatique utilisé pour exploiter des bases de données. Il permet de façon générale la définition, la manipulation et le contrôle sécurisé des données ainsi que sa structure.</strong></p>
+<p>) ;</p>
+<p>Alter Table :
+La commande <strong>ALTER TABLE</strong> permet de modifier la table existante désignée par l’argument nom_sql.
+ex :
+<strong>ALTER TABLE</strong> nom_table
+instruction</p>
+<p>Drop Table :
+La commande <strong>DROP TABLE</strong> permet de supprimer la table nommée nom_sql de la base.
+ex :
+<strong>DROP TABLE</strong> nom_table</p>
+<p>Grant :
+La commande <strong>GRANT</strong> permet de définir les droits d’accès associés au schéma nom_sql
+ex :
+<strong>GRANT ALL PRIVILEGES ON</strong> genres TO manuel;</p>
+<p>Revoke :
+La commande <strong>REVOKE</strong> permet de supprimer les droits d’accès spécifiques associés au schéma défini par le paramètre nom_sql.
+ex :
+<strong>REVOKE ALL PRIVILEGES ON</strong> genres <strong>FROM</strong> manuel;</p>
 </div>
 </div>
 
@@ -76,15 +142,17 @@
 
 <h3>Navigation</h3>
 <ul class="current">
-<li class="toctree-l1 current"><a class="current reference internal" href="#">1. SQL</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#definition">1.1. DEFINITION</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#requete">1.2. REQUETE</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#wow">1.3. WOW</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#damn">1.4. DAMN</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">1. title: “Untitled”
+author: yoannlucido
+date: 16/01/2020
+output: rmarkdown::html_vignette</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#sql">2. SQL</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#intro">2.1. INTRO</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#a-quoi-ca-sert">2.2. A QUOI CA SERT</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="SGBD.html">2. SGBD</a></li>
-<li class="toctree-l1"><a class="reference internal" href="DATABASE.html">3. DATABASE</a></li>
+<li class="toctree-l1"><a class="reference internal" href="SGBD.html">3. Les Systèmes de Gestion de Base de Donnée</a></li>
+<li class="toctree-l1"><a class="reference internal" href="DATABASE.html">4. DATABASE</a></li>
 </ul>
 
 <div class="relations">
@@ -92,7 +160,7 @@
 <ul>
   <li><a href="index.html">Documentation overview</a><ul>
       <li>Previous: <a href="index.html" title="previous chapter">Welcome to sql’s documentation!</a></li>
-      <li>Next: <a href="SGBD.html" title="next chapter"><span class="section-number">2. </span>SGBD</a></li>
+      <li>Next: <a href="SGBD.html" title="next chapter"><span class="section-number">3. </span>Les Systèmes de Gestion de Base de Donnée</a></li>
   </ul></li>
 </ul>
 </div>
@@ -122,7 +190,7 @@
       &copy;2020, ejhb xavier yoann.
       
       |
-      Powered by <a href="http://sphinx-doc.org/">Sphinx 2.3.0</a>
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 2.3.1</a>
       &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
       
       |

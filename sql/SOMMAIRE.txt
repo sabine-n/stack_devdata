@@ -7,11 +7,12 @@ plusieurs tables (jointures), gestion utilisateurs
   1.1 INTRO 
   1.2 A QUOI CA SERT
   1.3 COMMANDES DE BASE
-2 SGBD
-  3.1 INTRO
-  3.2 MySQL
-  3.3 Django 
-  3.4 phpMyAdmin
+2 Les systèmes de Gestion de Base de Données 
+  2.1 Qu'est ce que un SGBD
+	2.1.1 Définition
+	2.1.2 Quelques exemples de SGBD
+  2.2 Composition et fonctionnement d'un SGBD
+  2.3 Les Différents type de SGBD
 3 BASE DE DONNE
   2.1 INTRO
   2.2 SON HISTOIRE 
@@ -23,6 +24,4 @@ plusieurs tables (jointures), gestion utilisateurs
   4.1 INTRO 
   4.2 
   4.3
-  4.4
-
-
+  44.
