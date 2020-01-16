@@ -1,5 +1,4 @@
 Google Sheets 
-
 =============
 
 Histoire et création de Google Sheets:
@@ -14,10 +13,10 @@ Présentations : Ce module permet de créer des diaporamas et de les exporter ve
 *WYSIWYG: « WYSIWYG » est l’acronyme de la locution anglaise « what you see is what you get », signifiant littéralement en français « ce que vous voyez est ce que vous obtenez »1.
 Les termes WYSIWYG ou tel écran, tel écrit2 désignent en informatique une interface utilisateur qui permet de composer visuellement le résultat voulu, typiquement pour un logiciel de mise en page, un traitement de texte ou d’image. C'est une interface « intuitive » : l’utilisateur voit directement à l’écran à quoi ressemblera le résultat final.
 
-6 Astuces pour utiliser Google Sheets comme un pro:
---------------------------------------------------
-1. Importer des données d'une autre feuille de calcul
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+six astuces pour utiliser Google Sheets comme un pro:
+
+Importer des données d'une autre feuille de calcul
+-----------------------------------------------------
 Il arrive fréquemment de travailler en même temps sur plusieurs feuilles de calcul, dont certaines peuvent avoir des données communes.
 Il peut donc être très pratique d’importer automatiquement des valeurs issues d’un autre document (qui seront actualisées en temps réel en cas de modifications).
 Ceci est rendu possible par la fonction =IMPORTRANGE, qui s’utilise de la manière suivante :
@@ -28,8 +27,8 @@ Ceci est rendu possible par la fonction =IMPORTRANGE, qui s’utilise de la mani
 
    Notez qu’il est facultatif de renseigner le nom de la feuille si le document n’en contient qu’une.
 
-2. Protéger des cellules
-~~~~~~~~~~~~~~~~~~~~~~~~
+Protéger des cellules
+------------------------
 L’un des avantages de Google Sheets, c’est qu’il permet de partager très facilement des feuilles de calcul avec d’autres utilisateurs.
 Toutefois, il y a peut-être certaines données importantes que vous ne souhaitez pas voir modifiées (ne serait-ce que par erreur) par quelqu’un d’autre : pensez alors à les verrouiller.
 Pour ce faire, sélectionnez une plage de cellules, puis allez dans Données > Feuilles et plages protégées :
@@ -42,8 +41,8 @@ Dans le panneau qui apparaît à droite, cliquez sur « Définir les autorisatio
 .. image:https://www.codeur.com/blog/wp-content/uploads/2018/05/astuce-google-sheets-3.jpg
    :width: 500
 
-3. Modifier rapidement du texte
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Modifier rapidement du texte
+-------------------------------
 
 Il n’est pas rare que les chaînes de caractères présentes dans une feuille Google Sheets soient désordonnées.
 Trois fonctions peuvent vous aider à y remédier :
@@ -56,8 +55,8 @@ Par exemple, si je veux mettre rapidement en majuscules tous les mots présents 
 .. image: https://www.codeur.com/blog/wp-content/uploads/2018/05/astuce-google-sheets-4.gif
    width: 500
 
-4. Trier les données
-~~~~~~~~~~~~~~~~~~~~
+Trier les données
+-----------------
 Mettre de l’ordre dans les données, c’est aussi effectuer des tris pour ne visualiser que les cellules qui nous intéressent (surtout quand on a une grande quantité).
 Pour cela, vous pouvez utiliser la fonction de filtrage : par exemple, sélectionnez les en-têtes d’un tableau et cliquez sur le bouton en forme d’entonnoir.
 Un symbole apparaît à côté des en-têtes : en cliquant dessus, vous pouvez trier les données de la colonne par ordre croissant ou décroissant, ou encore ne visualiser que les données correspondant à tel ou tel critère.
@@ -65,16 +64,16 @@ Un symbole apparaît à côté des en-têtes : en cliquant dessus, vous pouvez t
 .. image: https://www.codeur.com/blog/wp-content/uploads/2018/05/astuce-google-sheets-5.gif
    width: 500
 
-5. Tirer parti de l’intelligence artificielle
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Tirer parti de l’intelligence artificielle
+------------------------------------------
 Google est connu pour ses prouesses en matière d’IA, et Sheets ne fait pas exception.
 La fonction Explorer (en bas à droite de l’écran) permet justement d’utiliser l’intelligence artificielle à votre avantage, puisqu’elle vous permet de générer automatiquement des tableaux et autres graphiques à partir de vos données.
 
 .. image: https://www.codeur.com/blog/wp-content/uploads/2018/05/astuce-google-sheets-6.gif
    width: 500
 
-6. Utiliser Google Traduction dans Google Sheets
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Utiliser Google Traduction dans Google Sheets
+---------------------------------------------
 
 Il y a des mots dans une langue étrangère dans votre document Google Sheets et vous ne souhaitez pas faire des allers-retours incessants vers Google Traduction ?
 Ne vous en faites : il est possible de traduire directement un mot dans le tableur à l’aide la fonction =GOOGLETRANSLATE. Elle s’utilise comme ceci :

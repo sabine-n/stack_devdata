@@ -1,4 +1,4 @@
-Format de fichier .xls
+Format de fichier xls
 ======================
 
 Qu’est ce qu’un fichier XLS ?
