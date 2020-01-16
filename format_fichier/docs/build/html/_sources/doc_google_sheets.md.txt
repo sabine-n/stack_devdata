@@ -22,8 +22,6 @@ Il peut donc être très pratique d’importer automatiquement des valeurs issue
 Ceci est rendu possible par la fonction =IMPORTRANGE, qui s’utilise de la manière suivante :
 =Importrange(« URL du document Sheets »; « Nom de la feuille!Plage de valeurs »)
 
-.. image: https://www.codeur.com/blog/wp-content/uploads/2018/05/astuce-google-sheets-1.gif
-   :width: 500
 
    Notez qu’il est facultatif de renseigner le nom de la feuille si le document n’en contient qu’une.
 
@@ -33,13 +31,7 @@ L’un des avantages de Google Sheets, c’est qu’il permet de partager très 
 Toutefois, il y a peut-être certaines données importantes que vous ne souhaitez pas voir modifiées (ne serait-ce que par erreur) par quelqu’un d’autre : pensez alors à les verrouiller.
 Pour ce faire, sélectionnez une plage de cellules, puis allez dans Données > Feuilles et plages protégées :
 
-.. image: https://www.codeur.com/blog/wp-content/uploads/2018/05/astuce-google-sheets-2.png
-   : width: 500
-
 Dans le panneau qui apparaît à droite, cliquez sur « Définir les autorisations ». Vous pourrez alors choisir comment protéger les données concernées :
-
-.. image:https://www.codeur.com/blog/wp-content/uploads/2018/05/astuce-google-sheets-3.jpg
-   :width: 500
 
 Modifier rapidement du texte
 -------------------------------
@@ -52,8 +44,6 @@ Trois fonctions peuvent vous aider à y remédier :
 =TRIM : permet de supprimer les espaces au début ou à la fin d’une chaîne de caractères.
 Par exemple, si je veux mettre rapidement en majuscules tous les mots présents dans une colonne :
 
-.. image: https://www.codeur.com/blog/wp-content/uploads/2018/05/astuce-google-sheets-4.gif
-   width: 500
 
 Trier les données
 -----------------
@@ -61,8 +51,6 @@ Mettre de l’ordre dans les données, c’est aussi effectuer des tris pour ne 
 Pour cela, vous pouvez utiliser la fonction de filtrage : par exemple, sélectionnez les en-têtes d’un tableau et cliquez sur le bouton en forme d’entonnoir.
 Un symbole apparaît à côté des en-têtes : en cliquant dessus, vous pouvez trier les données de la colonne par ordre croissant ou décroissant, ou encore ne visualiser que les données correspondant à tel ou tel critère.
 
-.. image: https://www.codeur.com/blog/wp-content/uploads/2018/05/astuce-google-sheets-5.gif
-   width: 500
 
 Tirer parti de l’intelligence artificielle
 ------------------------------------------
