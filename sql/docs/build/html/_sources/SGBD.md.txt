@@ -1,4 +1,4 @@
-Les Systèmes de Gestion de Base de Donnée 
+SGBD
 ========    
 
  Qu'est ce qu'un SGBD 
