@@ -10,11 +10,16 @@ INTRO
 LES COMMANDES ET PRIVILEGES
 ----------
 
-```GRANT```: autorisation d'un utilisateur à effectuer une action.
-```DENY``` : interdiction à un utilisateur d'effectuer une action.
-```REVOKE``` : annulation d'une commande de contrôle de données précédente.
-```COMMIT``` : validation d'une transaction en cours.
-```ROLLBACK``` : annulation d'une transaction en cours.
+```GRANT```: autorisation d'un utilisateur à effectuer une action ;
+
+```DENY``` : interdiction à un utilisateur d'effectuer une action ;
+
+```REVOKE``` : annulation d'une commande de contrôle de données précédente ;
+
+```COMMIT``` : validation d'une transaction en cours ;
+
+```ROLLBACK``` : annulation d'une transaction en cours ;
+
 ```LOCK``` : verrouillage sur une structure de données.
 
 Privilèges du CRUD :
@@ -23,15 +28,25 @@ Les privilèges ```SELECT```, ```INSERT```, ```UPDATE```  et ```DELETE```  perme
 ```CREATE TABLE``` : Création de tables
 
 ```CREATE TEMPORARY TABLE``` :Création de tables temporaires
+
 ```CREATE VIEW``` : Création de vues (il faut également avoir le privilège SELECTsur les colonnes sélectionnées par la vue)
+
 ```ALTER``` : Modification de tables (avec ALTER TABLE)
-```DROP``` : Suppression de tables, vues et bases de
+
+```DROP``` : Suppression de tables, vues et bases de données
+
 ```CREATE ROUTINE``` : Création de procédures stockées (et de fonctions stockées - non couvertes dans ce cours)
+
 ```ALTER ROUTINE``` : Modification et suppression de procédures stockées (et de fonctions stockées)
+
 ```EXECUTE``` : Exécution de procédures stockées (et de fonctions stockées)
+
 ```INDEX``` : Création et suppression d'index
+
 ```TRIGGER``` : Création et suppression de triggers
+
 ```LOCK TABLES``` : Verrouillage de tables (sur lesquelles on a le privilège SELECT)
+
 ```CREATE USER``` : Gestion d'utilisateur (commandes CREATE USER, DROP USER, RENAME USER  et SET PASSWORD)
 
 EXEMPLE DE REQUÊTES
