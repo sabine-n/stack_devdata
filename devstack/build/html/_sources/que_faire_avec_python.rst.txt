@@ -50,7 +50,7 @@ résultat:
  
     >>> <matplotlib.axes._subplots.AxesSubplot at 0x7fcb00bec210>
 
-..  image:: ../../output_19_1.png
+..  image:: output_19_1.png
     :width: 400
 
 
@@ -250,7 +250,7 @@ des jeux vidéo en 2D (librairie Pygame)
     
     
 
-..  image:: ../../space.png
+..  image:: space.png
     :width: 400
     
 
