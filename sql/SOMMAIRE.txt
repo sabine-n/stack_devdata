@@ -6,7 +6,7 @@ plusieurs tables (jointures), gestion utilisateurs
 1 SQL
   1.1 INTRO 
   1.2 A QUOI CA SERT
-  1.3 REQUÊTE
+  1.3 COMMANDES DE BASE
 2 SGBD
   3.1 INTRO
   3.2 MySQL
