@@ -3,13 +3,17 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to Stack DevData's documentation!
-=========================================
+Modélisation d'une base de donnée
+==================================
 
 .. toctree::
    :maxdepth: 2
-   :caption: Contents:
+   :numbered:
 
+   partie1
+   partie2
+   partie3
+   partie4
 
 
 Indices and tables
