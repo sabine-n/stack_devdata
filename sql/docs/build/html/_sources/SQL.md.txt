@@ -1,7 +1,7 @@
 SQL
 ===
 
-INTRO
+Intro
 -----
 SQL veut dire Langage de requête structurée : Structured Query Language
 
@@ -10,7 +10,7 @@ C’est un langage informatique utilisé pour exploiter des bases de données. I
 Créé en 1974, normalisé depuis 1986, le langage est reconnu par la grande majorité des systèmes de gestion de bases de données relationnelles
 
 
-A QUOI CA SERT
+A quoi ça sert
 --------------
 Pour que les différents logiciels et le moteur de base de données puissent se comprendre, ils utilisent un langage appelé SQL.
 
@@ -28,7 +28,7 @@ De plus, il a plusieurs avantages consequents :
 * Si on doit changer la base, il suffit de modifier la relation entre le logiciel et la base de données.
 
 
-COMMANDES DE BASE
+Commandes de base
 -----------------
 
 Select :

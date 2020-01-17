@@ -4,7 +4,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
     <meta charset="utf-8" />
-    <title>4. GESTION DES DROITS &#8212; sql 0.1 documentation</title>
+    <title>4. Gestion des droits &#8212; sql 0.1 documentation</title>
     <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
@@ -14,7 +14,7 @@
     <script type="text/javascript" src="_static/language_data.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="prev" title="3. DATABASE" href="DATABASE.html" />
+    <link rel="prev" title="3. Base de donnée" href="DATABASE.html" />
    
   <link rel="stylesheet" href="_static/custom.css" type="text/css" />
   
@@ -32,14 +32,14 @@
           <div class="body" role="main">
             
   <div class="section" id="gestion-des-droits">
-<h1><span class="section-number">4. </span>GESTION DES DROITS<a class="headerlink" href="#gestion-des-droits" title="Permalink to this headline">¶</a></h1>
+<h1><span class="section-number">4. </span>Gestion des droits<a class="headerlink" href="#gestion-des-droits" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="intro">
-<h2><span class="section-number">4.1. </span>INTRO<a class="headerlink" href="#intro" title="Permalink to this headline">¶</a></h2>
+<h2><span class="section-number">4.1. </span>Intro<a class="headerlink" href="#intro" title="Permalink to this headline">¶</a></h2>
 <p><em><strong>En SQL la gestion des droits des utilisateurs est très importante elle permet de définir  les actions  que un  utilisateur peut effectuer</strong></em></p>
 <p><strong>Les différentes actions s’appelle des</strong><em>DCL (Data Control Language)</em> <strong>elle permentent de controller la base de données, on peut aussi bien les exécuter via le terminal que via une interface graphique</strong></p>
 </div>
-<div class="section" id="les-commandes-et-privileges">
-<h2><span class="section-number">4.2. </span>LES COMMANDES ET PRIVILEGES<a class="headerlink" href="#les-commandes-et-privileges" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="les-commandes-priviliges">
+<h2><span class="section-number">4.2. </span>Les commandes priviliges<a class="headerlink" href="#les-commandes-priviliges" title="Permalink to this headline">¶</a></h2>
 <p><code class="docutils literal notranslate"><span class="pre">GRANT</span></code>: autorisation d’un utilisateur à effectuer une action ;</p>
 <p><code class="docutils literal notranslate"><span class="pre">DENY</span></code> : interdiction à un utilisateur d’effectuer une action ;</p>
 <p><code class="docutils literal notranslate"><span class="pre">REVOKE</span></code> : annulation d’une commande de contrôle de données précédente ;</p>
@@ -61,8 +61,8 @@ Les privilèges <code class="docutils literal notranslate"><span class="pre">SEL
 <p><code class="docutils literal notranslate"><span class="pre">LOCK</span> <span class="pre">TABLES</span></code> : Verrouillage de tables (sur lesquelles on a le privilège SELECT)</p>
 <p><code class="docutils literal notranslate"><span class="pre">CREATE</span> <span class="pre">USER</span></code> : Gestion d’utilisateur (commandes CREATE USER, DROP USER, RENAME USER  et SET PASSWORD)</p>
 </div>
-<div class="section" id="exemple-de-requetes">
-<h2><span class="section-number">4.3. </span>EXEMPLE DE REQUÊTES<a class="headerlink" href="#exemple-de-requetes" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="exemple-de-requete">
+<h2><span class="section-number">4.3. </span>Exemple de requête<a class="headerlink" href="#exemple-de-requete" title="Permalink to this headline">¶</a></h2>
 <p><em><strong>Autorisation d’un utilisateur à effectuer une action :</strong></em></p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">GRANT</span> <span class="n">UPDATE</span> <span class="p">(</span><span class="n">nom</span><span class="p">,</span> <span class="n">prenom</span><span class="p">)</span> <span class="n">ON</span> <span class="n">eleves</span>
 <span class="n">TO</span> <span class="n">enseignant</span>
@@ -104,12 +104,12 @@ Les privilèges <code class="docutils literal notranslate"><span class="pre">SEL
 <h3>Navigation</h3>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="SQL.html">1. SQL</a></li>
-<li class="toctree-l1"><a class="reference internal" href="SGBD.html">2. SGBD</a></li>
-<li class="toctree-l1"><a class="reference internal" href="DATABASE.html">3. DATABASE</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">4. GESTION DES DROITS</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#intro">4.1. INTRO</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#les-commandes-et-privileges">4.2. LES COMMANDES ET PRIVILEGES</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#exemple-de-requetes">4.3. EXEMPLE DE REQUÊTES</a></li>
+<li class="toctree-l1"><a class="reference internal" href="SGBD.html">2. Système de gestion de base de donné</a></li>
+<li class="toctree-l1"><a class="reference internal" href="DATABASE.html">3. Base de donnée</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">4. Gestion des droits</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#intro">4.1. Intro</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#les-commandes-priviliges">4.2. Les commandes priviliges</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#exemple-de-requete">4.3. Exemple de requête</a></li>
 </ul>
 </li>
 </ul>
@@ -118,7 +118,7 @@ Les privilèges <code class="docutils literal notranslate"><span class="pre">SEL
 <h3>Related Topics</h3>
 <ul>
   <li><a href="index.html">Documentation overview</a><ul>
-      <li>Previous: <a href="DATABASE.html" title="previous chapter"><span class="section-number">3. </span>DATABASE</a></li>
+      <li>Previous: <a href="DATABASE.html" title="previous chapter"><span class="section-number">3. </span>Base de donnée</a></li>
   </ul></li>
 </ul>
 </div>

@@ -1,20 +1,20 @@
-DATABASE 
+Base de donnée 
 ========
 
-INTRO 
+Intro 
 ------
 Elles se chargent elles-mêmes de créer, de mettre à jour ou de supprimer des données. Elles effectuent également des recherches parmi les données qu’elles contiennent sur demande de l’utilisateur, et de lancer des applications à partir des données.
 
 Les bases de données sont utilisées par de nombreuses entreprises dans toutes les industries. Elles sont notamment utilisées par les compagnies aériennes pour gérer les réservations. Elles sont utilisées pour la gestion de production. Pour les enregistrements médicaux dans les hôpitaux, ou encore pour les enregistrements légaux dans les compagnies d’assurances. Les bases de données les plus larges sont généralement utilisées par les agences gouvernementales, les grandes entreprises ou les universités.
 
-SON HISTOIRE 
+Son histoire
 -------------
 
 L’histoire des bases de données remonte aux années 1960, avec l’apparition des bases de données réseau et des bases de données hiérarchiques. Dans les années 1980, ce sont les bases de données object-oriented qui ont fait leur apparition. Aujourd’hui, les bases de données prédominantes sont les SQL, NoSQL et bases de données cloud.
 
 Il est aussi possible de classer les bases de données en fonction de leur contenu : bibliographique, textes, nombres ou images. Toutefois, en informatique, on classe généralement les bases de données en fonction de leur approche organisationnelle. Il existe de nombreux types de bases de données différentes : relationnelle, distribuée, cloud, NoSQL… Voici les différents types de bases de données.
 
-TYPE 
+Type
 ---------
 
 Dans le cas d’une grande database, les multiples utilisateurs doivent être en mesure de manipuler les informations qu’elle contient rapidement et n’importe quand. De plus, les grandes entreprises ont tendance à cumuler de nombreux fichiers indépendants comprenant des fichiers liés ou même des données se superposant. Dans le cadre d’une analyse de données, il est nécessaire que les données en provenance de plusieurs fichiers puissent être liées. C’est pourquoi différents types de bases de données ont été développé pour répondre à ces exigences : orientée texte, hiérarchique, réseau, relationnelle, orientée objet…
@@ -66,7 +66,7 @@ Dans le cas d’une DBaaS, l’entreprise s’abonne et elle repose sur l’infr
 
 De plus en plus souvent, des bases de données jadis séparées sont combinées électroniquement sous forme de collections plus larges que l’on appelle les Data Warehouses. Les entreprises et les gouvernements utilisent ensuite des logiciels de Data Mining pour analyser les différents aspects des données. Par exemple, une agence gouvernementale peut procéder ainsi pour enquêter sur une entreprise ou une personne qui ont acheté une grande quantité d’équipement, même si les achats sont disséminés dans tout le pays ou répartis entre plusieurs subsidiaires.
 
-RELATION OR NOT
+Relation or not 
 ------------- 
 
 Il peut être tentant de voir les bases de données NoSQL comme un remplacement pour les bases de données relationnelles. Toutefois, en réalité, il peut y avoir de la place pour ces deux types de technologies dans la plupart des entreprises.
@@ -79,7 +79,7 @@ Ainsi, les bases de données NoSQL conviennent davantage aux grands ensembles de
 
 Une autre raison pour laquelle les bases de données non relationnelles ne remplaceront pas les bases de données relationnelles est que les vendeurs de bases de données relationnelles ont amélioré leurs produits pour les adapter aux applications Big Data. Non seulement ces deux technologies ont encore leur place en entreprise, mais il y a aussi de la place pour qu’elles poursuivent toutes les deux leur croissance de leur côté.
 
-CLOUD
+Cloud
 ------- 
 
 Les bases de données cloud se distinguent des bases de données traditionnelles par le fait qu’elles résident sur le cloud public, privé ou hybride et non sur des serveurs internes. On distingue deux environnements de bases de données cloud distincts : les bases de données traditionnelles, et les bases de données en tant que service (DBaaS).

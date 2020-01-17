@@ -1,13 +1,13 @@
-GESTION DES DROITS
+Gestion des droits
 =========
 
-INTRO
+Intro
 -----
 ***En SQL la gestion des droits des utilisateurs est très importante elle permet de définir  les actions  que un  utilisateur peut effectuer***
 
 **Les différentes actions s'appelle des***DCL (Data Control Language)* **elle permentent de controller la base de données, on peut aussi bien les exécuter via le terminal que via une interface graphique**
 
-LES COMMANDES ET PRIVILEGES
+Les commandes priviliges 
 ----------
 
 ```GRANT```: autorisation d'un utilisateur à effectuer une action ;
@@ -49,7 +49,7 @@ Les privilèges ```SELECT```, ```INSERT```, ```UPDATE```  et ```DELETE```  perme
 
 ```CREATE USER``` : Gestion d'utilisateur (commandes CREATE USER, DROP USER, RENAME USER  et SET PASSWORD)
 
-EXEMPLE DE REQUÊTES
+Exemple de requête
 -------
 
 ***Autorisation d'un utilisateur à effectuer une action :***

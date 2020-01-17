@@ -1,4 +1,6 @@
 
+
+
 SQL, MySQL, Création base de données, création de tables, Requêtes sur une table, sur
 plusieurs tables (jointures), gestion utilisateurs
 
@@ -7,12 +9,11 @@ plusieurs tables (jointures), gestion utilisateurs
   1.1 INTRO
   1.2 A QUOI CA SERT
   1.3 COMMANDES DE BASE
-2 Les systèmes de Gestion de Base de Données 
-  2.1 Qu'est ce que un SGBD
-	2.1.1 Définition
-	2.1.2 Quelques exemples de SGBD
-  2.2 Composition et fonctionnement d'un SGBD
-  2.3 Les Différents type de SGBD
+2 SGBD 
+  2.1 INTRO
+  2.2 QUELQUE EXEMPLE SGBD
+  2.3 COMPOSITION EST FONCTIONNEMENT D'UN SGBD
+  2.4 LES DIFFERENTS TYPE DE SGBD
 3 BASE DE DONNE
   2.1 INTRO
   2.2 SON HISTOIRE 
@@ -24,3 +25,5 @@ plusieurs tables (jointures), gestion utilisateurs
   4.1 INTRO
   4.2 LES COMMANDES ET PRIVILEGE
   4.3 EXEMPLE DE REQUÊTE
+
+
