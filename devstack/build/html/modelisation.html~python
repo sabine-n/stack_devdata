@@ -1,0 +1,166 @@
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Modélisation d”une base de donnée &#8212; Documentation Ateliers </title>
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="_static/language_data.js"></script>
+    <script type="text/javascript" src="_static/translations.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Recherche" href="search.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="modelisation-d-une-base-de-donnee">
+<h1>Modélisation d”une base de donnée<a class="headerlink" href="#modelisation-d-une-base-de-donnee" title="Lien permanent vers ce titre">¶</a></h1>
+<ol>
+<li><p>Définition/Cadrage du projet</p>
+<p>1.1. Cahier des charges</p>
+<p>1.1.1. Briefing
+rencontre client, prise de note
+analyse du besoin/problème
+objectif projet</p>
+<p>1.1.2. Cadrage
+organisation du projet
+definition d”équipe</p>
+<p>1.2. Recensement des données
+(intro)</p>
+<p>1.2.1. Dictionnaire de données
+(métadonnées
+type
+taille
+commentaire)</p>
+<p>1.2.2. Règle de gestion
+(numéro
+description
+restrictions)</p>
+</li>
+<li><p>Modèle conceptuel de donnée (MCD)</p>
+<p>2.1. Le Modèle Entité/Association</p>
+<p>2.1.1. Entité
+identifiants</p>
+<p>2.1.2. Association
+cardinalités</p>
+<p>2.2. Exemple d”application
+projet micropousses</p>
+</li>
+<li><p>Modèle Logique des Données Relationnelles</p>
+<p>3.1. Les dépendances fonctionnelles</p>
+<p>3.1.1. Dépendances entre attributs</p>
+<p>3.1.2. Clés primaires</p>
+<p>3.2. Les Relations</p>
+<p>3.2.1. Le domaine</p>
+<p>3.2.2. Le produit cartésien</p>
+<p>3.2.3. La relation</p>
+<p>3.3. Les formes normales</p>
+<p>3.3.1. La première forme normale</p>
+<p>3.3.2. La deuxième forme normale</p>
+<p>3.3.3. La troisième forme normale</p>
+<p>3.4. Elaboration du modèle relationnel</p>
+<p>3.4.1. De l”Entité à la Relation</p>
+<p>3.4.2. Des associations aux clés etrangères</p>
+<p>3.4.3. Synthèse: Du modèle conceptuel au modèle relationnel</p>
+</li>
+<li><p>Modèle Physique des Données</p>
+<p>4.1. MySQL Workbench</p>
+<p>4.2. Le modèle physique en diagramme Workbench</p>
+<p>4.2.1. Creation de table</p>
+<p>4.2.2. Les attributs: clés primaires, types et taille d”attributs</p>
+<p>4.2.3. Associations et clés étrangères</p>
+<p>4.3. Du modèle physique à la base de donnée</p>
+</li>
+</ol>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="index.html">Ateliers</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="histoire_de_python.html">1. HISTOIRE DE PYTHON</a></li>
+<li class="toctree-l1"><a class="reference internal" href="que_faire_avec_python.html">2. QUE PEUT-ON FAIRE AVEC PYTHON ?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="python.html">3. INSTALLATION EN LIGNE DE COMMANDE DE PYTHON</a></li>
+<li class="toctree-l1"><a class="reference internal" href="interface_de_developpement.html">4. Utilisation d’anaconda</a></li>
+<li class="toctree-l1"><a class="reference internal" href="bugs.html">5. bugs rencontrer</a></li>
+<li class="toctree-l1"><a class="reference internal" href="aide.html">6. aide</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Recherche rapide</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2019, Sabine.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 2.2.0</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="_sources/modelisation.md.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>
