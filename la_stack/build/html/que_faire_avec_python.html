@@ -1,0 +1,468 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="fr" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="fr" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>2. Que peut-on faire avec Python? &mdash; Documentation Ateliers </title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+        <script type="text/javascript" src="_static/language_data.js"></script>
+        <script type="text/javascript" src="_static/translations.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Recherche" href="search.html" />
+    <link rel="next" title="3. Installation de Python 3 en ligne de commande" href="python.html" />
+    <link rel="prev" title="1. Histoire de Python" href="histoire_de_python.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home"> Ateliers
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="SQL.html">1. SQL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="SGBD.html">2. Système de gestion de base de donné</a></li>
+<li class="toctree-l1"><a class="reference internal" href="DATABASE.html">3. Base de donnée</a></li>
+<li class="toctree-l1"><a class="reference internal" href="DROITS.html">4. Gestion des droits</a></li>
+</ul>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="histoire_de_python.html">1. Histoire de Python</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">2. Que peut-on faire avec Python?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="python.html">3. Installation de Python 3 en ligne de commande</a></li>
+<li class="toctree-l1"><a class="reference internal" href="interface_de_developpement.html">4. Utilisation d’anaconda</a></li>
+<li class="toctree-l1"><a class="reference internal" href="bugs.html">5. bugs rencontrés</a></li>
+<li class="toctree-l1"><a class="reference internal" href="aide.html">6. aide</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="format_fichier_csv.html">1. Format de fichier .csv</a></li>
+<li class="toctree-l1"><a class="reference internal" href="format_fichier_xls.html">2. Format de fichier xls</a></li>
+<li class="toctree-l1"><a class="reference internal" href="format_fichier_sql.html">3. Format de fichier .sql</a></li>
+<li class="toctree-l1"><a class="reference internal" href="doc_google_sheets.html">4. Google Sheets</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="partie1.html">1. Définition/Cadrage du projet</a></li>
+<li class="toctree-l1"><a class="reference internal" href="partie2.html">2. Modèle conceptuel de donnée (MCD)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="partie3.html">3. Modèle Logique des Données Relationnelles</a></li>
+<li class="toctree-l1"><a class="reference internal" href="partie4.html">4. Modèle Physique des Données</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="Git_et_Github.html">1. Git et Github</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Git_partage.html">2. Ligne de commande git_team</a></li>
+<li class="toctree-l1"><a class="reference internal" href="git_tag.html">3. Ligne de commande git tag</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Ateliers</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>2. Que peut-on faire avec Python?</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/que_faire_avec_python.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="que-peut-on-faire-avec-python">
+<h1>2. Que peut-on faire avec Python?<a class="headerlink" href="#que-peut-on-faire-avec-python" title="Lien permanent vers ce titre">¶</a></h1>
+<p>Avec python on peut faire beaucoup de choses voici quelques exemple :</p>
+<div class="section" id="du-calcul-scientifique-librairie-pandas-numpy">
+<h2>2.1. du calcul scientifique (librairie pandas, numpy)<a class="headerlink" href="#du-calcul-scientifique-librairie-pandas-numpy" title="Lien permanent vers ce titre">¶</a></h2>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">pandas</span> <span class="c1"># on importe la biblitéque pandas</span>
+
+<span class="go">from pandas import Series</span>
+
+<span class="go">import numpy</span>
+
+<span class="go">s = Series([42, &#39;Hello World!&#39;, 3.14, -5, None, numpy.nan])</span>
+
+<span class="go">s.head()</span>
+</pre></div>
+</div>
+<p>résultat:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span> <span class="mi">0</span>              <span class="mi">42</span>
+<span class="go">     1    Hello World!</span>
+<span class="go">     2            3.14</span>
+<span class="go">     3              -5</span>
+<span class="go">     4            None</span>
+<span class="go">     dtype: object</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="des-graphiques-librairie-matplotlib-et-sous-librairie-pyplot">
+<h2>2.2. des graphiques (librairie matplotlib) et (sous librairie pyplot)<a class="headerlink" href="#des-graphiques-librairie-matplotlib-et-sous-librairie-pyplot" title="Lien permanent vers ce titre">¶</a></h2>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">mport</span> <span class="n">pandas</span> <span class="k">as</span> <span class="n">pd</span> <span class="c1">#importer pandas</span>
+<span class="go">import matplotlib.pyplot as plt #importer mathplitlib</span>
+
+<span class="go">liste=[&quot;mpg&quot;,&quot;cylindres&quot;,&quot;déplacement&quot;,&quot;puissance&quot;,&quot;poids&quot;,&quot;accélération&quot;,&quot;année de modèle&quot;,&quot;origine&quot;,</span>
+<span class="go">&quot;nom de la voiture)&quot;] #crée une liste</span>
+
+<span class="go">plt.figure(figsize=(7,7))#pour gérer la taille du graphique</span>
+<span class="go">auto=pd.read_excel(&#39;/home/hachem/Documents/autompg.xlsx&#39;, sep= &#39;\t&#39;, names =liste)</span>
+<span class="go">auto[&#39;année de modèle&#39;].value_counts().plot.pie()#diagramme à secteur *</span>
+</pre></div>
+</div>
+<p>résultat:</p>
+<blockquote>
+<div><div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="o">&lt;</span><span class="n">matplotlib</span><span class="o">.</span><span class="n">axes</span><span class="o">.</span><span class="n">_subplots</span><span class="o">.</span><span class="n">AxesSubplot</span> <span class="n">at</span> <span class="mh">0x7fcb00bec210</span><span class="o">&gt;</span>
+</pre></div>
+</div>
+</div></blockquote>
+<a class="reference internal image-reference" href="_images/output_19_1.png"><img alt="_images/output_19_1.png" src="_images/output_19_1.png" style="width: 400px;" /></a>
+</div>
+<div class="section" id="des-jeux-video-en-2d-librairie-pygame">
+<h2>2.3. des jeux vidéo en 2D (librairie Pygame)<a class="headerlink" href="#des-jeux-video-en-2d-librairie-pygame" title="Lien permanent vers ce titre">¶</a></h2>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">math</span>
+<span class="go">import random</span>
+
+<span class="go">import pygame</span>
+<span class="go">from pygame import mixer</span>
+
+<span class="go"># Intialize the pygame</span>
+<span class="go">pygame.init()</span>
+
+<span class="go"># create the screen</span>
+<span class="go">screen = pygame.display.set_mode((800, 600))</span>
+
+<span class="go"># Background</span>
+<span class="go">background = pygame.image.load(&#39;background.png&#39;)</span>
+
+<span class="go"># Sound</span>
+<span class="go">mixer.music.load(&quot;background.wav&quot;)</span>
+<span class="go">mixer.music.play(-1)</span>
+
+<span class="go"># Caption and Icon</span>
+<span class="go">pygame.display.set_caption(&quot;Space Invader&quot;)</span>
+<span class="go">icon = pygame.image.load(&#39;ufo.png&#39;)</span>
+<span class="go">pygame.display.set_icon(icon)</span>
+
+<span class="go"># Player</span>
+<span class="go">playerImg = pygame.image.load(&#39;player.png&#39;)</span>
+<span class="go">playerX = 370</span>
+<span class="go">playerY = 480</span>
+<span class="go">playerX_change = 0</span>
+
+<span class="go"># Enemy</span>
+<span class="go">enemyImg = []</span>
+<span class="go">enemyX = []</span>
+<span class="go">enemyY = []</span>
+<span class="go">enemyX_change = []</span>
+<span class="go">enemyY_change = []</span>
+<span class="go">num_of_enemies = 6</span>
+
+<span class="go">for i in range(num_of_enemies):</span>
+<span class="go">    enemyImg.append(pygame.image.load(&#39;enemy.png&#39;))</span>
+<span class="go">    enemyX.append(random.randint(0, 736))</span>
+<span class="go">    enemyY.append(random.randint(50, 150))</span>
+<span class="go">    enemyX_change.append(4)</span>
+<span class="go">    enemyY_change.append(40)</span>
+
+<span class="go"># Bullet</span>
+
+<span class="go"># Ready - You can&#39;t see the bullet on the screen</span>
+<span class="go"># Fire - The bullet is currently moving</span>
+
+<span class="go">bulletImg = pygame.image.load(&#39;bullet.png&#39;)</span>
+<span class="go">bulletX = 0</span>
+<span class="go">bulletY = 480</span>
+<span class="go">bulletX_change = 0</span>
+<span class="go">bulletY_change = 10</span>
+<span class="go">bullet_state = &quot;ready&quot;</span>
+
+<span class="go"># Score</span>
+
+<span class="go">score_value = 0</span>
+<span class="go">font = pygame.font.Font(&#39;freesansbold.ttf&#39;, 32)</span>
+
+<span class="go">textX = 10</span>
+<span class="go">testY = 10</span>
+
+<span class="go"># Game Over</span>
+<span class="go">over_font = pygame.font.Font(&#39;freesansbold.ttf&#39;, 64)</span>
+
+
+<span class="go">def show_score(x, y):</span>
+<span class="go">    score = font.render(&quot;Score : &quot; + str(score_value), True, (255, 255, 255))</span>
+<span class="go">    screen.blit(score, (x, y))</span>
+
+
+<span class="go">def game_over_text():</span>
+<span class="go">    over_text = over_font.render(&quot;GAME OVER&quot;, True, (255, 255, 255))</span>
+<span class="go">    screen.blit(over_text, (200, 250))</span>
+
+
+<span class="go">def player(x, y):</span>
+<span class="go">    screen.blit(playerImg, (x, y))</span>
+
+
+<span class="go">def enemy(x, y, i):</span>
+<span class="go">    screen.blit(enemyImg[i], (x, y))</span>
+
+
+<span class="go">def fire_bullet(x, y):</span>
+<span class="go">    global bullet_state</span>
+<span class="go">    bullet_state = &quot;fire&quot;</span>
+<span class="go">    screen.blit(bulletImg, (x + 16, y + 10))</span>
+
+
+<span class="go">def isCollision(enemyX, enemyY, bulletX, bulletY):</span>
+<span class="go">    distance = math.sqrt(math.pow(enemyX - bulletX, 2) + (math.pow(enemyY - bulletY, 2)))</span>
+<span class="go">    if distance &lt; 27:</span>
+<span class="go">        return True</span>
+<span class="go">    else:</span>
+<span class="go">        return False</span>
+
+
+<span class="go"># Game Loop</span>
+<span class="go">running = True</span>
+<span class="go">while running:</span>
+
+<span class="go">    # RGB = Red, Green, Blue</span>
+<span class="go">    screen.fill((0, 0, 0))</span>
+<span class="go">    # Background Image</span>
+<span class="go">    screen.blit(background, (0, 0))</span>
+<span class="go">    for event in pygame.event.get():</span>
+<span class="go">        if event.type == pygame.QUIT:</span>
+<span class="go">            running = False</span>
+
+<span class="go">        # if keystroke is pressed check whether its right or left</span>
+<span class="go">        if event.type == pygame.KEYDOWN:</span>
+<span class="go">            if event.key == pygame.K_LEFT:</span>
+<span class="go">                playerX_change = -5</span>
+<span class="go">            if event.key == pygame.K_RIGHT:</span>
+<span class="go">                playerX_change = 5</span>
+<span class="go">            if event.key == pygame.K_SPACE:</span>
+<span class="go">                if bullet_state is &quot;ready&quot;:</span>
+<span class="go">                    bulletSound = mixer.Sound(&quot;laser.wav&quot;)</span>
+<span class="go">                    bulletSound.play()</span>
+<span class="go">                    # Get the current x cordinate of the spaceship</span>
+<span class="go">                    bulletX = playerX</span>
+<span class="go">                    fire_bullet(bulletX, bulletY)</span>
+
+<span class="go">        if event.type == pygame.KEYUP:</span>
+<span class="go">            if event.key == pygame.K_LEFT or event.key == pygame.K_RIGHT:</span>
+<span class="go">                playerX_change = 0</span>
+
+<span class="go">    # 5 = 5 + -0.1 -&gt; 5 = 5 - 0.1</span>
+<span class="go">    # 5 = 5 + 0.1</span>
+
+<span class="go">    playerX += playerX_change</span>
+<span class="go">    if playerX &lt;= 0:</span>
+<span class="go">        playerX = 0</span>
+<span class="go">    elif playerX &gt;= 736:</span>
+<span class="go">        playerX = 736</span>
+
+<span class="go">    # Enemy Movement</span>
+<span class="go">    for i in range(num_of_enemies):</span>
+
+<span class="go">        # Game Over</span>
+<span class="go">        if enemyY[i] &gt; 440:</span>
+<span class="go">            for j in range(num_of_enemies):</span>
+<span class="go">                enemyY[j] = 2000</span>
+<span class="go">            game_over_text()</span>
+<span class="go">            break</span>
+
+<span class="go">        enemyX[i] += enemyX_change[i]</span>
+<span class="go">        if enemyX[i] &lt;= 0:</span>
+<span class="go">            enemyX_change[i] = 4</span>
+<span class="go">            enemyY[i] += enemyY_change[i]</span>
+<span class="go">        elif enemyX[i] &gt;= 736:</span>
+<span class="go">            enemyX_change[i] = -4</span>
+<span class="go">            enemyY[i] += enemyY_change[i]</span>
+
+<span class="go">        # Collision</span>
+<span class="go">        collision = isCollision(enemyX[i], enemyY[i], bulletX, bulletY)</span>
+<span class="go">        if collision:</span>
+<span class="go">            explosionSound = mixer.Sound(&quot;explosion.wav&quot;)</span>
+<span class="go">            explosionSound.play()</span>
+<span class="go">            bulletY = 480</span>
+<span class="go">            bullet_state = &quot;ready&quot;</span>
+<span class="go">            score_value += 1</span>
+<span class="go">            enemyX[i] = random.randint(0, 736)</span>
+<span class="go">            enemyY[i] = random.randint(50, 150)</span>
+
+<span class="go">        enemy(enemyX[i], enemyY[i], i)</span>
+
+<span class="go">    # Bullet Movement</span>
+<span class="go">    if bulletY &lt;= 0:</span>
+<span class="go">        bulletY = 480</span>
+<span class="go">        bullet_state = &quot;ready&quot;</span>
+
+<span class="go">    if bullet_state is &quot;fire&quot;:</span>
+<span class="go">        fire_bullet(bulletX, bulletY)</span>
+<span class="go">        bulletY -= bulletY_change</span>
+
+<span class="go">    player(playerX, playerY)</span>
+<span class="go">    show_score(textX, testY)</span>
+<span class="go">    pygame.display.update()</span>
+
+
+<span class="go">                    by Jonathan Michel</span>
+</pre></div>
+</div>
+<a class="reference internal image-reference" href="_images/space.png"><img alt="_images/space.png" src="_images/space.png" style="width: 400px;" /></a>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="python.html" class="btn btn-neutral float-right" title="3. Installation de Python 3 en ligne de commande" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="histoire_de_python.html" class="btn btn-neutral float-left" title="1. Histoire de Python" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, Sabine
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

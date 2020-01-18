@@ -1,0 +1,418 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="fr" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="fr" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>4. Gestion des droits &mdash; Documentation Ateliers </title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../_static/jquery.js"></script>
+        <script type="text/javascript" src="../_static/underscore.js"></script>
+        <script type="text/javascript" src="../_static/doctools.js"></script>
+        <script type="text/javascript" src="../_static/language_data.js"></script>
+        <script type="text/javascript" src="../_static/translations.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Recherche" href="../search.html" />
+    <link rel="next" title="Python" href="../python/index.html" />
+    <link rel="prev" title="3. Base de donnée" href="DATABASE.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> Ateliers
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">SQL</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="SQL.html">1. SQL</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="SQL.html#intro">1.1. Intro</a></li>
+<li class="toctree-l3"><a class="reference internal" href="SQL.html#a-quoi-ca-sert">1.2. A quoi ça sert</a></li>
+<li class="toctree-l3"><a class="reference internal" href="SQL.html#commandes-de-base">1.3. Commandes de base</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="SGBD.html">2. Système de gestion de base de donné</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="SGBD.html#intro">2.1. Intro</a></li>
+<li class="toctree-l3"><a class="reference internal" href="SGBD.html#exemple-de-sgbd">2.2. Exemple de SGBD</a></li>
+<li class="toctree-l3"><a class="reference internal" href="SGBD.html#composition-fonctionnement-sgbd">2.3. Composition &amp; Fonctionnement SGBD</a></li>
+<li class="toctree-l3"><a class="reference internal" href="SGBD.html#type-de-sgbd">2.4. Type de SGBD</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="DATABASE.html">3. Base de donnée</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="DATABASE.html#intro">3.1. Intro</a></li>
+<li class="toctree-l3"><a class="reference internal" href="DATABASE.html#son-histoire">3.2. Son histoire</a></li>
+<li class="toctree-l3"><a class="reference internal" href="DATABASE.html#type">3.3. Type</a></li>
+<li class="toctree-l3"><a class="reference internal" href="DATABASE.html#relation-or-not">3.4. Relation or not</a></li>
+<li class="toctree-l3"><a class="reference internal" href="DATABASE.html#cloud">3.5. Cloud</a></li>
+</ul>
+</li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">4. Gestion des droits</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#intro">4.1. Intro</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#les-commandes-priviliges">4.2. Les commandes priviliges</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#exemple-de-requete">4.3. Exemple de requête</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../python/index.html">Python</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../python/histoire_de_python.html">1. Histoire de Python</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../python/que_faire_avec_python.html">2. Que peut-on faire avec Python?</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../python/que_faire_avec_python.html#du-calcul-scientifique-librairie-pandas-numpy">2.1. du calcul scientifique (librairie pandas, numpy)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../python/que_faire_avec_python.html#des-graphiques-librairie-matplotlib-et-sous-librairie-pyplot">2.2. des graphiques (librairie matplotlib) et (sous librairie pyplot)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../python/que_faire_avec_python.html#des-jeux-video-en-2d-librairie-pygame">2.3. des jeux vidéo en 2D (librairie Pygame)</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../python/python.html">3. Installation de Python 3 en ligne de commande</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../python/python.html#ubuntu">3.1. Ubuntu</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../python/python.html#mac">3.2. Mac</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../python/python.html#windows">3.3. Windows</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../python/interface_de_developpement.html">4. Utilisation d’anaconda</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../python/interface_de_developpement.html#utilisation-de-jupyter-notebook">4.1. Utilisation de jupyter Notebook</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../python/interface_de_developpement.html#importation-des-biblitheque">4.1.1. Importation des biblithéque</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../python/bugs.html">5. bugs rencontrés</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../python/aide.html">6. aide</a></li>
+</ul>
+</li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../format/index.html">Format de fichier</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../format/format_fichier_csv.html">1. Format de fichier .csv</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../format/format_fichier_csv.html#quest-ce-quun-fichier-csv">1.1. Qu’est-ce qu’un Fichier CSV ?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../format/format_fichier_csv.html#a-quoi-servent-les-fichiers-csv">1.2. À quoi servent les fichiers CSV ?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../format/format_fichier_csv.html#structure-d-un-fichier-csv">1.3. Structure d”un fichier CSV</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../format/format_fichier_csv.html#comment-convertir-un-fichier-excel-en-csv">1.4. Comment convertir un fichier Excel en .CSV</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../format/format_fichier_xls.html">2. Format de fichier xls</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../format/format_fichier_xls.html#quest-ce-quun-fichier-xls">2.1. Qu’est ce qu’un fichier XLS ?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../format/format_fichier_xls.html#quelle-difference-entre-xls-et-xlsx">2.2. Quelle différence entre xls et xlsx ?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../format/format_fichier_xls.html#quel-est-le-role-du-logiciel-excel">2.3. Quel est le rôle du logiciel Excel ?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../format/format_fichier_xls.html#comment-s-appelle-un-fichier-excel">2.4. Comment s”appelle un fichier Excel ?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../format/format_fichier_xls.html#quelles-sont-les-fonctions-excel">2.5. Quelles sont les fonctions Excel ?</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../format/format_fichier_sql.html">3. Format de fichier .sql</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../format/format_fichier_sql.html#qu-est-ce-qu-un-fichier-sql">3.1. Qu”est ce qu”un fichier sql</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../format/format_fichier_sql.html#a-quoi-sert-le-format-de-fichier-sql">3.2. À quoi sert le format de fichier sql ?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../format/format_fichier_sql.html#structure-d-un-fichier-sql">3.3. Structure d”un fichier sql</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../format/format_fichier_sql.html#qu-elle-sont-les-fonctions-sql">3.4. Qu”elle sont les fonctions sql</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../format/doc_google_sheets.html">4. Google Sheets</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../format/doc_google_sheets.html#histoire-et-creation-de-google-sheets">4.1. Histoire et création de Google Sheets:</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../format/doc_google_sheets.html#importer-des-donnees-d-une-autre-feuille-de-calcul">4.2. Importer des données d”une autre feuille de calcul</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../format/doc_google_sheets.html#proteger-des-cellules">4.3. Protéger des cellules</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../format/doc_google_sheets.html#modifier-rapidement-du-texte">4.4. Modifier rapidement du texte</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../format/doc_google_sheets.html#trier-les-donnees">4.5. Trier les données</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../format/doc_google_sheets.html#tirer-parti-de-lintelligence-artificielle">4.6. Tirer parti de l’intelligence artificielle</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../format/doc_google_sheets.html#utiliser-google-traduction-dans-google-sheets">4.7. Utiliser Google Traduction dans Google Sheets</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../modelisation/index.html">Modélisation d’une base de donnée</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../modelisation/partie1.html">1. Définition/Cadrage du projet</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../modelisation/partie1.html#cahier-des-charges">1.1. Cahier des charges</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../modelisation/partie1.html#briefing">1.1.1. Briefing</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../modelisation/partie1.html#cadrage">1.1.2. Cadrage</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../modelisation/partie1.html#recensement-des-donnees">1.2. Recensement des données</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../modelisation/partie1.html#dictionnaire-de-donnees">1.2.1. Dictionnaire de données</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../modelisation/partie1.html#regle-de-gestion">1.2.2. Règle de gestion</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../modelisation/partie2.html">2. Modèle conceptuel de donnée (MCD)</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../modelisation/partie2.html#le-modele-entite-association">2.1. Le Modèle Entité/Association</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../modelisation/partie2.html#entite">2.1.1. Entité</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../modelisation/partie2.html#association">2.1.2. Association</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../modelisation/partie2.html#exemple-d-application">2.2. Exemple d”application</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../modelisation/partie3.html">3. Modèle Logique des Données Relationnelles</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../modelisation/partie3.html#les-dependances-fonctionnelles">3.1. Les dépendances fonctionnelles</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../modelisation/partie3.html#dependances-entre-attributs">3.1.1. Dépendances entre attributs</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../modelisation/partie3.html#cles-primaires">3.1.2. Clés primaires</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../modelisation/partie3.html#les-relations">3.2. Les Relations</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../modelisation/partie3.html#le-domaine">3.2.1. Le domaine</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../modelisation/partie3.html#le-produit-cartesien">3.2.2. Le produit cartésien</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../modelisation/partie3.html#la-relation">3.2.3. La relation</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../modelisation/partie3.html#les-formes-normales">3.3. Les formes normales</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../modelisation/partie3.html#la-premiere-forme-normale">3.3.1. La première forme normale</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../modelisation/partie3.html#la-deuxieme-forme-normale">3.3.2. La deuxième forme normale</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../modelisation/partie3.html#la-troisieme-forme-normale">3.3.3. La troisième forme normale</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../modelisation/partie3.html#elaboration-du-modele-relationnel">3.4. Elaboration du modèle relationnel</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../modelisation/partie3.html#de-l-entite-a-la-relation">3.4.1. De l”Entité à la Relation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../modelisation/partie3.html#des-associations-aux-cles-etrangeres">3.4.2. Des associations aux clés etrangères</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../modelisation/partie3.html#synthese-du-modele-conceptuel-au-modele-relationnel">3.4.3. Synthèse: Du modèle conceptuel au modèle relationnel</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../modelisation/partie4.html">4. Modèle Physique des Données</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../modelisation/partie4.html#mysql-workbench">4.1. MySQL Workbench</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../modelisation/partie4.html#le-modele-physique-en-diagramme-workbench">4.2. Le modèle physique en diagramme Workbench</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../work_env/index.html">Environnements</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../work_env/Git_et_Github.html">1. Git et Github</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../work_env/Git_et_Github.html#quest-ce-que-git">2. QU’EST CE QUE GIT ?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../work_env/Git_et_Github.html#premiers-pas-sur-git">3. PREMIERS PAS SUR GIT</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../work_env/Git_et_Github.html#les-branches">4. LES BRANCHES</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../work_env/Git_et_Github.html#repository-sur-github">5. REPOSITORY SUR GITHUB</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../work_env/Git_partage.html">6. Ligne de commande git_team</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../work_env/git_tag.html">7. Ligne de commande git tag</a></li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Ateliers</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="index.html">SQL</a> &raquo;</li>
+        
+      <li>4. Gestion des droits</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/sql/DROITS.md.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="gestion-des-droits">
+<h1>4. Gestion des droits<a class="headerlink" href="#gestion-des-droits" title="Lien permanent vers ce titre">¶</a></h1>
+<div class="section" id="intro">
+<h2>4.1. Intro<a class="headerlink" href="#intro" title="Lien permanent vers ce titre">¶</a></h2>
+<p><em><strong>En SQL la gestion des droits des utilisateurs est très importante elle permet de définir  les actions  que un  utilisateur peut effectuer</strong></em></p>
+<p><strong>Les différentes actions s”appelle des</strong><em>DCL (Data Control Language)</em> <strong>elle permentent de controller la base de données, on peut aussi bien les exécuter via le terminal que via une interface graphique</strong></p>
+</div>
+<div class="section" id="les-commandes-priviliges">
+<h2>4.2. Les commandes priviliges<a class="headerlink" href="#les-commandes-priviliges" title="Lien permanent vers ce titre">¶</a></h2>
+<p><code class="docutils literal notranslate"><span class="pre">GRANT</span></code>: autorisation d”un utilisateur à effectuer une action ;</p>
+<p><code class="docutils literal notranslate"><span class="pre">DENY</span></code> : interdiction à un utilisateur d”effectuer une action ;</p>
+<p><code class="docutils literal notranslate"><span class="pre">REVOKE</span></code> : annulation d”une commande de contrôle de données précédente ;</p>
+<p><code class="docutils literal notranslate"><span class="pre">COMMIT</span></code> : validation d”une transaction en cours ;</p>
+<p><code class="docutils literal notranslate"><span class="pre">ROLLBACK</span></code> : annulation d”une transaction en cours ;</p>
+<p><code class="docutils literal notranslate"><span class="pre">LOCK</span></code> : verrouillage sur une structure de données.</p>
+<p>Privilèges du CRUD :
+Les privilèges <code class="docutils literal notranslate"><span class="pre">SELECT</span></code>, <code class="docutils literal notranslate"><span class="pre">INSERT</span></code>, <code class="docutils literal notranslate"><span class="pre">UPDATE</span></code>  et <code class="docutils literal notranslate"><span class="pre">DELETE</span></code>  permettent aux utilisateurs d”utiliser ces mêmes commandes.</p>
+<p><code class="docutils literal notranslate"><span class="pre">CREATE</span> <span class="pre">TABLE</span></code> : Création de tables</p>
+<p><code class="docutils literal notranslate"><span class="pre">CREATE</span> <span class="pre">TEMPORARY</span> <span class="pre">TABLE</span></code> :Création de tables temporaires</p>
+<p><code class="docutils literal notranslate"><span class="pre">CREATE</span> <span class="pre">VIEW</span></code> : Création de vues (il faut également avoir le privilège SELECTsur les colonnes sélectionnées par la vue)</p>
+<p><code class="docutils literal notranslate"><span class="pre">ALTER</span></code> : Modification de tables (avec ALTER TABLE)</p>
+<p><code class="docutils literal notranslate"><span class="pre">DROP</span></code> : Suppression de tables, vues et bases de données</p>
+<p><code class="docutils literal notranslate"><span class="pre">CREATE</span> <span class="pre">ROUTINE</span></code> : Création de procédures stockées (et de fonctions stockées - non couvertes dans ce cours)</p>
+<p><code class="docutils literal notranslate"><span class="pre">ALTER</span> <span class="pre">ROUTINE</span></code> : Modification et suppression de procédures stockées (et de fonctions stockées)</p>
+<p><code class="docutils literal notranslate"><span class="pre">EXECUTE</span></code> : Exécution de procédures stockées (et de fonctions stockées)</p>
+<p><code class="docutils literal notranslate"><span class="pre">INDEX</span></code> : Création et suppression d”index</p>
+<p><code class="docutils literal notranslate"><span class="pre">TRIGGER</span></code> : Création et suppression de triggers</p>
+<p><code class="docutils literal notranslate"><span class="pre">LOCK</span> <span class="pre">TABLES</span></code> : Verrouillage de tables (sur lesquelles on a le privilège SELECT)</p>
+<p><code class="docutils literal notranslate"><span class="pre">CREATE</span> <span class="pre">USER</span></code> : Gestion d”utilisateur (commandes CREATE USER, DROP USER, RENAME USER  et SET PASSWORD)</p>
+</div>
+<div class="section" id="exemple-de-requete">
+<h2>4.3. Exemple de requête<a class="headerlink" href="#exemple-de-requete" title="Lien permanent vers ce titre">¶</a></h2>
+<p><em><strong>Autorisation d”un utilisateur à effectuer une action :</strong></em></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">GRANT</span> <span class="n">UPDATE</span> <span class="p">(</span><span class="n">nom</span><span class="p">,</span> <span class="n">prenom</span><span class="p">)</span> <span class="n">ON</span> <span class="n">eleves</span>
+<span class="n">TO</span> <span class="n">enseignant</span>
+<span class="n">WITH</span> <span class="n">GRANT</span> <span class="n">OPTION</span><span class="p">;</span>
+</pre></div>
+</div>
+<p><em><strong>Interdiction d”un utilisateur à effectuer une action :</strong></em></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">DENY</span> <span class="n">DELETE</span>
+<span class="n">TO</span> <span class="n">enseignant</span>
+</pre></div>
+</div>
+<p><em><strong>Annulation d”une commande de contrôle de données précédente :</strong></em></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">REVOKE</span> <span class="n">UPDATE</span> <span class="p">(</span><span class="n">nom</span><span class="p">,</span> <span class="n">prenom</span><span class="p">)</span>
+<span class="n">ON</span> <span class="n">eleves</span>
+<span class="n">FROM</span> <span class="n">enseignant</span>
+</pre></div>
+</div>
+<p><em><strong>Verrouillage d”une structure de données :</strong></em>
+<code class="docutils literal notranslate"><span class="pre">LOCK</span> <span class="pre">TABLE</span> <span class="pre">eleves</span> <span class="pre">IN</span> <span class="pre">EXCLUSIVE</span> <span class="pre">MODE;</span></code></p>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../python/index.html" class="btn btn-neutral float-right" title="Python" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="DATABASE.html" class="btn btn-neutral float-left" title="3. Base de donnée" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, Sabine
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

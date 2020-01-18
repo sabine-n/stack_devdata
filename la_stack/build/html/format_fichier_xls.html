@@ -1,0 +1,255 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="fr" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="fr" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>2. Format de fichier xls &mdash; Documentation Ateliers </title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+        <script type="text/javascript" src="_static/language_data.js"></script>
+        <script type="text/javascript" src="_static/translations.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Recherche" href="search.html" />
+    <link rel="next" title="3. Format de fichier .sql" href="format_fichier_sql.html" />
+    <link rel="prev" title="1. Format de fichier .csv" href="format_fichier_csv.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home"> Ateliers
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="SQL.html">1. SQL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="SGBD.html">2. Système de gestion de base de donné</a></li>
+<li class="toctree-l1"><a class="reference internal" href="DATABASE.html">3. Base de donnée</a></li>
+<li class="toctree-l1"><a class="reference internal" href="DROITS.html">4. Gestion des droits</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="histoire_de_python.html">1. Histoire de Python</a></li>
+<li class="toctree-l1"><a class="reference internal" href="que_faire_avec_python.html">2. Que peut-on faire avec Python?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="python.html">3. Installation de Python 3 en ligne de commande</a></li>
+<li class="toctree-l1"><a class="reference internal" href="interface_de_developpement.html">4. Utilisation d’anaconda</a></li>
+<li class="toctree-l1"><a class="reference internal" href="bugs.html">5. bugs rencontrés</a></li>
+<li class="toctree-l1"><a class="reference internal" href="aide.html">6. aide</a></li>
+</ul>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="format_fichier_csv.html">1. Format de fichier .csv</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">2. Format de fichier xls</a></li>
+<li class="toctree-l1"><a class="reference internal" href="format_fichier_sql.html">3. Format de fichier .sql</a></li>
+<li class="toctree-l1"><a class="reference internal" href="doc_google_sheets.html">4. Google Sheets</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="partie1.html">1. Définition/Cadrage du projet</a></li>
+<li class="toctree-l1"><a class="reference internal" href="partie2.html">2. Modèle conceptuel de donnée (MCD)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="partie3.html">3. Modèle Logique des Données Relationnelles</a></li>
+<li class="toctree-l1"><a class="reference internal" href="partie4.html">4. Modèle Physique des Données</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="Git_et_Github.html">1. Git et Github</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Git_partage.html">2. Ligne de commande git_team</a></li>
+<li class="toctree-l1"><a class="reference internal" href="git_tag.html">3. Ligne de commande git tag</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Ateliers</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>2. Format de fichier xls</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/format_fichier_xls.md.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="format-de-fichier-xls">
+<h1>2. Format de fichier xls<a class="headerlink" href="#format-de-fichier-xls" title="Lien permanent vers ce titre">¶</a></h1>
+<div class="section" id="quest-ce-quun-fichier-xls">
+<h2>2.1. Qu’est ce qu’un fichier XLS ?<a class="headerlink" href="#quest-ce-quun-fichier-xls" title="Lien permanent vers ce titre">¶</a></h2>
+<p>.xls est une extension de nom de fichier pour tableur au format de Microsoft Excel. Les fichiers à ce format peuvent également être ouverts avec certains autres logiciels tableurs comme OpenOffice.org Calc ou LibreOffice Calc.</p>
+</div>
+<div class="section" id="quelle-difference-entre-xls-et-xlsx">
+<h2>2.2. Quelle différence entre xls et xlsx ?<a class="headerlink" href="#quelle-difference-entre-xls-et-xlsx" title="Lien permanent vers ce titre">¶</a></h2>
+<p>Dans les versions depuis Office 2007, le type d”extension de fichier xlsx est utilisé.. Xlsx est au format Open XML, alors que xls était au format binaire.. Les fichiers Xls peuvent être ouverts par toutes les versions d”Excel, mais pas les fichiers xlsx.</p>
+</div>
+<div class="section" id="quel-est-le-role-du-logiciel-excel">
+<h2>2.3. Quel est le rôle du logiciel Excel ?<a class="headerlink" href="#quel-est-le-role-du-logiciel-excel" title="Lien permanent vers ce titre">¶</a></h2>
+<p>Excel est un logiciel de la suite bureautique Office de Microsoft et permet la création de tableaux, de calculs automatisés, de plannings, de graphiques et de bases de données. On appelle ce genre de logiciel un « tableur ». Excel permet de créer facilement des tableaux de toutes sortes, et d”y intégrer des calculs.</p>
+</div>
+<div class="section" id="comment-s-appelle-un-fichier-excel">
+<h2>2.4. Comment s”appelle un fichier Excel ?<a class="headerlink" href="#comment-s-appelle-un-fichier-excel" title="Lien permanent vers ce titre">¶</a></h2>
+<p>Vocabulaire du tableur
+Le classeur. Le document créé à l”aide d”un tableur s”appelle un classeur. …
+Les feuilles. A l”intérieur du classeur on trouve plusieurs feuilles. …
+Les cellules. Une feuille est divisée en lignes et colonnes. …
+Les formules et les fonctions. Les formules commencent toujours par le signe =.</p>
+</div>
+<div class="section" id="quelles-sont-les-fonctions-excel">
+<h2>2.5. Quelles sont les fonctions Excel ?<a class="headerlink" href="#quelles-sont-les-fonctions-excel" title="Lien permanent vers ce titre">¶</a></h2>
+<p>Sur Excel, les fonctions sont très nombreuses. Elles permettent d’effectuer des calculs, rechercher des données, ou obtenir des informations. Pour insérer une fonction, il suffit de cliquer sur l’icône Fx présent sous le ruban. Toutes les cellules qui contiennent une fonction commencent par le caractère =. Si vous connaissez bien certaines fonctions, vous pouvez y accéder directement en saisissant = puis le nom de la fonction au sein d’une cellule.</p>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="format_fichier_sql.html" class="btn btn-neutral float-right" title="3. Format de fichier .sql" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="format_fichier_csv.html" class="btn btn-neutral float-left" title="1. Format de fichier .csv" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, Sabine
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

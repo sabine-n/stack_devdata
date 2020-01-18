@@ -1,0 +1,287 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="fr" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="fr" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>3. Base de donnée &mdash; Documentation Ateliers </title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+        <script type="text/javascript" src="_static/language_data.js"></script>
+        <script type="text/javascript" src="_static/translations.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Recherche" href="search.html" />
+    <link rel="next" title="4. Gestion des droits" href="DROITS.html" />
+    <link rel="prev" title="2. Système de gestion de base de donné" href="SGBD.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home"> Ateliers
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="SQL.html">1. SQL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="SGBD.html">2. Système de gestion de base de donné</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">3. Base de donnée</a></li>
+<li class="toctree-l1"><a class="reference internal" href="DROITS.html">4. Gestion des droits</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="histoire_de_python.html">1. Histoire de Python</a></li>
+<li class="toctree-l1"><a class="reference internal" href="que_faire_avec_python.html">2. Que peut-on faire avec Python?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="python.html">3. Installation de Python 3 en ligne de commande</a></li>
+<li class="toctree-l1"><a class="reference internal" href="interface_de_developpement.html">4. Utilisation d’anaconda</a></li>
+<li class="toctree-l1"><a class="reference internal" href="bugs.html">5. bugs rencontrés</a></li>
+<li class="toctree-l1"><a class="reference internal" href="aide.html">6. aide</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="format_fichier_csv.html">1. Format de fichier .csv</a></li>
+<li class="toctree-l1"><a class="reference internal" href="format_fichier_xls.html">2. Format de fichier xls</a></li>
+<li class="toctree-l1"><a class="reference internal" href="format_fichier_sql.html">3. Format de fichier .sql</a></li>
+<li class="toctree-l1"><a class="reference internal" href="doc_google_sheets.html">4. Google Sheets</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="partie1.html">1. Définition/Cadrage du projet</a></li>
+<li class="toctree-l1"><a class="reference internal" href="partie2.html">2. Modèle conceptuel de donnée (MCD)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="partie3.html">3. Modèle Logique des Données Relationnelles</a></li>
+<li class="toctree-l1"><a class="reference internal" href="partie4.html">4. Modèle Physique des Données</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="Git_et_Github.html">1. Git et Github</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Git_partage.html">2. Ligne de commande git_team</a></li>
+<li class="toctree-l1"><a class="reference internal" href="git_tag.html">3. Ligne de commande git tag</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Ateliers</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>3. Base de donnée</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/DATABASE.md.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="base-de-donnee">
+<h1>3. Base de donnée<a class="headerlink" href="#base-de-donnee" title="Lien permanent vers ce titre">¶</a></h1>
+<div class="section" id="intro">
+<h2>3.1. Intro<a class="headerlink" href="#intro" title="Lien permanent vers ce titre">¶</a></h2>
+<p>Elles se chargent elles-mêmes de créer, de mettre à jour ou de supprimer des données. Elles effectuent également des recherches parmi les données qu’elles contiennent sur demande de l’utilisateur, et de lancer des applications à partir des données.</p>
+<p>Les bases de données sont utilisées par de nombreuses entreprises dans toutes les industries. Elles sont notamment utilisées par les compagnies aériennes pour gérer les réservations. Elles sont utilisées pour la gestion de production. Pour les enregistrements médicaux dans les hôpitaux, ou encore pour les enregistrements légaux dans les compagnies d’assurances. Les bases de données les plus larges sont généralement utilisées par les agences gouvernementales, les grandes entreprises ou les universités.</p>
+</div>
+<div class="section" id="son-histoire">
+<h2>3.2. Son histoire<a class="headerlink" href="#son-histoire" title="Lien permanent vers ce titre">¶</a></h2>
+<p>L’histoire des bases de données remonte aux années 1960, avec l’apparition des bases de données réseau et des bases de données hiérarchiques. Dans les années 1980, ce sont les bases de données object-oriented qui ont fait leur apparition. Aujourd’hui, les bases de données prédominantes sont les SQL, NoSQL et bases de données cloud.</p>
+<p>Il est aussi possible de classer les bases de données en fonction de leur contenu : bibliographique, textes, nombres ou images. Toutefois, en informatique, on classe généralement les bases de données en fonction de leur approche organisationnelle. Il existe de nombreux types de bases de données différentes : relationnelle, distribuée, cloud, NoSQL… Voici les différents types de bases de données.</p>
+</div>
+<div class="section" id="type">
+<h2>3.3. Type<a class="headerlink" href="#type" title="Lien permanent vers ce titre">¶</a></h2>
+<p>Dans le cas d’une grande database, les multiples utilisateurs doivent être en mesure de manipuler les informations qu’elle contient rapidement et n’importe quand. De plus, les grandes entreprises ont tendance à cumuler de nombreux fichiers indépendants comprenant des fichiers liés ou même des données se superposant. Dans le cadre d’une analyse de données, il est nécessaire que les données en provenance de plusieurs fichiers puissent être liées. C’est pourquoi différents types de bases de données ont été développé pour répondre à ces exigences : orientée texte, hiérarchique, réseau, relationnelle, orientée objet…</p>
+<p>Base de données hiérarchique
+Les bases de données hiérarchiques comptent parmi les plus anciennes bases de données. Au sein de cette catégorie, les enregistrements sont organisés dans une structure d’arborescence. Chaque niveau d’enregistrements découle sur un ensemble de catégories plus petites.</p>
+<p>Base de données réseau
+Les bases de données réseau sont également parmi les plus anciennes. Plutôt que de proposer des liens uniques entre différents ensembles de données à divers niveaux, les bases de données réseaux créent des liens multiples entre les ensembles en plaçant des liens, ou des pointeurs, sur un ensemble d’enregistrements ou un autre. La vitesse et la polyvalence des bases de données réseau ont conduit à une adoption massive de ce type de databases au sein des entreprises ou dans le domaine du e-commerce.</p>
+<p>Base de données orientée texte
+Une database orientée texte, ou flat file database, se présente sous la forme d’un fichier (une table) au format .txt ou .ini. Un fichier plat est un fichier texte, ou un fichier combinant du texte avec un fichier binaire. En général, dans ces bases de données, chaque ligne ne comporte qu’un enregistrement.La plupart des bases de données pour PC sont des bases de données orientées texte.</p>
+<p>Base de données SQL (relationnelle)
+Les bases de données relationnelles ont été inventées en 1970 par E.F. Codd de IBM. Il s’agit de documents tabulaires dans laquelle les données sont définies afin d’être accessibles et de pouvoir être réorganisées de différentes manières.</p>
+<p>Les bases de données relationnelles sont constituées d’un ensemble de tableaux. Au sein de ces tableaux, les données sont classées par catégorie. Chaque tableau comporte au moins une colonne correspondant à une catégorie. Chaque colonne comporte un certain nombre de données correspondant à cette catégorie.</p>
+<p>L’API standard pour les bases de données relationnelles est le Structured Query Language (SQL). Les bases de données relationnelles sont facilement extensibles, et de nouvelles catégories de données peuvent être ajoutées après la création de la database originale sans avoir besoin de modifier toutes les applications existantes.</p>
+<p>Base de données distribuée
+Une BDD distribuée est une database dont certaines portions sont stockées à plusieurs endroits physiques. Le traitement est réparti ou répliqué entre différents points d’un réseau.</p>
+<p>Les bases de données distribuées peuvent être homogènes ou hétérogènes. Dans le cas d’un système de base de données distribuée homogène, tous les emplacements physiques fonctionnent avec le même hardware et tournent sous le même système d’exploitation et les mêmes applications de bases de données. Au contraire, dans le cas d’une database distribuée hétérogène, le hardware, les systèmes d’exploitation et les applications de bases de données peuvent varier entre les différents endroits physiques.</p>
+<p>Base de données cloud
+Dans ce cadre, elle est optimisée ou directement créée pour les environnements virtualisés. Il peut s’agir d’un cloud privé, d’un cloud public ou d’un cloud hybride.</p>
+<p>Les bases de données cloud offrent plusieurs avantages comme la possibilité de payer pour la capacité de stockage et la bande passante en fonction de l’usage. Par ailleurs, il est possible de changer l’échelle sur demande. Ces bases de données offrent aussi une disponibilité plus élevée.</p>
+<p>Base de données NoSQL
+Les bases de données NoSQL sont utiles pour les larges ensembles de données distribuées. En effet, les bases de données relationnelles ne sont pas conçues pour le Big Data, et les ensembles de données trop larges peuvent poser des problèmes de performances.</p>
+<p>Si une entreprise doit analyser d’importantes quantités de données non structurées, ou des données stockées sur plusieurs serveurs cloud virtuels, la database NoSQL est idéale. Avec l’essor du Big Data, les bases de données NoSQL sont de plus en plus utilisées.</p>
+<p>Base de données orientée objets
+Les objets créés à l’aide de langage de programmation orientés objets sont généralement stockés sur des bases de données relationnelles. Toutefois, en réalité, les bases de données orientées objets sont plus adaptées pour stocker ce type de contenu.</p>
+<p>Plutôt que d’être organisée autour d’actions, les bases de données orientées objets sont organisées autour d’objets. De même, au lieu d’être organisées autour d’une logique, elles sont organisées autour des données. Par exemple, un enregistrement multimédia au sein d’une BDD relationnelle peut être défini comme un objet de données plutôt que comme une valeur alphanumérique.</p>
+<p>Base de données orientée graph
+Une base de données orientée graphe, ou graphe, est un type de database NoSQL utilisant la théorie des graphes pour stocker, cartographier et effectuer des requêtes sur les relations entre les données. Les bases de données graphe sont constituées de noeuds et de bords.</p>
+<p>Chaque noeud représente une entité, et chaque bord représente une connexion entre les noeuds. Les bases de données graphes gagnent en popularité dans le domaine des analyses d’interconnexions. Par exemple, les entreprises peuvent Les bases de données cloud se distinguent des bases de données traditionnelles par le fait qu’elles résident sur le cloud public, privé ou hybride et non sur des serveurs internes. On distingue deux environnements de bases de données cloud distincts : les bases de données traditionnelles, et les bases de données en tant que service (DBaaS).</p>
+<p>Une database cloud traditionnelle peut être lancée sur l’infrastructure informatique d’une entreprise par le biais d’une machine virtuelle. La maintenance et la gestion de la base de données sont assurées par le personnel informatique de l’entreprise.</p>
+<p>Dans le cas d’une DBaaS, l’entreprise s’abonne et elle repose sur l’infrastructure physique du fournisseur de services cloud. Le fournisseur se charge de la maintenance de l’infrastructure physique et de la base, tandis que le client est chargé de gérer le contenu et les opérations de la BDD. Certains fournisseurs proposent également de prendre en charge la gestion, une option très utile pour les petites entreprises qui ont besoin d’une database, mais n’ont pas l’expertise informatique.utiliser une BDD graphe pour miner des données sur ses clients à partir des réseaux sociaux.</p>
+<p>De plus en plus souvent, des bases de données jadis séparées sont combinées électroniquement sous forme de collections plus larges que l’on appelle les Data Warehouses. Les entreprises et les gouvernements utilisent ensuite des logiciels de Data Mining pour analyser les différents aspects des données. Par exemple, une agence gouvernementale peut procéder ainsi pour enquêter sur une entreprise ou une personne qui ont acheté une grande quantité d’équipement, même si les achats sont disséminés dans tout le pays ou répartis entre plusieurs subsidiaires.</p>
+</div>
+<div class="section" id="relation-or-not">
+<h2>3.4. Relation or not<a class="headerlink" href="#relation-or-not" title="Lien permanent vers ce titre">¶</a></h2>
+<p>Il peut être tentant de voir les bases de données NoSQL comme un remplacement pour les bases de données relationnelles. Toutefois, en réalité, il peut y avoir de la place pour ces deux types de technologies dans la plupart des entreprises.</p>
+<p>Les bases de données SQL et NoSQL prennent en charge les informations d’une façon différente et prennent en charge différents types de workloads. Plutôt que de prendre la place des bases de données relationnelles, les bases de données NoSQL permettent aux entreprises de viser de nouveaux objectifs, de relever de nouveaux défis.</p>
+<p>Il est important de bien savoir dans quelle situation utiliser une database NoSQL, et dans quelle situation il est préférable d’utiliser une BDD relationnelle. En fonction de la nature du workload et des données sous-jacentes, il convient d’utiliser une solution relationnelle ou NoSQL.</p>
+<p>Ainsi, les bases de données NoSQL conviennent davantage aux grands ensembles de données fréquemment exposés à de nouvelles informations, au sein desquels les enregistrements ont des structures variables ne se mariant pas bien aux modèles relationnels.</p>
+<p>Une autre raison pour laquelle les bases de données non relationnelles ne remplaceront pas les bases de données relationnelles est que les vendeurs de bases de données relationnelles ont amélioré leurs produits pour les adapter aux applications Big Data. Non seulement ces deux technologies ont encore leur place en entreprise, mais il y a aussi de la place pour qu’elles poursuivent toutes les deux leur croissance de leur côté.</p>
+</div>
+<div class="section" id="cloud">
+<h2>3.5. Cloud<a class="headerlink" href="#cloud" title="Lien permanent vers ce titre">¶</a></h2>
+<p>Les bases de données cloud se distinguent des bases de données traditionnelles par le fait qu’elles résident sur le cloud public, privé ou hybride et non sur des serveurs internes. On distingue deux environnements de bases de données cloud distincts : les bases de données traditionnelles, et les bases de données en tant que service (DBaaS).</p>
+<p>Une database cloud traditionnelle peut être lancée sur l’infrastructure informatique d’une entreprise par le biais d’une machine virtuelle. La maintenance et la gestion de la base de données sont assurées par le personnel informatique de l’entreprise.</p>
+<p>Dans le cas d’une DBaaS, l’entreprise s’abonne et elle repose sur l’infrastructure physique du fournisseur de services cloud. Le fournisseur se charge de la maintenance de l’infrastructure physique et de la base, tandis que le client est chargé de gérer le contenu et les opérations de la BDD. Certains fournisseurs proposent également de prendre en charge la gestion, une option très utile pour les petites entreprises qui ont besoin d’une database, mais n’ont pas l’expertise informatique.</p>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="DROITS.html" class="btn btn-neutral float-right" title="4. Gestion des droits" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="SGBD.html" class="btn btn-neutral float-left" title="2. Système de gestion de base de donné" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, Sabine
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

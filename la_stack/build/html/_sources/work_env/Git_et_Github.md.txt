@@ -1,6 +1,7 @@
-﻿#GIT ET GITHUB
+﻿Git et Github
+--------------
 
-I QU’EST CE QUE GIT ?
+## QU’EST CE QUE GIT ?
 
 Git ===>	- VCS (Version Control System),
 		- Pour gérer tous nos projets,
@@ -24,7 +25,7 @@ Avec un projet (avec un dossier et des fichiers), un éditeur de texte et un ter
 ![version](./image_git/version.jpg)
 	
 
-II PREMIERS PAS SUR GIT
+## PREMIERS PAS SUR GIT
 
 Initialisation du projet :
 
@@ -91,7 +92,7 @@ En faisant ls, le fichier .gitignore n’apparaît pas.
 
 
 
-III LES BRANCHES
+## LES BRANCHES
 
 https://git-scm.com/book/fr/v2/Les-branches-avec-Git-Les-branches-en-bref
 En faisant « git status », nous pouvons vérifier que nous sommes bien sur la branche master.
@@ -116,7 +117,7 @@ L’étoile devant le nom de la branche indiquera dans quelle branche nous nous 
 
 ![merge](./image_git/merge.jpg)
 
-IV REPOSITORY SUR GITHUB
+## REPOSITORY SUR GITHUB
 
 ![repository1](./image_git/repository1.jpg)
 

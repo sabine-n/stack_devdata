@@ -1,0 +1,286 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="fr" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="fr" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>4. Google Sheets &mdash; Documentation Ateliers </title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+        <script type="text/javascript" src="_static/language_data.js"></script>
+        <script type="text/javascript" src="_static/translations.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Recherche" href="search.html" />
+    <link rel="next" title="1. Définition/Cadrage du projet" href="partie1.html" />
+    <link rel="prev" title="3. Format de fichier .sql" href="format_fichier_sql.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home"> Ateliers
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="SQL.html">1. SQL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="SGBD.html">2. Système de gestion de base de donné</a></li>
+<li class="toctree-l1"><a class="reference internal" href="DATABASE.html">3. Base de donnée</a></li>
+<li class="toctree-l1"><a class="reference internal" href="DROITS.html">4. Gestion des droits</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="histoire_de_python.html">1. Histoire de Python</a></li>
+<li class="toctree-l1"><a class="reference internal" href="que_faire_avec_python.html">2. Que peut-on faire avec Python?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="python.html">3. Installation de Python 3 en ligne de commande</a></li>
+<li class="toctree-l1"><a class="reference internal" href="interface_de_developpement.html">4. Utilisation d’anaconda</a></li>
+<li class="toctree-l1"><a class="reference internal" href="bugs.html">5. bugs rencontrés</a></li>
+<li class="toctree-l1"><a class="reference internal" href="aide.html">6. aide</a></li>
+</ul>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="format_fichier_csv.html">1. Format de fichier .csv</a></li>
+<li class="toctree-l1"><a class="reference internal" href="format_fichier_xls.html">2. Format de fichier xls</a></li>
+<li class="toctree-l1"><a class="reference internal" href="format_fichier_sql.html">3. Format de fichier .sql</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">4. Google Sheets</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="partie1.html">1. Définition/Cadrage du projet</a></li>
+<li class="toctree-l1"><a class="reference internal" href="partie2.html">2. Modèle conceptuel de donnée (MCD)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="partie3.html">3. Modèle Logique des Données Relationnelles</a></li>
+<li class="toctree-l1"><a class="reference internal" href="partie4.html">4. Modèle Physique des Données</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="Git_et_Github.html">1. Git et Github</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Git_partage.html">2. Ligne de commande git_team</a></li>
+<li class="toctree-l1"><a class="reference internal" href="git_tag.html">3. Ligne de commande git tag</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Ateliers</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>4. Google Sheets</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/doc_google_sheets.md.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="google-sheets">
+<h1>4. Google Sheets<a class="headerlink" href="#google-sheets" title="Lien permanent vers ce titre">¶</a></h1>
+<div class="section" id="histoire-et-creation-de-google-sheets">
+<h2>4.1. Histoire et création de Google Sheets:<a class="headerlink" href="#histoire-et-creation-de-google-sheets" title="Lien permanent vers ce titre">¶</a></h2>
+<p>Le 11 octobre 2006, Google ouvre le site Google Docs &amp; Spreadsheets qui regroupe les accès à l”ancien Writely et Google Spreadsheets2.
+Quatre mois plus tard, le site est traduit en plusieurs langues, dont le français sous le nom Google Document et Tableur dans un premier temps, puis Google Documents ensuite (Google Docs en anglais).</p>
+<p>Spreadsheets : Ce tableur en ligne développé par Google permet à des utilisateurs de créer, modifier et manipuler des feuilles de calcul grâce à une interface WYSIWYG, comme un tableur logiciel classique mais dans un simple navigateur web. Google a sorti le 6 juin 2006 Google Spreadsheets, disponible auparavant seulement en test et à un nombre limité d”utilisateurs inscrits. Une nouvelle fonctionnalité est aussi disponible, on peut créer des formulaires et voir les résultats sur les feuilles de calcul.
+Présentations : Ce module permet de créer des diaporamas et de les exporter vers le format *.ppt ou *.pdf. Il est aussi possible d”importer des présentations au format .ppt et de les modifier en ligne.</p>
+<p>*WYSIWYG: « WYSIWYG » est l’acronyme de la locution anglaise « what you see is what you get », signifiant littéralement en français « ce que vous voyez est ce que vous obtenez »1.
+Les termes WYSIWYG ou tel écran, tel écrit2 désignent en informatique une interface utilisateur qui permet de composer visuellement le résultat voulu, typiquement pour un logiciel de mise en page, un traitement de texte ou d’image. C”est une interface « intuitive » : l’utilisateur voit directement à l’écran à quoi ressemblera le résultat final.</p>
+<p>six astuces pour utiliser Google Sheets comme un pro:</p>
+</div>
+<div class="section" id="importer-des-donnees-d-une-autre-feuille-de-calcul">
+<h2>4.2. Importer des données d”une autre feuille de calcul<a class="headerlink" href="#importer-des-donnees-d-une-autre-feuille-de-calcul" title="Lien permanent vers ce titre">¶</a></h2>
+<p>Il arrive fréquemment de travailler en même temps sur plusieurs feuilles de calcul, dont certaines peuvent avoir des données communes.
+Il peut donc être très pratique d’importer automatiquement des valeurs issues d’un autre document (qui seront actualisées en temps réel en cas de modifications).
+Ceci est rendu possible par la fonction =IMPORTRANGE, qui s’utilise de la manière suivante :
+=Importrange(« URL du document Sheets »; « Nom de la feuille!Plage de valeurs »)</p>
+<p>Notez qu’il est facultatif de renseigner le nom de la feuille si le document n’en contient qu’une.</p>
+</div>
+<div class="section" id="proteger-des-cellules">
+<h2>4.3. Protéger des cellules<a class="headerlink" href="#proteger-des-cellules" title="Lien permanent vers ce titre">¶</a></h2>
+<p>L’un des avantages de Google Sheets, c’est qu’il permet de partager très facilement des feuilles de calcul avec d’autres utilisateurs.
+Toutefois, il y a peut-être certaines données importantes que vous ne souhaitez pas voir modifiées (ne serait-ce que par erreur) par quelqu’un d’autre : pensez alors à les verrouiller.
+Pour ce faire, sélectionnez une plage de cellules, puis allez dans Données &gt; Feuilles et plages protégées :</p>
+<p>Dans le panneau qui apparaît à droite, cliquez sur « Définir les autorisations ». Vous pourrez alors choisir comment protéger les données concernées :</p>
+</div>
+<div class="section" id="modifier-rapidement-du-texte">
+<h2>4.4. Modifier rapidement du texte<a class="headerlink" href="#modifier-rapidement-du-texte" title="Lien permanent vers ce titre">¶</a></h2>
+<p>Il n’est pas rare que les chaînes de caractères présentes dans une feuille Google Sheets soient désordonnées.
+Trois fonctions peuvent vous aider à y remédier :</p>
+<p>=UPPER : permet de mettre automatiquement en majuscules les lettres contenues dans une cellule ;
+=LOWER : permet de mettre automatiquement en minuscules les lettres contenues dans une cellule ;
+=TRIM : permet de supprimer les espaces au début ou à la fin d’une chaîne de caractères.
+Par exemple, si je veux mettre rapidement en majuscules tous les mots présents dans une colonne :</p>
+</div>
+<div class="section" id="trier-les-donnees">
+<h2>4.5. Trier les données<a class="headerlink" href="#trier-les-donnees" title="Lien permanent vers ce titre">¶</a></h2>
+<p>Mettre de l’ordre dans les données, c’est aussi effectuer des tris pour ne visualiser que les cellules qui nous intéressent (surtout quand on a une grande quantité).
+Pour cela, vous pouvez utiliser la fonction de filtrage : par exemple, sélectionnez les en-têtes d’un tableau et cliquez sur le bouton en forme d’entonnoir.
+Un symbole apparaît à côté des en-têtes : en cliquant dessus, vous pouvez trier les données de la colonne par ordre croissant ou décroissant, ou encore ne visualiser que les données correspondant à tel ou tel critère.</p>
+</div>
+<div class="section" id="tirer-parti-de-lintelligence-artificielle">
+<h2>4.6. Tirer parti de l’intelligence artificielle<a class="headerlink" href="#tirer-parti-de-lintelligence-artificielle" title="Lien permanent vers ce titre">¶</a></h2>
+<p>Google est connu pour ses prouesses en matière d’IA, et Sheets ne fait pas exception.
+La fonction Explorer (en bas à droite de l’écran) permet justement d’utiliser l’intelligence artificielle à votre avantage, puisqu’elle vous permet de générer automatiquement des tableaux et autres graphiques à partir de vos données.</p>
+<p>.. image: https://www.codeur.com/blog/wp-content/uploads/2018/05/astuce-google-sheets-6.gif
+width: 500</p>
+</div>
+<div class="section" id="utiliser-google-traduction-dans-google-sheets">
+<h2>4.7. Utiliser Google Traduction dans Google Sheets<a class="headerlink" href="#utiliser-google-traduction-dans-google-sheets" title="Lien permanent vers ce titre">¶</a></h2>
+<p>Il y a des mots dans une langue étrangère dans votre document Google Sheets et vous ne souhaitez pas faire des allers-retours incessants vers Google Traduction ?
+Ne vous en faites : il est possible de traduire directement un mot dans le tableur à l’aide la fonction =GOOGLETRANSLATE. Elle s’utilise comme ceci :
+=Googletranslate(« mot ou phrase à traduire »; « langue source »; « langue cible »)</p>
+<p>Remarque : la langue source et la langue de destination doivent être indiquées par un code de deux lettres (par exemple « en » pour l’anglais ou « fr » pour le français).</p>
+<p>Pour la langue source, vous pouvez aussi indiquer « auto » pour que Google Traduction détermine automatiquement la langue.</p>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="partie1.html" class="btn btn-neutral float-right" title="1. Définition/Cadrage du projet" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="format_fichier_sql.html" class="btn btn-neutral float-left" title="3. Format de fichier .sql" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, Sabine
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

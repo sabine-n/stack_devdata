@@ -1,0 +1,296 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="fr" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="fr" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>1. Git et Github &mdash; Documentation Ateliers </title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+        <script type="text/javascript" src="_static/language_data.js"></script>
+        <script type="text/javascript" src="_static/translations.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Recherche" href="search.html" />
+    <link rel="next" title="2. Ligne de commande git_team" href="Git_partage.html" />
+    <link rel="prev" title="4. Modèle Physique des Données" href="partie4.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home"> Ateliers
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="SQL.html">1. SQL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="SGBD.html">2. Système de gestion de base de donné</a></li>
+<li class="toctree-l1"><a class="reference internal" href="DATABASE.html">3. Base de donnée</a></li>
+<li class="toctree-l1"><a class="reference internal" href="DROITS.html">4. Gestion des droits</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="histoire_de_python.html">1. Histoire de Python</a></li>
+<li class="toctree-l1"><a class="reference internal" href="que_faire_avec_python.html">2. Que peut-on faire avec Python?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="python.html">3. Installation de Python 3 en ligne de commande</a></li>
+<li class="toctree-l1"><a class="reference internal" href="interface_de_developpement.html">4. Utilisation d’anaconda</a></li>
+<li class="toctree-l1"><a class="reference internal" href="bugs.html">5. bugs rencontrés</a></li>
+<li class="toctree-l1"><a class="reference internal" href="aide.html">6. aide</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="format_fichier_csv.html">1. Format de fichier .csv</a></li>
+<li class="toctree-l1"><a class="reference internal" href="format_fichier_xls.html">2. Format de fichier xls</a></li>
+<li class="toctree-l1"><a class="reference internal" href="format_fichier_sql.html">3. Format de fichier .sql</a></li>
+<li class="toctree-l1"><a class="reference internal" href="doc_google_sheets.html">4. Google Sheets</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="partie1.html">1. Définition/Cadrage du projet</a></li>
+<li class="toctree-l1"><a class="reference internal" href="partie2.html">2. Modèle conceptuel de donnée (MCD)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="partie3.html">3. Modèle Logique des Données Relationnelles</a></li>
+<li class="toctree-l1"><a class="reference internal" href="partie4.html">4. Modèle Physique des Données</a></li>
+</ul>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">1. Git et Github</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Git_partage.html">2. Ligne de commande git_team</a></li>
+<li class="toctree-l1"><a class="reference internal" href="git_tag.html">3. Ligne de commande git tag</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Ateliers</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>1. Git et Github</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/Git_et_Github.md.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="git-et-github">
+<h1>1. Git et Github<a class="headerlink" href="#git-et-github" title="Lien permanent vers ce titre">¶</a></h1>
+<p>I QU’EST CE QUE GIT ?</p>
+<p>Git ===&gt;	- VCS (Version Control System),
+- Pour gérer tous nos projets,
+- Pour tracker les différents changements apportés à un projet spécifique.</p>
+<p>===&gt; C’est un outil qui apporte de gérer nos projets.
+===&gt; GitHub = C’est une plateforme qui permet d’héberger nos différents projets.</p>
+<p>Pourquoi ?
+- collaboration,
+- historique des différentes versions,
+- développement en parallèle.</p>
+<p>Comment ?
+- Création d’un compte sur GitHub
+(https://git-scm.com/book/fr/v2/GitHub-Configuration-et-param%C3%A9trage-d%E2%80%99un-compte),
+- Installation de Git en local (https://desktop.github.com/)
+- Environnement de travail
+Avec un projet (avec un dossier et des fichiers), un éditeur de texte et un terminal</p>
+<p><img alt="version" src="_images/version.jpg" /></p>
+<p>II PREMIERS PAS SUR GIT</p>
+<p>Initialisation du projet :</p>
+<p>Avec Git init, git va créer un fichier caché « git » dans le dossier (en fichier caché) [CTRL H pour afficher les fichiers cachés sur Linux ]qui permettra de pusher les fichiers vers Github.</p>
+<p><img alt="initialisation" src="_images/initialisation.jpg" /></p>
+<p>Identification sur Git :</p>
+<p>Il faut ensuite s’identifier sur Git pour pouvoir continuer à utiliser toutes les commandes.</p>
+<p><img alt="identification" src="_images/identification.jpg" /></p>
+<p>Exemple de sauvegarde d’un fichier sur GitHub :</p>
+<p>Dans un premier temps, il faut pré-sauvegarder le fichier grâce à « git add NomDuFichier » puis avec la commande « guide status », on affichera la liste de tous les fichiers pré-sauvegardés.</p>
+<p><img alt="add" src="_images/add.jpg" /></p>
+<p>Pour annuler cette opération,il faut comme c’est indiqué au-dessus, utiliser la commande
+« git rm –cached NomDuFichier ».</p>
+<p>Attention de ne pas oublier les deux tirets avant « cached » sans cela, le fichier sera supprimé.</p>
+<p><img alt="annulation" src="_images/annulation.jpg" /></p>
+<p>Pour annuler une suppression ou tout autre changement, la commande « checkout » peut être utilisée.</p>
+<p><img alt="checkout" src="_images/checkout.jpg" /></p>
+<p>A la fin, pour finaliser la pré-sauvegarde, il suffit d’utiliser la commande « commit »
+Une page vim s’ouvre et demande un message de validation, ici « Première sauvegarde ».
+Vim est un éditeur de texte, c”est-à-dire un logiciel permettant la manipulation de fichiers texte.
+Un CTRL X ferme vim.</p>
+<p><img alt="vim" src="_images/vim.jpg" /></p>
+<p>Enfin, avec la commande « commit -m « mise à jour », les fichiers sont enregistrés.</p>
+<p>La commande « gitignore » :</p>
+<p>https://perhonen.fr/blog/2015/03/exclure-fichiers-depot-git-gitignore-1476</p>
+<p>En fait, ce n’est pas une commande mais un fichier en faisant :
+⇒ touch .gitignore</p>
+<p>Il suffira d’y inscrire les noms des fichiers que nous voulons exclure des git car trop sensibles par exemple.
+EX : .test/ (Ne pas oublier le point au début et le slash à la fin)</p>
+<p><img alt="gitignore1" src="_images/gitignore1.jpg" /></p>
+<p>En faisant ls, le fichier .gitignore n’apparaît pas.</p>
+<p><img alt="gitignore2" src="_images/gitignore2.jpg" /></p>
+<p>III LES BRANCHES</p>
+<p>https://git-scm.com/book/fr/v2/Les-branches-avec-Git-Les-branches-en-bref
+En faisant « git status », nous pouvons vérifier que nous sommes bien sur la branche master.</p>
+<p><img alt="status" src="_images/status.jpg" /></p>
+<p>Création d’une nouvelle branche :</p>
+<p><img alt="branch1" src="_images/branch1.jpg" /></p>
+<p>Pour aller sur cette nouvelle branche, il suffit de faire « git checkout NomNouvelleBranche ».</p>
+<p><img alt="branch2" src="_images/branch2.jpg" /></p>
+<p>Pour savoir dans quelle branche, nous sommes, il faut utiliser la commande « git branch –list ».
+Ne pas mettre d’espace entre les deux tirets et le nom de la branche, sinon une nouvelle branche sera créée.
+L’étoile devant le nom de la branche indiquera dans quelle branche nous nous situons.</p>
+<p><img alt="branchlist" src="_images/branchlist.jpg" /></p>
+<p><img alt="merge" src="_images/merge.jpg" /></p>
+<p>IV REPOSITORY SUR GITHUB</p>
+<p><img alt="repository1" src="_images/repository1.jpg" /></p>
+<p><img alt="repository2" src="_images/repository2.jpg" /></p>
+<p><img alt="repository3" src="_images/repository3.jpg" /></p>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="Git_partage.html" class="btn btn-neutral float-right" title="2. Ligne de commande git_team" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="partie4.html" class="btn btn-neutral float-left" title="4. Modèle Physique des Données" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, Sabine
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
