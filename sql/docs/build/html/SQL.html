@@ -1,0 +1,198 @@
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8" />
+    <title>1. SQL &#8212; sql 0.1 documentation</title>
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="_static/language_data.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="2. SGBD" href="SGBD.html" />
+    <link rel="prev" title="Welcome to sql’s documentation!" href="index.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="sql">
+<h1><span class="section-number">1. </span>SQL<a class="headerlink" href="#sql" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="intro">
+<h2><span class="section-number">1.1. </span>Intro<a class="headerlink" href="#intro" title="Permalink to this headline">¶</a></h2>
+<p>SQL veut dire Langage de requête structurée : Structured Query Language</p>
+<p>C’est un langage informatique utilisé pour exploiter des bases de données. Il permet de façon générale la définition, la manipulation et le contrôle de sécurité de données.</p>
+<p>Créé en 1974, normalisé depuis 1986, le langage est reconnu par la grande majorité des systèmes de gestion de bases de données relationnelles</p>
+</div>
+<div class="section" id="a-quoi-ca-sert">
+<h2><span class="section-number">1.2. </span>A quoi ça sert<a class="headerlink" href="#a-quoi-ca-sert" title="Permalink to this headline">¶</a></h2>
+<p>Pour que les différents logiciels et le moteur de base de données puissent se comprendre, ils utilisent un langage appelé SQL.</p>
+<p>il est utilisé pour :</p>
+<ul class="simple">
+<li><p>Lire les données</p></li>
+<li><p>Écrire les données</p></li>
+<li><p>Modifier les données</p></li>
+<li><p>Supprimer les données</p></li>
+<li><p>Modifier la structure d’une base de donnée</p></li>
+</ul>
+<p>De plus, il a plusieurs avantages consequents :</p>
+<ul class="simple">
+<li><p>Il peut fonctionner avec n’importe quelle base de données. Il suffira de lui indiquer avec quelle base de données il doit dialoguer.</p></li>
+<li><p>C’est un langage international</p></li>
+<li><p>Si on doit changer la base, il suffit de modifier la relation entre le logiciel et la base de données.</p></li>
+</ul>
+</div>
+<div class="section" id="commandes-de-base">
+<h2><span class="section-number">1.3. </span>Commandes de base<a class="headerlink" href="#commandes-de-base" title="Permalink to this headline">¶</a></h2>
+<p>Select :
+La commande <strong>SELECT</strong> permet de récupérer des données stockées dans une ou plusieurs table(s).
+ex :
+<strong>SELECT</strong> *
+<strong>FROM</strong> personne
+<strong>WHERE</strong> (taille &gt; 170) ;</p>
+<p>Insert :
+La commande <strong>INSERT</strong> permet d’ajouter des données dans une table existante.
+ex :
+<strong>INSERT INTO</strong> personne <strong>VALUES</strong> (50, “Dupont”, “Pierre”, 25, “Sans emploi”, 0, 174)</p>
+<p>Update :
+La commande <strong>UPDATE</strong> permet de modifier les données contenues dans la table
+ex :
+<strong>UPDATE</strong> table
+<strong>SET</strong> colonne_1 = ‘valeur 1’, colonne_2 = ‘valeur 2’, colonne_3 = ‘valeur 3’
+WHERE condition ;</p>
+<p>Delete :
+La commande <strong>DELETE</strong> permet de supprimer une partie ou la totalité des données de la table
+ex :
+<strong>DELETE FROM</strong> nom_table ;</p>
+<p>Commit :
+<strong>COMMIT</strong> valide la transaction en cours. Tout le monde peut désormais voir les modifications réalisées au cours de la transaction.
+ex :</p>
+<p>Create Table :
+La commande <strong>CREATE TABLE</strong> permet de créer une table nommée nom_sql comportant un ou plusieurs champ.
+ex :
+create table <strong>PERSONNE</strong>
+(
+<strong>ID_PERSONNE</strong> int not null ,
+<strong>NOM</strong> varchar not null ,
+<strong>PRENOM</strong> varchar not null ,
+<strong>AGE</strong> int ,
+<strong>CATEGORIE_PROFESSIONNELLE</strong> varchar ,
+<strong>NOMBRE_ENFANTS</strong> int ,
+<strong>TAILLE</strong> float ,</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">primary</span> <span class="n">key</span> <span class="p">(</span><span class="n">ID_PERSONNE</span><span class="p">)</span> <span class="p">,</span>
+</pre></div>
+</div>
+<p>) ;</p>
+<p>Alter Table :
+La commande <strong>ALTER TABLE</strong> permet de modifier la table existante désignée par l’argument nom_sql.
+ex :
+<strong>ALTER TABLE</strong> nom_table
+instruction</p>
+<p>Drop Table :
+La commande <strong>DROP TABLE</strong> permet de supprimer la table nommée nom_sql de la base.
+ex :
+<strong>DROP TABLE</strong> nom_table</p>
+<p>Grant :
+La commande <strong>GRANT</strong> permet de définir les droits d’accès associés au schéma nom_sql
+ex :
+<strong>GRANT ALL PRIVILEGES ON</strong> genres TO manuel;</p>
+<p>Revoke :
+La commande <strong>REVOKE</strong> permet de supprimer les droits d’accès spécifiques associés au schéma défini par le paramètre nom_sql.
+ex :
+<strong>REVOKE ALL PRIVILEGES ON</strong> genres <strong>FROM</strong> manuel;</p>
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="index.html">sql</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">1. SQL</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#intro">1.1. Intro</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#a-quoi-ca-sert">1.2. A quoi ça sert</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#commandes-de-base">1.3. Commandes de base</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="SGBD.html">2. SGBD</a></li>
+<li class="toctree-l1"><a class="reference internal" href="DATABASE.html">3. DATABASE</a></li>
+<li class="toctree-l1"><a class="reference internal" href="DROITS.html">4. GESTION DES DROITS</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+      <li>Previous: <a href="index.html" title="previous chapter">Welcome to sql’s documentation!</a></li>
+      <li>Next: <a href="SGBD.html" title="next chapter"><span class="section-number">2. </span>SGBD</a></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2020, ejhb xavier yoann.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 2.3.0</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="_sources/SQL.md.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>
