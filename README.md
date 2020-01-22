@@ -1,6 +1,6 @@
 # Documentation Dev Data
 
-Vous trouverez dans ce répertoire une documentation détaillée de la Stack Dev Data. Elle est réalisée par les apprenant en Developpement Data à Simplon et contient tous les thèmes et les outils abordés lors de la formation jusqu'à présent.
+Vous trouverez dans ce répertoire une documentation détaillée de la Stack Dev Data. Elle est réalisée par les apprenants en Developpement Data à Simplon et contient tous les thèmes et les outils abordés lors de la formation jusqu'à présent.
 
 Le travail est répartis en groupe de 5 de la manière suivante:
 
