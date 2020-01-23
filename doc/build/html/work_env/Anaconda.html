@@ -1,0 +1,474 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="fr" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="fr" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>5. INSTALLATION EN LIGNE DE COMMANDE DE ANACONDA &mdash; Documentation Ateliers </title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../_static/jquery.js"></script>
+        <script type="text/javascript" src="../_static/underscore.js"></script>
+        <script type="text/javascript" src="../_static/doctools.js"></script>
+        <script type="text/javascript" src="../_static/language_data.js"></script>
+        <script type="text/javascript" src="../_static/translations.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Recherche" href="../search.html" />
+    <link rel="prev" title="4. Ligne de commande git tag" href="git_tag.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> Ateliers
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../sql/index.html">SQL</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../sql/SQL.html">1. SQL</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../sql/SQL.html#intro">1.1. Intro</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../sql/SQL.html#a-quoi-ca-sert">1.2. A quoi ça sert</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../sql/SQL.html#commandes-de-base">1.3. Commandes de base</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../sql/SGBD.html">2. Système de Gestion de Base de Données</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../sql/SGBD.html#intro">2.1. Intro</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../sql/SGBD.html#exemple-de-sgbd">2.2. Exemple de SGBD</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../sql/SGBD.html#composition-fonctionnement-sgbd">2.3. Composition &amp; Fonctionnement SGBD</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../sql/SGBD.html#type-de-sgbd">2.4. Type de SGBD</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../sql/DATABASE.html">3. Base de Données</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../sql/DATABASE.html#intro">3.1. Intro</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../sql/DATABASE.html#son-histoire">3.2. Son histoire</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../sql/DATABASE.html#type">3.3. Type</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../sql/DATABASE.html#relation-or-not">3.4. Relation or not</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../sql/DATABASE.html#cloud">3.5. Cloud</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../sql/DROITS.html">4. Gestion des droits</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../sql/DROITS.html#intro">4.1. Intro</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../sql/DROITS.html#les-commandes-priviliges">4.2. Les commandes priviliges</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../sql/DROITS.html#exemple-de-requete">4.3. Exemple de requête</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../python/index.html">Python</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../python/histoire_de_python.html">1. Histoire de Python</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../python/que_faire_avec_python.html">2. Que peut-on faire avec Python?</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../python/que_faire_avec_python.html#du-calcul-scientifique-librairie-pandas-numpy">2.1. du calcul scientifique (librairie pandas, numpy)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../python/que_faire_avec_python.html#des-graphiques-librairie-matplotlib-et-sous-librairie-pyplot">2.2. des graphiques (librairie matplotlib) et (sous librairie pyplot)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../python/que_faire_avec_python.html#des-jeux-video-en-2d-librairie-pygame">2.3. des jeux vidéo en 2D (librairie Pygame)</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../python/python.html">3. Installation de Python 3 en ligne de commande</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../python/python.html#ubuntu">3.1. Ubuntu</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../python/python.html#mac">3.2. Mac</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../python/python.html#windows">3.3. Windows</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../python/interface_de_developpement.html">4. Utilisation d’anaconda</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../python/interface_de_developpement.html#utilisation-de-jupyter-notebook">4.1. Utilisation de jupyter Notebook</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../python/interface_de_developpement.html#importation-des-biblitheque">4.1.1. Importation des biblithéque</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../python/bugs.html">5. bugs rencontrés</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../python/aide.html">6. aide</a></li>
+</ul>
+</li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../format/index.html">Format de fichier</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../format/format_fichier_csv.html">1. Format de fichier .csv</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../format/format_fichier_csv.html#quest-ce-quun-fichier-csv">1.1. Qu’est-ce qu’un Fichier CSV ?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../format/format_fichier_csv.html#a-quoi-servent-les-fichiers-csv">1.2. À quoi servent les fichiers CSV ?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../format/format_fichier_csv.html#structure-d-un-fichier-csv">1.3. Structure d”un fichier CSV</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../format/format_fichier_csv.html#comment-convertir-un-fichier-excel-en-csv">1.4. Comment convertir un fichier Excel en .CSV</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../format/format_fichier_xls.html">2. Format de fichier xls</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../format/format_fichier_xls.html#quest-ce-quun-fichier-xls">2.1. Qu’est ce qu’un fichier XLS ?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../format/format_fichier_xls.html#quelle-difference-entre-xls-et-xlsx">2.2. Quelle différence entre xls et xlsx ?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../format/format_fichier_xls.html#quel-est-le-role-du-logiciel-excel">2.3. Quel est le rôle du logiciel Excel ?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../format/format_fichier_xls.html#comment-s-appelle-un-fichier-excel">2.4. Comment s”appelle un fichier Excel ?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../format/format_fichier_xls.html#quelles-sont-les-fonctions-excel">2.5. Quelles sont les fonctions Excel ?</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../format/format_fichier_sql.html">3. Format de fichier .sql</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../format/format_fichier_sql.html#qu-est-ce-qu-un-fichier-sql">3.1. Qu”est ce qu”un fichier sql</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../format/format_fichier_sql.html#a-quoi-sert-le-format-de-fichier-sql">3.2. À quoi sert le format de fichier sql ?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../format/format_fichier_sql.html#structure-d-un-fichier-sql">3.3. Structure d”un fichier sql</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../format/format_fichier_sql.html#qu-elle-sont-les-fonctions-sql">3.4. Qu”elle sont les fonctions sql</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../format/doc_google_sheets.html">4. Google Sheets</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../format/doc_google_sheets.html#histoire-et-creation-de-google-sheets">4.1. Histoire et création de Google Sheets:</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../format/doc_google_sheets.html#importer-des-donnees-d-une-autre-feuille-de-calcul">4.2. Importer des données d”une autre feuille de calcul</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../format/doc_google_sheets.html#proteger-des-cellules">4.3. Protéger des cellules</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../format/doc_google_sheets.html#modifier-rapidement-du-texte">4.4. Modifier rapidement du texte</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../format/doc_google_sheets.html#trier-les-donnees">4.5. Trier les données</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../format/doc_google_sheets.html#tirer-parti-de-lintelligence-artificielle">4.6. Tirer parti de l’intelligence artificielle</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../format/doc_google_sheets.html#utiliser-google-traduction-dans-google-sheets">4.7. Utiliser Google Traduction dans Google Sheets</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../modelisation/index.html">Modélisation d’une base de donnée</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../modelisation/partie1.html">1. Définition/Cadrage du projet</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../modelisation/partie1.html#cahier-des-charges">1.1. Cahier des charges</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../modelisation/partie1.html#briefing">1.1.1. Briefing</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../modelisation/partie1.html#cadrage">1.1.2. Cadrage</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../modelisation/partie1.html#recensement-des-donnees">1.2. Recensement des données</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../modelisation/partie1.html#dictionnaire-de-donnees">1.2.1. Dictionnaire de données</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../modelisation/partie1.html#regle-de-gestion">1.2.2. Règle de gestion</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../modelisation/partie2.html">2. Modèle Conceptuel de Données (MCD)</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../modelisation/partie2.html#le-modele-entite-association">2.1. Le Modèle Entité/Association</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../modelisation/partie2.html#classe-entite">2.1.1. Classe Entité</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../modelisation/partie2.html#classe-association">2.1.2. Classe Association</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../modelisation/partie2.html#cardinalites">2.1.3. Cardinalités</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../modelisation/partie2.html#exemple-d-application">2.2. Exemple d”application</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../modelisation/partie3.html">3. Modèle Logique des Données (MLD)</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../modelisation/partie3.html#les-dependances-fonctionnelles">3.1. Les dépendances fonctionnelles</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../modelisation/partie3.html#dependances-entre-attributs">3.1.1. Dépendances entre attributs</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../modelisation/partie3.html#cles-primaires">3.1.2. Clés primaires</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../modelisation/partie3.html#les-relations">3.2. Les Relations</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../modelisation/partie3.html#le-domaine">3.2.1. Le domaine</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../modelisation/partie3.html#le-produit-cartesien">3.2.2. Le produit cartésien</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../modelisation/partie3.html#la-relation">3.2.3. La relation</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../modelisation/partie3.html#les-formes-normales">3.3. Les formes normales</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../modelisation/partie3.html#la-premiere-forme-normale">3.3.1. La première forme normale</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../modelisation/partie3.html#la-deuxieme-forme-normale">3.3.2. La deuxième forme normale</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../modelisation/partie3.html#la-troisieme-forme-normale">3.3.3. La troisième forme normale</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../modelisation/partie3.html#elaboration-du-modele-relationnel">3.4. Elaboration du modèle relationnel</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../modelisation/partie3.html#de-l-entite-a-la-relation">3.4.1. De l”Entité à la Relation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../modelisation/partie3.html#des-associations-aux-cles-etrangeres">3.4.2. Des associations aux clés etrangères</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../modelisation/partie3.html#synthese-du-modele-conceptuel-au-modele-relationnel">3.4.3. Synthèse: Du modèle conceptuel au modèle relationnel</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../modelisation/partie4.html">4. Modèle Physique des Données</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../modelisation/partie4.html#mysql-workbench">4.1. MySQL Workbench</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../modelisation/partie4.html#le-modele-physique-en-diagramme-workbench">4.2. Le modèle physique en diagramme Workbench</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Environnements</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="Environnement_Linux_Ubuntu.html">1. Environnement Linux Ubuntu</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="Environnement_Linux_Ubuntu.html#presentation-de-linux-et-de-ubuntu">1.1. Présentation de Linux et de Ubuntu</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Environnement_Linux_Ubuntu.html#installation-dubuntu-sur-un-pc">1.2. Installation d’Ubuntu sur un PC</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Environnement_Linux_Ubuntu.html#presentation-du-terminal-ubuntu">1.3. Présentation du terminal Ubuntu</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Environnement_Linux_Ubuntu.html#le-systeme-de-fichiers">1.4. Le système de fichiers</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Environnement_Linux_Ubuntu.html#informations-par-rapport-aux-commandes-effectues">1.5. Informations par rapport aux commandes effectués :</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="Git_et_Github.html">2. Git et Github</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="Git_et_Github.html#quest-ce-que-git">2.1. QU’EST CE QUE GIT ?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Git_et_Github.html#premiers-pas-sur-git">2.2. PREMIERS PAS SUR GIT</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Git_et_Github.html#les-branches">2.3. LES BRANCHES</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Git_et_Github.html#repository-sur-github">2.4. REPOSITORY SUR GITHUB</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="Git_partage.html">3. Ligne de commande git_team</a></li>
+<li class="toctree-l2"><a class="reference internal" href="git_tag.html">4. Ligne de commande git tag</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">5. INSTALLATION EN LIGNE DE COMMANDE DE ANACONDA</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#ubuntu">5.1. Ubuntu</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#mac">5.2. MAC</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#windows">5.3. Windows</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Ateliers</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="index.html">Environnements</a> &raquo;</li>
+        
+      <li>5. INSTALLATION EN LIGNE DE COMMANDE DE ANACONDA</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/work_env/Anaconda.md.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="installation-en-ligne-de-commande-de-anaconda">
+<h1>5. INSTALLATION EN LIGNE DE COMMANDE DE ANACONDA<a class="headerlink" href="#installation-en-ligne-de-commande-de-anaconda" title="Lien permanent vers ce titre">¶</a></h1>
+<p>un serpent peut-en cacher un autre</p>
+<p>ANACONDA est une distribution libre et open source3 des langages de programmation Python et R appliqué au
+développement d”applications dédiées à la science des données et à l”apprentissage automatique (traitement de
+données à grande échelle, analyse prédictive, calcul scientifique), qui vise à simplifier la gestion des
+paquets et de déploiement4. Les versions de paquetages sont gérées par le système de gestion de paquets
+conda5. La distribution Anaconda est utilisée par plus de 6 millions d”utilisateurs et comprend plus de 250
+paquets populaires en science des données adaptés pour Windows, Linux et MacOS.</p>
+<div class="section" id="ubuntu">
+<h2>5.1. Ubuntu<a class="headerlink" href="#ubuntu" title="Lien permanent vers ce titre">¶</a></h2>
+<ol>
+<li><p>allez sur le site https://www.anaconda.com/</p></li>
+<li><p>télécharger le fichier Anaconda3-2019.10-Linux-x86_64.sh</p></li>
+<li><p>ouvrir le terminal et écrire les lignes de commande suivantes:</p>
+<p>3.1. sha256sum /path/filename</p>
+<p>3.2. bash ~/téléchargements/Anaconda3-2019.10-Linux-x86_64.sh</p>
+</li>
+<li><p>ouvrir anacoda:</p>
+<p>4.1 anaconda-navigator</p>
+</li>
+</ol>
+</div>
+<div class="section" id="mac">
+<h2>5.2. MAC<a class="headerlink" href="#mac" title="Lien permanent vers ce titre">¶</a></h2>
+<ol>
+<li><p>Dans votre navigateur, téléchargez la version en ligne de commande du programme d” installation de macOS
+pour votre système.</p></li>
+<li><p>RECOMMANDÉ: Vérifiez l”intégrité des données avec SHA-256 . Pour plus d”informations sur la vérification
+du hachage, voir Validation du hachage cryptographique .</p></li>
+<li><p>Ouvrez un terminal et exécutez ce qui suit:</p>
+<p>shasum -a 256 /path/filename</p>
+</li>
+</ol>
+<p>Remarque:</p>
+<p>Remplacez /path/filenamepar le chemin et le nom de fichier de votre installation.</p>
+<ol class="simple">
+<li><p>Installez pour Python 3.7: (s”il n”est pas encore installer)</p></li>
+</ol>
+<p>voir la rubrique installation de python</p>
+<ol class="simple">
+<li><p>Le programme d”installation demande «Afin de poursuivre le processus d”installation, veuillez consulter
+le contrat de licence.» Cliquez sur Entrée pour afficher les termes de la licence.</p></li>
+<li><p>Faites défiler vers le bas des conditions de licence et entrez oui pour les accepter.</p></li>
+<li><p>Le programme d”installation vous invite à appuyer sur Entrée pour confirmer l”emplacement, à appuyer sur
+CTRL-C pour annuler l”installation ou à spécifier un autre répertoire d”installation. Si vous confirmez
+l”emplacement par défaut, il s”affichera et poursuivra l”installation.PREFIX=/home/<user>/anaconda&lt;2 or 3&gt;</p></li>
+</ol>
+<p>Remarque</p>
+<p>Contrairement à l”installation graphique, l”installation du fichier shell le placera par défaut dans
+~ / anaconda &lt;2 ou 3&gt;, pas dans ~ / opt. Cela est dû aux limitations de l”installation des fichiers .pkg
+sur macOS Catalina.</p>
+<ol class="simple">
+<li><p>pour ouvrir anacoda:</p></li>
+</ol>
+<p>anaconda-navigator</p>
+</div>
+<div class="section" id="windows">
+<h2>5.3. Windows<a class="headerlink" href="#windows" title="Lien permanent vers ce titre">¶</a></h2>
+<ol class="simple">
+<li><p>Téléchargez le programme d”installation d”Anaconda .</p></li>
+<li><p>RECOMMANDÉ: Vérifiez l”intégrité des données avec SHA-256 . Pour plus d”informations sur les hachages, voir Qu”en est-il de la vérification de hachage cryptographique?</p></li>
+<li><p>Double-cliquez sur le programme d”installation pour lancer.</p></li>
+</ol>
+<p>Remarque</p>
+<p>Pour éviter les erreurs d”autorisation, ne lancez pas le programme d”installation à partir du dossier Favoris .</p>
+<p>Remarque</p>
+<p>Si vous rencontrez des problèmes lors de l”installation, désactivez temporairement votre logiciel antivirus pendant l”installation, puis réactivez-le une fois l”installation terminée. Si vous avez installé pour tous les utilisateurs, désinstallez Anaconda et réinstallez-le pour votre utilisateur uniquement et réessayez.</p>
+<ol class="simple">
+<li><p>Cliquez sur Suivant.</p></li>
+<li><p>Lisez les conditions de licence et cliquez sur «J”accepte».</p></li>
+<li><p>Sélectionnez une installation pour «Just Me», sauf si vous effectuez l”installation pour tous les utilisateurs (ce qui nécessite des privilèges d”administrateur Windows) et cliquez sur Suivant.</p></li>
+<li><p>Sélectionnez un dossier de destination pour installer Anaconda et cliquez sur le bouton Suivant. Voir FAQ .</p></li>
+</ol>
+<p>Remarque</p>
+<p>Installez Anaconda dans un chemin de répertoire qui ne contient pas d”espaces ni de caractères Unicode.</p>
+<p>Remarque</p>
+<p>N”installez pas en tant qu”administrateur sauf si les privilèges d”administrateur sont requis.</p>
+<p><img alt="destination" src="work_env/./image_git/destination.png" /></p>
+<ol class="simple">
+<li><p>Choisissez d”ajouter Anaconda à votre variable d”environnement PATH. Nous vous recommandons de ne pas ajouter Anaconda à la variable d”environnement PATH, car cela peut interférer avec d”autres logiciels. À la place, utilisez le logiciel Anaconda en ouvrant Anaconda Navigator ou l”invite Anaconda dans le menu Démarrer.</p></li>
+</ol>
+<p><img alt="options" src="work_env/./image_git/options.png" /></p>
+<ol class="simple">
+<li><p>Choisissez d”enregistrer Anaconda comme Python par défaut. Sauf si vous prévoyez d”installer et d”exécuter plusieurs versions d”Anaconda ou plusieurs versions de Python, acceptez la valeur par défaut et laissez cette case cochée.</p></li>
+<li><p>Cliquez sur le bouton Installer. Si vous souhaitez regarder les packages qu”Anaconda installe, cliquez sur Afficher les détails.</p></li>
+<li><p>Cliquez sur le bouton Suivant.</p></li>
+<li><p>Après une installation réussie, vous verrez la boîte de dialogue «Merci d”avoir installé Anaconda»:</p></li>
+</ol>
+<p><img alt="complete" src="work_env/./image_git/complete.jpg" /></p>
+<ol class="simple">
+<li><p>Si vous souhaitez en savoir plus sur Anaconda Cloud et comment démarrer avec Anaconda, cochez les cases «En savoir plus sur Anaconda Cloud» et «Apprenez à démarrer avec Anaconda». Cliquez sur le bouton Terminer.</p></li>
+</ol>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+      
+        <a href="git_tag.html" class="btn btn-neutral float-left" title="4. Ligne de commande git tag" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, Sabine
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

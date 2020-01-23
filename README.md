@@ -14,8 +14,14 @@ Le travail est répartis en groupe de 5 de la manière suivante:
 
 5. Le thème d'environnement Linux, Ubuntu, Github, Jupyter et Anaconda sera développé par **Amaria**, **Inès** et **Djoumbé**. **Djoumbé** est le chef d'équipe.
 
-La chef de projet est **Sabine**.
+La responsable de projet est **Sabine**.
 
-Le répertoire et la documentation ont été crée le 15 Janvier 2020.
+Le répertoire et la documentation ont été crées le 15 Janvier 2020.
 
-Plusieurs absences sont notés. Les apprenants qui souhaitent rejoindre certains groupes devraient demander au chef de projet de partager le répertoire et de modifier de ce fichier REAMDE.
+
+## LOGS:
+
+15/01/2020 : Création du répertoire de documentation
+15/01/2020 : Noémie a rejoint l'équipe de Romain
+16/01/2020 : Daniel a rejoint l'équipe de Joshua
+22/01/2020 : Rendu de la version 0.9.0 de la docu -> Corrections à faire
