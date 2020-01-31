@@ -4,7 +4,7 @@ Vous trouverez dans ce répertoire une documentation détaillée de la Stack Dev
 
 Le travail est répartis en groupe de 5 de la manière suivante:
 
-1. Le thème SQL, MySQL, Création de base de données, tables, requêtes sur des tables et gestion d'utilisateur sera à la charge de **Joshua**, **Xavier** et **Yoann**. **Joshua** est le chef d'équipe.
+1. Le thème SQL, MySQL, Création de base de données, tables, requêtes sur des tables et gestion d'utilisateur sera à la charge de **Joshua**, **Xavier**, **Yoann** et **Ludovic**. **Joshua** est le chef d'équipe.
 
 2. Le thème de Python 3 et les bibliothèques NumPy, Pandas et Matplotlib a été développé par Hachem et sera intégré dès le départ à la documentation.
 
@@ -21,7 +21,9 @@ Le répertoire et la documentation ont été crées le 15 Janvier 2020.
 
 ## LOGS:
 
-15/01/2020 : Création du répertoire de documentation
-15/01/2020 : Noémie a rejoint l'équipe de Romain
-16/01/2020 : Daniel a rejoint l'équipe de Joshua
-22/01/2020 : Rendu de la version 0.9.0 de la docu -> Corrections à faire
+* 15/01/2020 : Création du répertoire de documentation
+* 15/01/2020 : Noémie a rejoint l'équipe de Romain
+* 16/01/2020 : Daniel a rejoint l'équipe de Joshua
+* 22/01/2020 : Rendu de la version 0.9.0 de la docu -> Corrections à faire
+* 23/01/2020 : Corrections faites -> version 1.0.0 est sur toutes les branches -> Mises à jour attendues.
+* 31/01/2020 : Ludo a rejoint l'équipe de Joshua (SQL)
