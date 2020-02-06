@@ -1,0 +1,254 @@
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="français">
+  <head>
+    <meta charset="utf-8" />
+    <title>5. CONDITION if, else et elif &#8212; Documentation stack_devdata(python) 0.0.2</title>
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="_static/language_data.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Recherche" href="search.html" />
+    <link rel="next" title="11. Mots clés Python" href="Mots_cles_Python.html" />
+    <link rel="prev" title="1. Créez des structures conditionnelles:" href="forme-minimale.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="condition-if-else-et-elif">
+<h1><span class="section-number">5. </span>CONDITION if, else et elif<a class="headerlink" href="#condition-if-else-et-elif" title="Lien permanent vers ce titre">¶</a></h1>
+</div>
+<div class="section" id="if-else">
+<h1><span class="section-number">6. </span>if, else<a class="headerlink" href="#if-else" title="Lien permanent vers ce titre">¶</a></h1>
+<p>Ce programme utilise une instruction conditionnelle if. Après le if nous mettons une condition (x &gt; 0)
+suivie par deux points. Après cela, nous mettons un bloc d'instructions qui ne seront exécutées que si la
+condition est vraie (c'est-à-dire évaluée à True). Ce bloc peut être suivi du mot else, deux points et d'un
+autre bloc d'instructions qui ne seront exécutées que si la condition est fausse (c'est-à-dire évaluée à
+False). Si c'est le cas ci-dessus, la condition est fausse, donc le bloc 'else' est exécuté. Chaque bloc
+doit être mis en retrait à l'aide d'espaces.</p>
+<p>Pour résumer, l'instruction conditionnelle en Python a la syntaxe suivante:</p>
+<p>::
+if condition:
+true-block
+several instructions that are executed<br />if the condition evaluates to True
+else:
+false-block
+several instructions that are executed
+if the condition evaluates to False</p>
+<p>Dans cet exemple, la variable x n'est affectée -x qu'à si x &lt; 0. En revanche, l'instruction print(x) est
+exécutée à chaque fois, car elle n'est pas en retrait, elle n'appartient donc pas au bloc «vrai».</p>
+<p>L'indentation est un moyen général en Python de séparer des blocs de code. Toutes les instructions d'un
+même bloc doivent être mises en retrait de la même manière, c'est-à-dire qu'elles doivent avoir le même
+nombre d'espaces au début de la ligne. Il est recommandé d'utiliser 4 espaces pour l'indentation.</p>
+<p>L'indentation est ce qui rend Python différent de la plupart des autres langages, dans lesquels les
+accolades {et }sont utilisés pour former les blocs.</p>
+<p>Soit dit en passant, il existe une fonction intégrée pour la valeur absolue en Python:</p>
+<p>::
+x = -273
+print(abs(x))</p>
+<p>:: 273</p>
+</div>
+<div class="section" id="elif">
+<h1><span class="section-number">7. </span>elif<a class="headerlink" href="#elif" title="Lien permanent vers ce titre">¶</a></h1>
+<p>Si vous avez plus de deux options pour les distinguer à l'aide de l'opérateur conditionnel, vous pouvez
+utiliser l' if... elif... elseinstruction.</p>
+<p>Montrons comment cela fonctionne en réécrivant l'exemple avec le point (x, y) sur le plan et les quadrants
+d'en haut:</p>
+<p>::
+x = -5
+y = 7
+if x &gt; 0 and y &gt; 0:
+print(&quot;Quadrant I&quot;)
+elif x &gt; 0 and y &lt; 0:
+print(&quot;Quadrant IV&quot;)
+elif y &gt; 0:
+print(&quot;Quadrant II&quot;)
+else:
+print(&quot;Quadrant III&quot;)</p>
+<p>:: Quadrant II</p>
+</div>
+<div class="section" id="conditions-imbriquees">
+<h1><span class="section-number">8. </span>CONDITIONS IMBRIQUÊES<a class="headerlink" href="#conditions-imbriquees" title="Lien permanent vers ce titre">¶</a></h1>
+<p>Toute instruction Python peut être placée dans des blocs «vrais» et «faux», y compris une autre instruction
+conditionnelle. De cette façon, nous obtenons des conditions imbriquées. Les blocs de conditions internes
+sont indentés en utilisant deux fois plus d'espaces (par exemple 8 espaces). Voyons un exemple. Étant donné
+les coordonnées du point sur le plan, imprimez son quadrant.</p>
+<p>::
+x = 2
+y = -3
+if x &gt; 0:
+if y &gt; 0:
+# x is greater than 0, y is greater than 0
+print(&quot;Quadrant I&quot;)
+else:<br /># x is greater than 0, y is less or equal than 0
+print(&quot;Quadrant IV&quot;)
+else:
+if y &gt; 0:
+# x is less or equal than 0, y is greater than 0
+print(&quot;Quadrant II&quot;)
+else:<br /># x is less or equal than 0, y is less or equal than 0
+print(&quot;Quadrant III&quot;)</p>
+<p>:: Quadrant IV</p>
+</div>
+<div class="section" id="operateurs-de-comparaison">
+<h1><span class="section-number">9. </span>OPÊRATEURS DE COMPARAISON<a class="headerlink" href="#operateurs-de-comparaison" title="Lien permanent vers ce titre">¶</a></h1>
+<p>Habituellement, la condition après ifpossède un ou plusieurs des opérateurs suivants:</p>
+<p>&lt;
+less  - la condition est vraie si le côté gauche est inférieur au côté droit.</p>
+<p>supérieur  - la condition est vraie si le côté gauche est supérieur au côté droit.
+&lt;=
+inférieur ou égal.</p>
+<blockquote>
+<div><p>=
+supérieur ou égal.
+==
+égal.
+!=
+inégal</p>
+</div></blockquote>
+</div>
+<div class="section" id="objets-booleens-et-operateurs-logiques">
+<h1><span class="section-number">10. </span>OBJETS BOOLÊENS ET OPÊRATEURS LOGIQUES<a class="headerlink" href="#objets-booleens-et-operateurs-logiques" title="Lien permanent vers ce titre">¶</a></h1>
+<p>Lorsque nous additionnons deux objets entiers en utilisant l' +opérateur, comme 2 + 5, nous obtenons un
+nouvel objet: 7. De la même manière, si l' on compare deux entiers à l' aide de l' &lt;opérateur, comme 2 &lt; 5,
+nous obtenons un nouvel objet: True.</p>
+<p>::
+print(2 &lt; 5)
+print(2 &gt; 5)</p>
+<p>::
+True
+False</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Les</span> <span class="n">objets</span> <span class="n">Trueet</span> <span class="n">Falseont</span> <span class="n">un</span> <span class="nb">type</span> <span class="n">spécial</span> <span class="n">appelé</span> <span class="nb">bool</span><span class="o">.</span> <span class="n">Comme</span> <span class="n">chaque</span> <span class="n">nom</span> <span class="n">de</span> <span class="nb">type</span> <span class="n">peut</span> <span class="n">être</span> <span class="n">utilisé</span> <span class="n">pour</span> 
+<span class="n">convertir</span> <span class="n">des</span> <span class="n">objets</span> <span class="n">en</span> <span class="n">ce</span> <span class="nb">type</span><span class="p">,</span> <span class="n">voyons</span> <span class="n">ce</span> <span class="n">que</span> <span class="n">cette</span> <span class="n">distribution</span> <span class="n">donne</span> <span class="n">pour</span> <span class="n">les</span> <span class="n">nombres</span><span class="p">:</span>
+</pre></div>
+</div>
+<p>::
+print(bool(-10))<br />print(bool(0))<br />print(bool(10))</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="nb">bool</span><span class="p">(</span><span class="s1">&#39;&#39;</span><span class="p">))</span>     
+<span class="nb">print</span><span class="p">(</span><span class="nb">bool</span><span class="p">(</span><span class="s1">&#39;abc&#39;</span><span class="p">))</span>  
+</pre></div>
+</div>
+<p>::
+False
+True
+False
+True</p>
+<p>Parfois, vous devez vérifier plusieurs conditions à la fois. Par exemple, vous pouvez vérifier si un nombre
+nest divisible par 2 en utilisant la condition n % 2 == 0 ( ndonne un reste 0lors de la division par 2). Si
+vous devez vérifier que les deux chiffres net msont à la fois divisble par 2, vous devriez vérifier à la
+fois n % 2 == 0 et m % 2 == 0. Pour ce faire, vous joindre à eux à l' aide d' un opérateur and (logique): n
+% 2 == 0 and m % 2 == 0.</p>
+<p>Python a un ET logique, un OU logique et une négation.</p>
+<p>L'opérateur andest un opérateur binaire qui évalue True si et seulement si son côté gauche et son côté
+droit le sont True.</p>
+<p>L'opérateur orest un opérateur binaire qui évalue True si au moins un de ses côtés l'est True.</p>
+<p>L'opérateur notest une négation unaire, il est suivi d'une certaine valeur. Il est évalué Truesi cette
+valeur est Falseet vice versa.</p>
+<p>Vérifions qu'au moins l'un des deux nombres se termine par 0:</p>
+<p>::
+a = 15
+b = 40
+if a % 10 == 0 or b % 10 == 0:
+print('YES')
+else:
+print('NO')</p>
+<p>::
+YES</p>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="index.html">stack_devdata(python)</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="forme-minimale.html">1. Créez des structures conditionnelles:</a></li>
+<li class="toctree-l1"><a class="reference internal" href="forme-minimale.html#vos-premieres-conditions-et-blocs-d-instructions">2. Vos premières conditions et blocs d'instructions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="forme-minimale.html#forme-minimale-en-if">3. Forme minimale en if</a></li>
+<li class="toctree-l1"><a class="reference internal" href="forme-minimale.html#detaillons-ce-code-ligne-par-ligne">4. Détaillons ce code, ligne par ligne :</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">5. CONDITION if, else et elif</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#if-else">6. if, else</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#elif">7. elif</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#conditions-imbriquees">8. CONDITIONS IMBRIQUÊES</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#operateurs-de-comparaison">9. OPÊRATEURS DE COMPARAISON</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#objets-booleens-et-operateurs-logiques">10. OBJETS BOOLÊENS ET OPÊRATEURS LOGIQUES</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Mots_cles_Python.html">11. Mots clés Python</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+      <li>Previous: <a href="forme-minimale.html" title="Chapitre précédent"><span class="section-number">1. </span>Créez des structures conditionnelles:</a></li>
+      <li>Next: <a href="Mots_cles_Python.html" title="Chapitre suivant"><span class="section-number">11. </span>Mots clés Python</a></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Recherche rapide</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2020, Yacine Hachem Lotfi.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 2.3.1</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="_sources/forme-complete.md.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>
