@@ -272,10 +272,7 @@ class Voiture:
 
     def __init__(self):
         self.nom = "A déterminer"
-        
-    def allumer(self):
-        print "La voiture démarre"
-
+        0,polymorphism:1,poo:1,surcharg:1,tabl:0,welcom:0}})
 class VoitureSport(Voiture):
 
     def __init__(self):
