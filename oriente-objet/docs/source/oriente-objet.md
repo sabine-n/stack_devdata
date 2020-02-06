@@ -305,3 +305,6 @@ Prenez l'habitude de nommer votre classe uniquement avec des caractères alphanu
 ```
 voiture_sport = VoitureSport()
 ```
+
+
+source : https://python.doctor/page-apprendre-programmation-orientee-objet-poo-classes-python-cours-debutants
