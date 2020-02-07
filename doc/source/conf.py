@@ -18,8 +18,8 @@
 # -- Project information -----------------------------------------------------
 
 project = 'Ateliers'
-copyright = '2019, Sabine'
-author = 'Sabine'
+copyright = '2019, Sabine, hachem'
+author = 'Sabine, hachem'
 
 
 # -- General configuration ---------------------------------------------------

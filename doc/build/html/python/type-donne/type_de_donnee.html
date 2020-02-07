@@ -1,0 +1,452 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="fr" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="fr" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>3. Les principaux Types de données en Python &mdash; Documentation Ateliers </title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../../_static/jquery.js"></script>
+        <script type="text/javascript" src="../../_static/underscore.js"></script>
+        <script type="text/javascript" src="../../_static/doctools.js"></script>
+        <script type="text/javascript" src="../../_static/language_data.js"></script>
+        <script type="text/javascript" src="../../_static/translations.js"></script>
+    
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Recherche" href="../../search.html" />
+    <link rel="next" title="4. Créez des structures conditionnelles:" href="../structure-conditionelle/forme-minimale.html" />
+    <link rel="prev" title="2. Que peut-on faire avec Python?" href="../que_faire_avec_python.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../index.html" class="icon icon-home"> Ateliers
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../../sql/index.html">SQL</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../sql/SQL.html">1. SQL</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../sql/SQL.html#intro">1.1. Intro</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../sql/SQL.html#a-quoi-ca-sert">1.2. A quoi ça sert</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../sql/SQL.html#commandes-de-base">1.3. Commandes de base</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../sql/SGBD.html">2. Système de Gestion de Base de Données</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../sql/SGBD.html#intro">2.1. Intro</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../sql/SGBD.html#exemple-de-sgbd">2.2. Exemple de SGBD</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../sql/SGBD.html#composition-fonctionnement-sgbd">2.3. Composition &amp; Fonctionnement SGBD</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../sql/SGBD.html#type-de-sgbd">2.4. Type de SGBD</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../sql/DATABASE.html">3. Base de Données</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../sql/DATABASE.html#intro">3.1. Intro</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../sql/DATABASE.html#son-histoire">3.2. Son histoire</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../sql/DATABASE.html#type">3.3. Type</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../sql/DATABASE.html#relation-or-not">3.4. Relation or not</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../sql/DATABASE.html#cloud">3.5. Cloud</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../sql/DROITS.html">4. Gestion des droits</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../sql/DROITS.html#intro">4.1. Intro</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../sql/DROITS.html#les-commandes-priviliges">4.2. Les commandes priviliges</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../sql/DROITS.html#exemple-de-requete">4.3. Exemple de requête</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">python</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../histoire_de_python.html">1. Histoire de Python</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../que_faire_avec_python.html">2. Que peut-on faire avec Python?</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../que_faire_avec_python.html#du-calcul-scientifique-librairie-pandas-numpy">2.1. du calcul scientifique (librairie pandas, numpy)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../que_faire_avec_python.html#des-graphiques-librairie-matplotlib-et-sous-librairie-pyplot">2.2. des graphiques (librairie matplotlib) et (sous librairie pyplot)</a></li>
+</ul>
+</li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">3. Les principaux Types de données en Python</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#la-fonction-type">3.1. La Fonction Type() :</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#le-type-int-entier">3.2. Le Type int(entier) :</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#le-type-float-flottant">3.3. Le Type Float(flottant) :</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#le-type-str-chaine-de-caracteres">3.4. Le Type str(chaîne de caractères) :</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#le-type-bool-booleen">3.5. Le Type bool(booléen) :</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#le-type-list-liste">3.6. Le Type list(liste) :</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#le-type-complex-complexe">3.7. Le Type complex(complexe) :</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../structure-conditionelle/forme-minimale.html">4. Créez des structures conditionnelles:</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../structure-conditionelle/forme-minimale.html#vos-premieres-conditions-et-blocs-d-instructions">5. Vos premières conditions et blocs d”instructions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../structure-conditionelle/forme-minimale.html#forme-minimale-en-if">6. Forme minimale en if</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../structure-conditionelle/forme-minimale.html#detaillons-ce-code-ligne-par-ligne">7. Détaillons ce code, ligne par ligne :</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../structure-conditionelle/forme-complete.html">8. CONDITION if, else et elif</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../structure-conditionelle/forme-complete.html#if-else">9. if, else</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../structure-conditionelle/forme-complete.html#elif">10. elif</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../structure-conditionelle/forme-complete.html#conditions-imbriquees">11. CONDITIONS IMBRIQUÊES</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../structure-conditionelle/forme-complete.html#operateurs-de-comparaison">12. OPÊRATEURS DE COMPARAISON</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../structure-conditionelle/forme-complete.html#objets-booleens-et-operateurs-logiques">13. OBJETS BOOLÊENS ET OPÊRATEURS LOGIQUES</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../structure-conditionelle/Mots_cles_Python.html">14. Mots clés Python</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../structure-conditionelle/Mots_cles_Python.html#and">14.1. AND:</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../structure-conditionelle/Mots_cles_Python.html#or">14.2. OR:</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../structure-conditionelle/Mots_cles_Python.html#not">14.3. NOT:</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../instruction-fonction/Arguments-et-Variables.html">15. 3- Arguments positionnels et Arguments par mot-clé :</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../instruction-fonction/Arguments-et-Variables.html#arguments-positionnels">15.1. 3-1 Arguments positionnels:</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../instruction-fonction/Arguments-et-Variables.html#arguments-par-mot-cle">15.2. 3-1 Arguments par mot-clé:</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../instruction-fonction/Arguments-et-Variables.html#variables-locales-et-variable-globales">16. 4- Variables locales et Variable globales :</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../instruction-fonction/Arguments-et-Variables.html#variables-locales">16.1. 4-1 variables locales :</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../instruction-fonction/Arguments-et-Variables.html#variables-globales">16.2. 4-2 Variables globales :</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../instruction-fonction/Arguments-et-Variables.html#utilisation-de-la-variable-globale">16.3. 4-3 Utilisation de la Variable globale :</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../instruction-fonction/les-fonctions.html">17. LES FONCTIONS</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../instruction-fonction/les-fonctions.html#qu-est-ce-qu-une-fonction">17.1. 1 QU”EST CE QU”UNE FONCTION</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../instruction-fonction/renvoie-de-resultat.html">18. RENVOI DES RESULTAT :</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../oriente-objet/oriente-objet.html">19. Orienté objet (POO)</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../oriente-objet/oriente-objet.html#les-classes">19.1. Les classes</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../oriente-objet/oriente-objet.html#les-objets">19.2. Les objets</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../oriente-objet/oriente-objet.html#les-methodes">19.3. Les méthodes</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../oriente-objet/oriente-objet.html#les-proprietes">19.4. Les propriétés</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../oriente-objet/oriente-objet.html#la-fonction-dir">19.5. La fonction dir</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../oriente-objet/oriente-objet.html#l-attribut-special-dict">19.6. L”attribut spécial __ dict __</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../oriente-objet/oriente-objet.html#l-heritage-de-classe">19.7. L”héritage de classe</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../oriente-objet/oriente-objet.html#polymorphisme-surcharge-de-methode">19.8. Polymorphisme / surcharge de méthode</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../oriente-objet/oriente-objet.html#conventions">19.9. Conventions</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../format/index.html">Format de fichier</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../format/format_fichier_csv.html">1. Format de fichier .csv</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../format/format_fichier_csv.html#quest-ce-quun-fichier-csv">1.1. Qu’est-ce qu’un Fichier CSV ?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../format/format_fichier_csv.html#a-quoi-servent-les-fichiers-csv">1.2. À quoi servent les fichiers CSV ?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../format/format_fichier_csv.html#structure-d-un-fichier-csv">1.3. Structure d”un fichier CSV</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../format/format_fichier_csv.html#comment-convertir-un-fichier-excel-en-csv">1.4. Comment convertir un fichier Excel en .CSV</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../format/format_fichier_xls.html">2. Format de fichier xls</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../format/format_fichier_xls.html#quest-ce-quun-fichier-xls">2.1. Qu’est ce qu’un fichier XLS ?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../format/format_fichier_xls.html#quelle-difference-entre-xls-et-xlsx">2.2. Quelle différence entre xls et xlsx ?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../format/format_fichier_xls.html#quel-est-le-role-du-logiciel-excel">2.3. Quel est le rôle du logiciel Excel ?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../format/format_fichier_xls.html#comment-s-appelle-un-fichier-excel">2.4. Comment s”appelle un fichier Excel ?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../format/format_fichier_xls.html#quelles-sont-les-fonctions-excel">2.5. Quelles sont les fonctions Excel ?</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../format/format_fichier_sql.html">3. Format de fichier .sql</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../format/format_fichier_sql.html#qu-est-ce-qu-un-fichier-sql">3.1. Qu”est ce qu”un fichier sql</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../format/format_fichier_sql.html#a-quoi-sert-le-format-de-fichier-sql">3.2. À quoi sert le format de fichier sql ?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../format/format_fichier_sql.html#structure-d-un-fichier-sql">3.3. Structure d”un fichier sql</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../format/format_fichier_sql.html#qu-elle-sont-les-fonctions-sql">3.4. Qu”elle sont les fonctions sql</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../format/doc_google_sheets.html">4. Google Sheets</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../format/doc_google_sheets.html#histoire-et-creation-de-google-sheets">4.1. Histoire et création de Google Sheets:</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../format/doc_google_sheets.html#importer-des-donnees-d-une-autre-feuille-de-calcul">4.2. Importer des données d”une autre feuille de calcul</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../format/doc_google_sheets.html#proteger-des-cellules">4.3. Protéger des cellules</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../format/doc_google_sheets.html#modifier-rapidement-du-texte">4.4. Modifier rapidement du texte</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../format/doc_google_sheets.html#trier-les-donnees">4.5. Trier les données</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../format/doc_google_sheets.html#tirer-parti-de-lintelligence-artificielle">4.6. Tirer parti de l’intelligence artificielle</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../format/doc_google_sheets.html#utiliser-google-traduction-dans-google-sheets">4.7. Utiliser Google Traduction dans Google Sheets</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../modelisation/index.html">Modélisation d’une base de donnée</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../modelisation/partie1.html">1. Définition/Cadrage du projet</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../modelisation/partie1.html#cahier-des-charges">1.1. Cahier des charges</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../modelisation/partie1.html#briefing">1.1.1. Briefing</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../modelisation/partie1.html#cadrage">1.1.2. Cadrage</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../modelisation/partie1.html#recensement-des-donnees">1.2. Recensement des données</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../modelisation/partie1.html#dictionnaire-de-donnees">1.2.1. Dictionnaire de données</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../modelisation/partie1.html#regle-de-gestion">1.2.2. Règle de gestion</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../modelisation/partie2.html">2. Modèle Conceptuel de Données (MCD)</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../modelisation/partie2.html#le-modele-entite-association">2.1. Le Modèle Entité/Association</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../modelisation/partie2.html#classe-entite">2.1.1. Classe Entité</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../modelisation/partie2.html#classe-association">2.1.2. Classe Association</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../modelisation/partie2.html#cardinalites">2.1.3. Cardinalités</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../modelisation/partie2.html#exemple-d-application">2.2. Exemple d”application</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../modelisation/partie3.html">3. Modèle Logique des Données (MLD)</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../modelisation/partie3.html#les-dependances-fonctionnelles">3.1. Les dépendances fonctionnelles</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../modelisation/partie3.html#dependances-entre-attributs">3.1.1. Dépendances entre attributs</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../modelisation/partie3.html#cles-primaires">3.1.2. Clés primaires</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../modelisation/partie3.html#les-relations">3.2. Les Relations</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../modelisation/partie3.html#le-domaine">3.2.1. Le domaine</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../modelisation/partie3.html#le-produit-cartesien">3.2.2. Le produit cartésien</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../modelisation/partie3.html#la-relation">3.2.3. La relation</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../modelisation/partie3.html#les-formes-normales">3.3. Les formes normales</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../modelisation/partie3.html#la-premiere-forme-normale">3.3.1. La première forme normale</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../modelisation/partie3.html#la-deuxieme-forme-normale">3.3.2. La deuxième forme normale</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../modelisation/partie3.html#la-troisieme-forme-normale">3.3.3. La troisième forme normale</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../modelisation/partie3.html#elaboration-du-modele-relationnel">3.4. Elaboration du modèle relationnel</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../modelisation/partie3.html#de-l-entite-a-la-relation">3.4.1. De l”Entité à la Relation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../modelisation/partie3.html#des-associations-aux-cles-etrangeres">3.4.2. Des associations aux clés etrangères</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../modelisation/partie3.html#synthese-du-modele-conceptuel-au-modele-relationnel">3.4.3. Synthèse: Du modèle conceptuel au modèle relationnel</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../modelisation/partie4.html">4. Modèle Physique des Données</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../modelisation/partie4.html#mysql-workbench">4.1. MySQL Workbench</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../modelisation/partie4.html#le-modele-physique-en-diagramme-workbench">4.2. Le modèle physique en diagramme Workbench</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../work_env/index.html">Environnements</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../work_env/Environnement_Linux_Ubuntu.html">1. Environnement Linux Ubuntu</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../work_env/Environnement_Linux_Ubuntu.html#presentation-de-linux-et-de-ubuntu">1.1. Présentation de Linux et de Ubuntu</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../work_env/Environnement_Linux_Ubuntu.html#installation-dubuntu-sur-un-pc">1.2. Installation d’Ubuntu sur un PC</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../work_env/Environnement_Linux_Ubuntu.html#presentation-du-terminal-ubuntu">1.3. Présentation du terminal Ubuntu</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../work_env/Environnement_Linux_Ubuntu.html#le-systeme-de-fichiers">1.4. Le système de fichiers</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../work_env/Environnement_Linux_Ubuntu.html#informations-par-rapport-aux-commandes-effectues">1.5. Informations par rapport aux commandes effectués :</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../work_env/Git_et_Github.html">2. Git et Github</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../work_env/Git_et_Github.html#quest-ce-que-git">2.1. QU’EST CE QUE GIT ?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../work_env/Git_et_Github.html#premiers-pas-sur-git">2.2. PREMIERS PAS SUR GIT</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../work_env/Git_et_Github.html#les-branches">2.3. LES BRANCHES</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../work_env/Git_et_Github.html#repository-sur-github">2.4. REPOSITORY SUR GITHUB</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../work_env/Git_partage.html">3. Ligne de commande git_team</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../work_env/git_tag.html">4. Ligne de commande git tag</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../work_env/Anaconda.html">5. INSTALLATION EN LIGNE DE COMMANDE DE ANACONDA</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../work_env/Anaconda.html#ubuntu">5.1. Ubuntu</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../work_env/Anaconda.html#mac">5.2. MAC</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../work_env/Anaconda.html#windows">5.3. Windows</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">Ateliers</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="../index.html">python</a> &raquo;</li>
+        
+      <li><span class="section-number">3. </span>Les principaux Types de données en Python</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../_sources/python/type-donne/type_de_donnee.md.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="les-principaux-types-de-donnees-en-python">
+<h1><span class="section-number">3. </span>Les principaux Types de données en Python<a class="headerlink" href="#les-principaux-types-de-donnees-en-python" title="Lien permanent vers ce titre">¶</a></h1>
+<div class="section" id="la-fonction-type">
+<h2><span class="section-number">3.1. </span>La Fonction Type() :<a class="headerlink" href="#la-fonction-type" title="Lien permanent vers ce titre">¶</a></h2>
+<p>Pour connaître le type d’une donnée ou le type de la valeur d’une variable, il suffit d’utiliser la fonction type().</p>
+</div>
+<div class="section" id="le-type-int-entier">
+<h2><span class="section-number">3.2. </span>Le Type int(entier) :<a class="headerlink" href="#le-type-int-entier" title="Lien permanent vers ce titre">¶</a></h2>
+<p>Ce type est utilisé pour stocker un entier, en anglais integer. Pour cette raison, on appelle ce type int.</p>
+</div>
+<div class="section" id="le-type-float-flottant">
+<h2><span class="section-number">3.3. </span>Le Type Float(flottant) :<a class="headerlink" href="#le-type-float-flottant" title="Lien permanent vers ce titre">¶</a></h2>
+<p>Ce type est utilisé pour stocker des nombres à virgule flottante, désignés en anglais par l’expression floating point numbers. Pour cette raison, on appelle ce type : float. En français, on parle de flottant.</p>
+</div>
+<div class="section" id="le-type-str-chaine-de-caracteres">
+<h2><span class="section-number">3.4. </span>Le Type str(chaîne de caractères) :<a class="headerlink" href="#le-type-str-chaine-de-caracteres" title="Lien permanent vers ce titre">¶</a></h2>
+<p>Sous Python, une donnée de type str est une suite quelconque de caractères délimitée soit par des apostrophes (simple quotes), soit par des guillemets (double quotes). str est l’abréviation de string, qui veut dire chaîne en français.</p>
+</div>
+<div class="section" id="le-type-bool-booleen">
+<h2><span class="section-number">3.5. </span>Le Type bool(booléen) :<a class="headerlink" href="#le-type-bool-booleen" title="Lien permanent vers ce titre">¶</a></h2>
+<p>Le type bool est utilisé pour les booléens. Un booléen peut prendre les valeurs True ou False.</p>
+</div>
+<div class="section" id="le-type-list-liste">
+<h2><span class="section-number">3.6. </span>Le Type list(liste) :<a class="headerlink" href="#le-type-list-liste" title="Lien permanent vers ce titre">¶</a></h2>
+<p>Sous Python, on peut définir une liste comme une collection d’éléments séparés par des virgules, l’ensemble étant enfermé dans des crochets.</p>
+</div>
+<div class="section" id="le-type-complex-complexe">
+<h2><span class="section-number">3.7. </span>Le Type complex(complexe) :<a class="headerlink" href="#le-type-complex-complexe" title="Lien permanent vers ce titre">¶</a></h2>
+<p>Python posséde par défaut un type pour manipuler les nombres complexes. La partie imaginaire est indiquée grâce à la lettre « j » ou « J ». La lettre mathématique utilisée habituellement, le « i », n’est pas utilisée en Python car la variable i est souvent utilisée dans les boucles.</p>
+<p>Source : https://courspython.com/types.html</p>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../structure-conditionelle/forme-minimale.html" class="btn btn-neutral float-right" title="4. Créez des structures conditionnelles:" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="../que_faire_avec_python.html" class="btn btn-neutral float-left" title="2. Que peut-on faire avec Python?" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, Sabine, hachem
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

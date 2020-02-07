@@ -1,0 +1,684 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="fr" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="fr" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>11. Orienté objet (POO) &mdash; Documentation Ateliers </title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../../_static/jquery.js"></script>
+        <script type="text/javascript" src="../../_static/underscore.js"></script>
+        <script type="text/javascript" src="../../_static/doctools.js"></script>
+        <script type="text/javascript" src="../../_static/language_data.js"></script>
+        <script type="text/javascript" src="../../_static/translations.js"></script>
+    
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Recherche" href="../../search.html" />
+    <link rel="next" title="Format de fichier" href="../../format/index.html" />
+    <link rel="prev" title="10. RENVOI DES RESULTAT :" href="../instruction-fonction/renvoie-de-resultat.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../index.html" class="icon icon-home"> Ateliers
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../../sql/index.html">SQL</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../sql/SQL.html">1. SQL</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../sql/SQL.html#intro">1.1. Intro</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../sql/SQL.html#a-quoi-ca-sert">1.2. A quoi ça sert</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../sql/SQL.html#commandes-de-base">1.3. Commandes de base</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../sql/SGBD.html">2. Système de Gestion de Base de Données</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../sql/SGBD.html#intro">2.1. Intro</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../sql/SGBD.html#exemple-de-sgbd">2.2. Exemple de SGBD</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../sql/SGBD.html#composition-fonctionnement-sgbd">2.3. Composition &amp; Fonctionnement SGBD</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../sql/SGBD.html#type-de-sgbd">2.4. Type de SGBD</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../sql/DATABASE.html">3. Base de Données</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../sql/DATABASE.html#intro">3.1. Intro</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../sql/DATABASE.html#son-histoire">3.2. Son histoire</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../sql/DATABASE.html#type">3.3. Type</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../sql/DATABASE.html#relation-or-not">3.4. Relation or not</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../sql/DATABASE.html#cloud">3.5. Cloud</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../sql/DROITS.html">4. Gestion des droits</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../sql/DROITS.html#intro">4.1. Intro</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../sql/DROITS.html#les-commandes-priviliges">4.2. Les commandes priviliges</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../sql/DROITS.html#exemple-de-requete">4.3. Exemple de requête</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">python</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../histoire_de_python.html">1. Histoire de Python</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../que_faire_avec_python.html">2. Que peut-on faire avec Python?</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../que_faire_avec_python.html#du-calcul-scientifique-librairie-pandas-numpy">2.1. du calcul scientifique (librairie pandas, numpy)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../que_faire_avec_python.html#des-graphiques-librairie-matplotlib-et-sous-librairie-pyplot">2.2. des graphiques (librairie matplotlib) et (sous librairie pyplot)</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../type-donne/type_de_donnee.html">3. Les principaux Types de données en Python</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../type-donne/type_de_donnee.html#la-fonction-type">3.1. La Fonction Type() :</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../type-donne/type_de_donnee.html#le-type-int-entier">3.2. Le Type int(entier) :</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../type-donne/type_de_donnee.html#le-type-float-flottant">3.3. Le Type Float(flottant) :</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../type-donne/type_de_donnee.html#le-type-str-chaine-de-caracteres">3.4. Le Type str(chaîne de caractères) :</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../type-donne/type_de_donnee.html#le-type-bool-booleen">3.5. Le Type bool(booléen) :</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../type-donne/type_de_donnee.html#le-type-list-liste">3.6. Le Type list(liste) :</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../type-donne/type_de_donnee.html#le-type-complex-complexe">3.7. Le Type complex(complexe) :</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../structure-conditionelle/forme-minimale.html">4. Documentation Python: Les structures conditionnelles</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../structure-conditionelle/forme-minimale.html#creez-des-structures-conditionnelles">4.1. Créez des structures conditionnelles:</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../structure-conditionelle/forme-minimale.html#vos-premieres-conditions-et-blocs-d-instructions">4.2. Vos premières conditions et blocs d”instructions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../structure-conditionelle/forme-minimale.html#forme-minimale-en-if">4.3. Forme minimale en if</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../structure-conditionelle/forme-minimale.html#detaillons-ce-code-ligne-par-ligne">4.4. Détaillons ce code, ligne par ligne :</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../structure-conditionelle/forme-complete.html">5. CONDITION if, else et elif</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../structure-conditionelle/forme-complete.html#if-else">5.1. if, else</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../structure-conditionelle/forme-complete.html#elif">5.2. elif</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../structure-conditionelle/forme-complete.html#conditions-imbriquees">5.3. CONDITIONS IMBRIQUÊES</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../structure-conditionelle/forme-complete.html#operateurs-de-comparaison">5.4. OPÊRATEURS DE COMPARAISON</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../structure-conditionelle/forme-complete.html#objets-booleens-et-operateurs-logiques">5.5. OBJETS BOOLÊENS ET OPÊRATEURS LOGIQUES</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../structure-conditionelle/Mots_cles_Python.html">6. Mots clés Python</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../structure-conditionelle/Mots_cles_Python.html#and">6.1. AND:</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../structure-conditionelle/Mots_cles_Python.html#or">6.2. OR:</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../structure-conditionelle/Mots_cles_Python.html#not">6.3. NOT:</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../instruction-fonction/Arguments-et-Variables.html">7. 3- Arguments positionnels et Arguments par mot-clé :</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../instruction-fonction/Arguments-et-Variables.html#arguments-positionnels">7.1. 3-1 Arguments positionnels:</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../instruction-fonction/Arguments-et-Variables.html#arguments-par-mot-cle">7.2. 3-1 Arguments par mot-clé:</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../instruction-fonction/Arguments-et-Variables.html#variables-locales-et-variable-globales">8. 4- Variables locales et Variable globales :</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../instruction-fonction/Arguments-et-Variables.html#variables-locales">8.1. 4-1 variables locales :</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../instruction-fonction/Arguments-et-Variables.html#variables-globales">8.2. 4-2 Variables globales :</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../instruction-fonction/Arguments-et-Variables.html#utilisation-de-la-variable-globale">8.3. 4-3 Utilisation de la Variable globale :</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../instruction-fonction/les-fonctions.html">9. LES FONCTIONS</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../instruction-fonction/les-fonctions.html#qu-est-ce-qu-une-fonction">9.1. 1 QU”EST CE QU”UNE FONCTION</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../instruction-fonction/renvoie-de-resultat.html">10. RENVOI DES RESULTAT :</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">11. Orienté objet (POO)</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#les-classes">11.1. Les classes</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#les-objets">11.2. Les objets</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#les-methodes">11.3. Les méthodes</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#les-proprietes">11.4. Les propriétés</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#la-fonction-dir">11.5. La fonction dir</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#l-attribut-special-dict">11.6. L”attribut spécial __ dict __</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#l-heritage-de-classe">11.7. L”héritage de classe</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#polymorphisme-surcharge-de-methode">11.8. Polymorphisme / surcharge de méthode</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#conventions">11.9. Conventions</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../format/index.html">Format de fichier</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../format/format_fichier_csv.html">1. Format de fichier .csv</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../format/format_fichier_csv.html#quest-ce-quun-fichier-csv">1.1. Qu’est-ce qu’un Fichier CSV ?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../format/format_fichier_csv.html#a-quoi-servent-les-fichiers-csv">1.2. À quoi servent les fichiers CSV ?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../format/format_fichier_csv.html#structure-d-un-fichier-csv">1.3. Structure d”un fichier CSV</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../format/format_fichier_csv.html#comment-convertir-un-fichier-excel-en-csv">1.4. Comment convertir un fichier Excel en .CSV</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../format/format_fichier_xls.html">2. Format de fichier xls</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../format/format_fichier_xls.html#quest-ce-quun-fichier-xls">2.1. Qu’est ce qu’un fichier XLS ?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../format/format_fichier_xls.html#quelle-difference-entre-xls-et-xlsx">2.2. Quelle différence entre xls et xlsx ?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../format/format_fichier_xls.html#quel-est-le-role-du-logiciel-excel">2.3. Quel est le rôle du logiciel Excel ?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../format/format_fichier_xls.html#comment-s-appelle-un-fichier-excel">2.4. Comment s”appelle un fichier Excel ?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../format/format_fichier_xls.html#quelles-sont-les-fonctions-excel">2.5. Quelles sont les fonctions Excel ?</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../format/format_fichier_sql.html">3. Format de fichier .sql</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../format/format_fichier_sql.html#qu-est-ce-qu-un-fichier-sql">3.1. Qu”est ce qu”un fichier sql</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../format/format_fichier_sql.html#a-quoi-sert-le-format-de-fichier-sql">3.2. À quoi sert le format de fichier sql ?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../format/format_fichier_sql.html#structure-d-un-fichier-sql">3.3. Structure d”un fichier sql</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../format/format_fichier_sql.html#qu-elle-sont-les-fonctions-sql">3.4. Qu”elle sont les fonctions sql</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../format/doc_google_sheets.html">4. Google Sheets</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../format/doc_google_sheets.html#histoire-et-creation-de-google-sheets">4.1. Histoire et création de Google Sheets:</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../format/doc_google_sheets.html#importer-des-donnees-d-une-autre-feuille-de-calcul">4.2. Importer des données d”une autre feuille de calcul</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../format/doc_google_sheets.html#proteger-des-cellules">4.3. Protéger des cellules</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../format/doc_google_sheets.html#modifier-rapidement-du-texte">4.4. Modifier rapidement du texte</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../format/doc_google_sheets.html#trier-les-donnees">4.5. Trier les données</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../format/doc_google_sheets.html#tirer-parti-de-lintelligence-artificielle">4.6. Tirer parti de l’intelligence artificielle</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../format/doc_google_sheets.html#utiliser-google-traduction-dans-google-sheets">4.7. Utiliser Google Traduction dans Google Sheets</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../modelisation/index.html">Modélisation d’une base de donnée</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../modelisation/partie1.html">1. Définition/Cadrage du projet</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../modelisation/partie1.html#cahier-des-charges">1.1. Cahier des charges</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../modelisation/partie1.html#briefing">1.1.1. Briefing</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../modelisation/partie1.html#cadrage">1.1.2. Cadrage</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../modelisation/partie1.html#recensement-des-donnees">1.2. Recensement des données</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../modelisation/partie1.html#dictionnaire-de-donnees">1.2.1. Dictionnaire de données</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../modelisation/partie1.html#regle-de-gestion">1.2.2. Règle de gestion</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../modelisation/partie2.html">2. Modèle Conceptuel de Données (MCD)</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../modelisation/partie2.html#le-modele-entite-association">2.1. Le Modèle Entité/Association</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../modelisation/partie2.html#classe-entite">2.1.1. Classe Entité</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../modelisation/partie2.html#classe-association">2.1.2. Classe Association</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../modelisation/partie2.html#cardinalites">2.1.3. Cardinalités</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../modelisation/partie2.html#exemple-d-application">2.2. Exemple d”application</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../modelisation/partie3.html">3. Modèle Logique des Données (MLD)</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../modelisation/partie3.html#les-dependances-fonctionnelles">3.1. Les dépendances fonctionnelles</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../modelisation/partie3.html#dependances-entre-attributs">3.1.1. Dépendances entre attributs</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../modelisation/partie3.html#cles-primaires">3.1.2. Clés primaires</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../modelisation/partie3.html#les-relations">3.2. Les Relations</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../modelisation/partie3.html#le-domaine">3.2.1. Le domaine</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../modelisation/partie3.html#le-produit-cartesien">3.2.2. Le produit cartésien</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../modelisation/partie3.html#la-relation">3.2.3. La relation</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../modelisation/partie3.html#les-formes-normales">3.3. Les formes normales</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../modelisation/partie3.html#la-premiere-forme-normale">3.3.1. La première forme normale</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../modelisation/partie3.html#la-deuxieme-forme-normale">3.3.2. La deuxième forme normale</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../modelisation/partie3.html#la-troisieme-forme-normale">3.3.3. La troisième forme normale</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../modelisation/partie3.html#elaboration-du-modele-relationnel">3.4. Elaboration du modèle relationnel</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../modelisation/partie3.html#de-l-entite-a-la-relation">3.4.1. De l”Entité à la Relation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../modelisation/partie3.html#des-associations-aux-cles-etrangeres">3.4.2. Des associations aux clés etrangères</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../modelisation/partie3.html#synthese-du-modele-conceptuel-au-modele-relationnel">3.4.3. Synthèse: Du modèle conceptuel au modèle relationnel</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../modelisation/partie4.html">4. Modèle Physique des Données</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../modelisation/partie4.html#mysql-workbench">4.1. MySQL Workbench</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../modelisation/partie4.html#le-modele-physique-en-diagramme-workbench">4.2. Le modèle physique en diagramme Workbench</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../work_env/index.html">Environnements</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../work_env/Environnement_Linux_Ubuntu.html">1. Environnement Linux Ubuntu</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../work_env/Environnement_Linux_Ubuntu.html#presentation-de-linux-et-de-ubuntu">1.1. Présentation de Linux et de Ubuntu</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../work_env/Environnement_Linux_Ubuntu.html#installation-dubuntu-sur-un-pc">1.2. Installation d’Ubuntu sur un PC</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../work_env/Environnement_Linux_Ubuntu.html#presentation-du-terminal-ubuntu">1.3. Présentation du terminal Ubuntu</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../work_env/Environnement_Linux_Ubuntu.html#le-systeme-de-fichiers">1.4. Le système de fichiers</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../work_env/Environnement_Linux_Ubuntu.html#informations-par-rapport-aux-commandes-effectues">1.5. Informations par rapport aux commandes effectués :</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../work_env/Git_et_Github.html">2. Git et Github</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../work_env/Git_et_Github.html#quest-ce-que-git">2.1. QU’EST CE QUE GIT ?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../work_env/Git_et_Github.html#premiers-pas-sur-git">2.2. PREMIERS PAS SUR GIT</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../work_env/Git_et_Github.html#les-branches">2.3. LES BRANCHES</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../work_env/Git_et_Github.html#repository-sur-github">2.4. REPOSITORY SUR GITHUB</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../work_env/Git_partage.html">3. Ligne de commande git_team</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../work_env/git_tag.html">4. Ligne de commande git tag</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../work_env/Anaconda.html">5. INSTALLATION EN LIGNE DE COMMANDE DE ANACONDA</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../work_env/Anaconda.html#ubuntu">5.1. Ubuntu</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../work_env/Anaconda.html#mac">5.2. MAC</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../work_env/Anaconda.html#windows">5.3. Windows</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">Ateliers</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="../index.html">python</a> &raquo;</li>
+        
+      <li><span class="section-number">11. </span>Orienté objet (POO)</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../_sources/python/oriente-objet/oriente-objet.md.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="oriente-objet-poo">
+<h1><span class="section-number">11. </span>Orienté objet (POO)<a class="headerlink" href="#oriente-objet-poo" title="Lien permanent vers ce titre">¶</a></h1>
+<div class="section" id="les-classes">
+<h2><span class="section-number">11.1. </span>Les classes<a class="headerlink" href="#les-classes" title="Lien permanent vers ce titre">¶</a></h2>
+<p>Une classe regroupe des fonctions et des attributs qui définissent un objet. On appelle par ailleurs les fonctions d”une classe des «  méthodes « .</p>
+<p>Créons une classe <strong>Voiture</strong> :</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">Voiture</span><span class="p">:</span>
+
+	<span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+		<span class="bp">self</span><span class="o">.</span><span class="n">nom</span> <span class="o">=</span> <span class="s2">&quot;Ferrari&quot;</span>
+</pre></div>
+</div>
+<p>Notre classe <strong>Voiture</strong> est une sorte d”usine à créer des voitures.</p>
+<p>La méthode <strong>init</strong>() est appelée lors de la création d”un objet.</p>
+<p><strong>self.nom</strong> est une manière de stocker une information dans la classe. On parle d”attribut de classe. Dans notre cas, on stock le nom dans l”attribut <strong>nom</strong> .</p>
+</div>
+<div class="section" id="les-objets">
+<h2><span class="section-number">11.2. </span>Les objets<a class="headerlink" href="#les-objets" title="Lien permanent vers ce titre">¶</a></h2>
+<p><strong>Un objet est une instance d”une classe</strong> . On peut créer autant d”objets que l”on désire avec une <strong>classe</strong> .</p>
+<p>Créons maintenant notre voiture:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">ma_voiture</span> <span class="o">=</span> <span class="n">Voiture</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>Les attributs de classe
+Les attributs de classe permettent de stocker des informations au niveau de la classe. Elle sont similaires aux variables.</p>
+<p>Dans notre exemple:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">ma_voiture</span> <span class="o">=</span> <span class="n">Voiture</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">ma_voiture</span><span class="o">.</span><span class="n">nom</span>
+<span class="go">&#39;Ferrari&#39;</span>
+</pre></div>
+</div>
+<p>Vous pouvez à tout moment créer un attribut pour votre objet:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">ma_voiture</span><span class="o">.</span><span class="n">modele</span> <span class="o">=</span> <span class="s2">&quot;250&quot;</span>
+</pre></div>
+</div>
+<p>Et le lire ainsi:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">ma_voiture</span><span class="o">.</span><span class="n">modele</span>
+<span class="go">&#39;250&#39;</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="les-methodes">
+<h2><span class="section-number">11.3. </span>Les méthodes<a class="headerlink" href="#les-methodes" title="Lien permanent vers ce titre">¶</a></h2>
+<p>Les méthodes sont des fonctions définies dans une classe.</p>
+<p>Créons une nouvelle méthode dans notre classe voiture:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">Voiture</span><span class="p">:</span>
+
+	<span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+		<span class="bp">self</span><span class="o">.</span><span class="n">nom</span> <span class="o">=</span> <span class="s2">&quot;Ferrari&quot;</span>
+
+	<span class="k">def</span> <span class="nf">donne_moi_le_modele</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+		<span class="k">return</span> <span class="s2">&quot;250&quot;</span>
+</pre></div>
+</div>
+<p>Utilison cette méthode:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">ma_voiture</span><span class="o">=</span><span class="n">Voiture</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">ma_voiture</span><span class="o">.</span><span class="n">donne_moi_le_modele</span><span class="p">()</span>
+<span class="go">&#39;250&#39;</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="les-proprietes">
+<h2><span class="section-number">11.4. </span>Les propriétés<a class="headerlink" href="#les-proprietes" title="Lien permanent vers ce titre">¶</a></h2>
+<p>Quelque soit le langage, pour la <strong>programmation orientée objet</strong> il est de préférable de passer par des propriétés pour changer les valeurs des attributs. Alors bien que cela ne soit pas obligatoire, il existe une convention de passer par des <strong>getter</strong> (ou <strong>accesseur</strong> en francais) et des <strong>setter</strong> ( <strong>mutateurs</strong> ) pour changer la valeur d”un attribut. Cela permet de garder une cohérence pour le programmeur, si je change un attribut souvent cela peut également impacter d”autres attributs et les mutate
+voiture_sport = VoitureSport()
+Un exemple d”utilisation de propriétés:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">Voiture</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
+
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_roues</span><span class="o">=</span><span class="mi">4</span>
+
+    <span class="k">def</span> <span class="nf">_get_roues</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="nb">print</span> <span class="s2">&quot;Récupération du nombre de roues&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_roues</span>
+
+    <span class="k">def</span> <span class="nf">_set_roues</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">v</span><span class="p">):</span>
+        <span class="nb">print</span> <span class="s2">&quot;Changement du nombre de roues&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_roues</span>  <span class="o">=</span>  <span class="n">v</span>
+
+    <span class="n">roues</span><span class="o">=</span><span class="nb">property</span><span class="p">(</span><span class="n">_get_roues</span><span class="p">,</span> <span class="n">_set_roues</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Quand on changera la valeur du nombre de roues, un message apparaîtra. En soi cela n”apporte rien mais au lieu de faire un simple <strong>print</strong> , vous pouvez par exemple envoyer un mail, etc.</p>
+<p>Testons notre classe:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">ma_voiture</span><span class="o">=</span><span class="n">Voiture</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">ma_voiture</span><span class="o">.</span><span class="n">roues</span><span class="o">=</span><span class="mi">5</span>
+<span class="go">Changement du nombre de roues</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">ma_voiture</span><span class="o">.</span><span class="n">roues</span>
+<span class="go">Récupération du nombre de roues</span>
+<span class="go">5</span>
+</pre></div>
+</div>
+<p>Il existe une autre syntaxe en passant par des décorateurs:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">Voiture</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
+
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_roues</span><span class="o">=</span><span class="mi">4</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">roues</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="nb">print</span> <span class="s2">&quot;Récupération du nombre de roues&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_roues</span>
+
+    <span class="nd">@roues</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">roues</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">v</span><span class="p">):</span>
+        <span class="nb">print</span> <span class="s2">&quot;Changement du nombre de roues&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_roues</span>  <span class="o">=</span>  <span class="n">v</span>
+</pre></div>
+</div>
+<p>Le résultat sera le même, mais la lecture du code se trouve amélioré.</p>
+</div>
+<div class="section" id="la-fonction-dir">
+<h2><span class="section-number">11.5. </span>La fonction dir<a class="headerlink" href="#la-fonction-dir" title="Lien permanent vers ce titre">¶</a></h2>
+<p>Parfois il est intéressant de decortiquer un objet pour résoudre à un bug ou pour comprendre un script.</p>
+<p>La fonction <strong>dir</strong> vous donne un aperçu des méthodes de l”objet:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="nb">dir</span><span class="p">(</span><span class="n">ma_voiture</span><span class="p">)</span>
+<span class="go">[&#39;__doc__&#39;, &#39;__init__&#39;, &#39;__module__&#39;, &#39;donne_moi_le_modele&#39;, &#39;nom&#39;]</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="l-attribut-special-dict">
+<h2><span class="section-number">11.6. </span>L”attribut spécial __ dict __<a class="headerlink" href="#l-attribut-special-dict" title="Lien permanent vers ce titre">¶</a></h2>
+<p>Cet attribut spécial vous donne les valeurs des attributs de l”instance:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">ma_voiture</span><span class="o">.</span><span class="vm">__dict__</span>
+<span class="go">{&#39;nom&#39;: &#39;Ferrari&#39;}</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="l-heritage-de-classe">
+<h2><span class="section-number">11.7. </span>L”héritage de classe<a class="headerlink" href="#l-heritage-de-classe" title="Lien permanent vers ce titre">¶</a></h2>
+<p>L”héritage est un concept très utile. Cela permet de créer de nouvelles classes mais avec une base existante.</p>
+<p>Gardons l”exemple de la voiture et créons une classe <strong>VoitureSport</strong> :</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">Voiture</span><span class="p">:</span>
+
+	<span class="n">roues</span> <span class="o">=</span> <span class="mi">4</span>
+	<span class="n">moteur</span> <span class="o">=</span> <span class="mi">1</span>
+
+	<span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+		<span class="bp">self</span><span class="o">.</span><span class="n">nom</span> <span class="o">=</span> <span class="s2">&quot;A déterminer&quot;</span>
+
+<span class="k">class</span> <span class="nc">VoitureSport</span><span class="p">(</span><span class="n">Voiture</span><span class="p">):</span>
+
+	<span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+		<span class="bp">self</span><span class="o">.</span><span class="n">nom</span> <span class="o">=</span> <span class="s2">&quot;Ferrari&quot;</span>
+</pre></div>
+</div>
+<p>On a indiqué que <strong>VoitureSport</strong> a hérité de classe <strong>Voiture</strong> , elle recupère donc toutes ses méthodes et ses attributs.</p>
+<p>On peut toujours instancier la classe <strong>Voiture</strong> si on le désire:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">ma_voiture</span><span class="o">=</span><span class="n">Voiture</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">ma_voiture</span><span class="o">.</span><span class="n">nom</span>
+<span class="go">&#39;A déterminer&#39;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">ma_voiture</span><span class="o">.</span><span class="n">roues</span>
+<span class="go">4</span>
+</pre></div>
+</div>
+<p>Instancions maintenant la classe <strong>VoitureSport</strong> :</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">ma_voiture_sport</span><span class="o">=</span><span class="n">VoitureSport</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">ma_voiture_sport</span><span class="o">.</span><span class="n">nom</span>
+<span class="go">&#39;Ferrari&#39;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">ma_voiture_sport</span><span class="o">.</span><span class="n">roues</span>
+<span class="go">4</span>
+</pre></div>
+</div>
+<p>On remarque tout d”abord que l”attribut <strong>roues</strong> a bien été hérité. Ensuite on remarque que la méthode <code class="docutils literal notranslate"><span class="pre">__init__</span></code> a écrasé la méthode de la classe <strong>Voiture</strong> . On parle alors de surcharge de méthode.</p>
+</div>
+<div class="section" id="polymorphisme-surcharge-de-methode">
+<h2><span class="section-number">11.8. </span>Polymorphisme / surcharge de méthode<a class="headerlink" href="#polymorphisme-surcharge-de-methode" title="Lien permanent vers ce titre">¶</a></h2>
+<p>Comme nous l”avons vu plus haut si une <strong>classe</strong> hérite d”une autre classe, <strong>elle hérite les méthodes de son parent</strong> .</p>
+<p>Exemple:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">Voiture</span><span class="p">:</span>
+
+    <span class="n">roues</span> <span class="o">=</span> <span class="mi">4</span>
+    <span class="n">moteur</span> <span class="o">=</span> <span class="mi">1</span>
+
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">nom</span> <span class="o">=</span> <span class="s2">&quot;A déterminer&quot;</span>
+        
+    <span class="k">def</span> <span class="nf">allumer</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="nb">print</span> <span class="s2">&quot;La voiture démarre&quot;</span>
+
+<span class="k">class</span> <span class="nc">VoitureSport</span><span class="p">(</span><span class="n">Voiture</span><span class="p">):</span>
+
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">nom</span> <span class="o">=</span> <span class="s2">&quot;Ferrari&quot;</span>
+
+<span class="n">ma_voiture_sport</span> <span class="o">=</span> <span class="n">VoitureSport</span><span class="p">()</span>
+<span class="n">ma_voiture_sport</span><span class="o">.</span><span class="n">allumer</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>Le résultat:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">La</span> <span class="n">voiture</span> <span class="n">démarre</span>
+</pre></div>
+</div>
+<p>Il est cependant possible d”<strong>écraser</strong> la méthode de la classe parente en la redéfinissant. On parle alors de <strong>surcharger une méthode</strong> .</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">Voiture</span><span class="p">:</span>
+
+    <span class="n">roues</span> <span class="o">=</span> <span class="mi">4</span>
+    <span class="n">moteur</span> <span class="o">=</span> <span class="mi">1</span>
+
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">nom</span> <span class="o">=</span> <span class="s2">&quot;A déterminer&quot;</span>
+        
+    <span class="k">def</span> <span class="nf">allumer</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="nb">print</span> <span class="s2">&quot;La voiture démarre&quot;</span>
+
+<span class="k">class</span> <span class="nc">VoitureSport</span><span class="p">(</span><span class="n">Voiture</span><span class="p">):</span>
+
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">nom</span> <span class="o">=</span> <span class="s2">&quot;Ferrari&quot;</span>
+        
+    <span class="k">def</span> <span class="nf">allumer</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="nb">print</span> <span class="s2">&quot;La voiture de sport démarre&quot;</span>
+
+<span class="n">ma_voiture_sport</span> <span class="o">=</span> <span class="n">VoitureSport</span><span class="p">()</span>
+<span class="n">ma_voiture_sport</span><span class="o">.</span><span class="n">allumer</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>Le résultat:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">La</span> <span class="n">voiture</span> <span class="n">de</span> <span class="n">sport</span> <span class="n">démarre</span>
+</pre></div>
+</div>
+<p>Enfin dernier point intéressant: il est possible d”appeler la méthode du parent puis de faire la spécificité de la méthode. On peut d”ailleurs appeler n”importe quelle autre méthode.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">Voiture</span><span class="p">:</span>
+
+    <span class="n">roues</span> <span class="o">=</span> <span class="mi">4</span>
+    <span class="n">moteur</span> <span class="o">=</span> <span class="mi">1</span>
+
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">nom</span> <span class="o">=</span> <span class="s2">&quot;A déterminer&quot;</span>
+        <span class="mi">0</span><span class="p">,</span><span class="n">polymorphism</span><span class="p">:</span><span class="mi">1</span><span class="p">,</span><span class="n">poo</span><span class="p">:</span><span class="mi">1</span><span class="p">,</span><span class="n">surcharg</span><span class="p">:</span><span class="mi">1</span><span class="p">,</span><span class="n">tabl</span><span class="p">:</span><span class="mi">0</span><span class="p">,</span><span class="n">welcom</span><span class="p">:</span><span class="mi">0</span><span class="p">}})</span>
+<span class="k">class</span> <span class="nc">VoitureSport</span><span class="p">(</span><span class="n">Voiture</span><span class="p">):</span>
+
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">nom</span> <span class="o">=</span> <span class="s2">&quot;Ferrari&quot;</span>
+        
+    <span class="k">def</span> <span class="nf">allumer</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="n">Voiture</span><span class="o">.</span><span class="n">allumer</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span>
+        <span class="nb">print</span> <span class="s2">&quot;La voiture de sport démarre&quot;</span>
+
+<span class="n">ma_voiture_sport</span> <span class="o">=</span> <span class="n">VoitureSport</span><span class="p">()</span>
+<span class="n">ma_voiture_sport</span><span class="o">.</span><span class="n">allumer</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>Le résultat:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">La</span> <span class="n">voiture</span> <span class="n">démarre</span>
+<span class="n">La</span> <span class="n">voiture</span> <span class="n">de</span> <span class="n">sport</span> <span class="n">démarre</span>
+</pre></div>
+</div>
+<p>Les classes <strong>Voiture</strong> et <strong>VoitureSport</strong> possédent donc chacune une méthode de même nom mais ces méthodes n”éffectuent pas les mêmes tâches. On parle dans ce cas de polymorphisme .</p>
+</div>
+<div class="section" id="conventions">
+<h2><span class="section-number">11.9. </span>Conventions<a class="headerlink" href="#conventions" title="Lien permanent vers ce titre">¶</a></h2>
+<p>Prenez l”habitude de nommer votre classe uniquement avec des caractères alphanumériques et commençant par une majuscule. Et à l”inverse l”instance peut être nommée sans majuscule.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">voiture_sport</span> <span class="o">=</span> <span class="n">VoitureSport</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>source : https://python.doctor/page-apprendre-programmation-orientee-objet-poo-classes-python-cours-debutants</p>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../../format/index.html" class="btn btn-neutral float-right" title="Format de fichier" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="../instruction-fonction/renvoie-de-resultat.html" class="btn btn-neutral float-left" title="10. RENVOI DES RESULTAT :" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, Sabine, hachem
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
