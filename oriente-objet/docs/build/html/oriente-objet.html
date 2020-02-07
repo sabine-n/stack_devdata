@@ -1,0 +1,376 @@
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8" />
+    <title>1. Orienté objet (POO) &#8212; oriente-objet 0.1 documentation</title>
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="_static/language_data.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="Welcome to oriente-objet’s documentation!" href="index.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="oriente-objet-poo">
+<h1><span class="section-number">1. </span>Orienté objet (POO)<a class="headerlink" href="#oriente-objet-poo" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="les-classes">
+<h2><span class="section-number">1.1. </span>Les classes<a class="headerlink" href="#les-classes" title="Permalink to this headline">¶</a></h2>
+<p>Une classe regroupe des fonctions et des attributs qui définissent un objet. On appelle par ailleurs les fonctions d’une classe des “ méthodes “.</p>
+<p>Créons une classe <strong>Voiture</strong> :</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">Voiture</span><span class="p">:</span>
+
+	<span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+		<span class="bp">self</span><span class="o">.</span><span class="n">nom</span> <span class="o">=</span> <span class="s2">&quot;Ferrari&quot;</span>
+</pre></div>
+</div>
+<p>Notre classe <strong>Voiture</strong> est une sorte d’usine à créer des voitures.</p>
+<p>La méthode <strong>init</strong>() est appelée lors de la création d’un objet.</p>
+<p><strong>self.nom</strong> est une manière de stocker une information dans la classe. On parle d’attribut de classe. Dans notre cas, on stock le nom dans l’attribut <strong>nom</strong> .</p>
+</div>
+<div class="section" id="les-objets">
+<h2><span class="section-number">1.2. </span>Les objets<a class="headerlink" href="#les-objets" title="Permalink to this headline">¶</a></h2>
+<p><strong>Un objet est une instance d’une classe</strong> . On peut créer autant d’objets que l’on désire avec une <strong>classe</strong> .</p>
+<p>Créons maintenant notre voiture:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">ma_voiture</span> <span class="o">=</span> <span class="n">Voiture</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>Les attributs de classe
+Les attributs de classe permettent de stocker des informations au niveau de la classe. Elle sont similaires aux variables.</p>
+<p>Dans notre exemple:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">ma_voiture</span> <span class="o">=</span> <span class="n">Voiture</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">ma_voiture</span><span class="o">.</span><span class="n">nom</span>
+<span class="go">&#39;Ferrari&#39;</span>
+</pre></div>
+</div>
+<p>Vous pouvez à tout moment créer un attribut pour votre objet:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">ma_voiture</span><span class="o">.</span><span class="n">modele</span> <span class="o">=</span> <span class="s2">&quot;250&quot;</span>
+</pre></div>
+</div>
+<p>Et le lire ainsi:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">ma_voiture</span><span class="o">.</span><span class="n">modele</span>
+<span class="go">&#39;250&#39;</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="les-methodes">
+<h2><span class="section-number">1.3. </span>Les méthodes<a class="headerlink" href="#les-methodes" title="Permalink to this headline">¶</a></h2>
+<p>Les méthodes sont des fonctions définies dans une classe.</p>
+<p>Créons une nouvelle méthode dans notre classe voiture:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">Voiture</span><span class="p">:</span>
+
+	<span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+		<span class="bp">self</span><span class="o">.</span><span class="n">nom</span> <span class="o">=</span> <span class="s2">&quot;Ferrari&quot;</span>
+
+	<span class="k">def</span> <span class="nf">donne_moi_le_modele</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+		<span class="k">return</span> <span class="s2">&quot;250&quot;</span>
+</pre></div>
+</div>
+<p>Utilison cette méthode:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">ma_voiture</span><span class="o">=</span><span class="n">Voiture</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">ma_voiture</span><span class="o">.</span><span class="n">donne_moi_le_modele</span><span class="p">()</span>
+<span class="go">&#39;250&#39;</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="les-proprietes">
+<h2><span class="section-number">1.4. </span>Les propriétés<a class="headerlink" href="#les-proprietes" title="Permalink to this headline">¶</a></h2>
+<p>Quelque soit le langage, pour la <strong>programmation orientée objet</strong> il est de préférable de passer par des propriétés pour changer les valeurs des attributs. Alors bien que cela ne soit pas obligatoire, il existe une convention de passer par des <strong>getter</strong> (ou <strong>accesseur</strong> en francais) et des <strong>setter</strong> ( <strong>mutateurs</strong> ) pour changer la valeur d’un attribut. Cela permet de garder une cohérence pour le programmeur, si je change un attribut souvent cela peut également impacter d’autres attributs et les mutate
+voiture_sport = VoitureSport()
+Un exemple d’utilisation de propriétés:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">Voiture</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
+
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_roues</span><span class="o">=</span><span class="mi">4</span>
+
+    <span class="k">def</span> <span class="nf">_get_roues</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="nb">print</span> <span class="s2">&quot;Récupération du nombre de roues&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_roues</span>
+
+    <span class="k">def</span> <span class="nf">_set_roues</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">v</span><span class="p">):</span>
+        <span class="nb">print</span> <span class="s2">&quot;Changement du nombre de roues&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_roues</span>  <span class="o">=</span>  <span class="n">v</span>
+
+    <span class="n">roues</span><span class="o">=</span><span class="nb">property</span><span class="p">(</span><span class="n">_get_roues</span><span class="p">,</span> <span class="n">_set_roues</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Quand on changera la valeur du nombre de roues, un message apparaîtra. En soi cela n’apporte rien mais au lieu de faire un simple <strong>print</strong> , vous pouvez par exemple envoyer un mail, etc.</p>
+<p>Testons notre classe:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">ma_voiture</span><span class="o">=</span><span class="n">Voiture</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">ma_voiture</span><span class="o">.</span><span class="n">roues</span><span class="o">=</span><span class="mi">5</span>
+<span class="go">Changement du nombre de roues</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">ma_voiture</span><span class="o">.</span><span class="n">roues</span>
+<span class="go">Récupération du nombre de roues</span>
+<span class="go">5</span>
+</pre></div>
+</div>
+<p>Il existe une autre syntaxe en passant par des décorateurs:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">Voiture</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
+
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_roues</span><span class="o">=</span><span class="mi">4</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">roues</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="nb">print</span> <span class="s2">&quot;Récupération du nombre de roues&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_roues</span>
+
+    <span class="nd">@roues</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">roues</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">v</span><span class="p">):</span>
+        <span class="nb">print</span> <span class="s2">&quot;Changement du nombre de roues&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_roues</span>  <span class="o">=</span>  <span class="n">v</span>
+</pre></div>
+</div>
+<p>Le résultat sera le même, mais la lecture du code se trouve amélioré.</p>
+</div>
+<div class="section" id="la-fonction-dir">
+<h2><span class="section-number">1.5. </span>La fonction dir<a class="headerlink" href="#la-fonction-dir" title="Permalink to this headline">¶</a></h2>
+<p>Parfois il est intéressant de decortiquer un objet pour résoudre à un bug ou pour comprendre un script.</p>
+<p>La fonction <strong>dir</strong> vous donne un aperçu des méthodes de l’objet:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="nb">dir</span><span class="p">(</span><span class="n">ma_voiture</span><span class="p">)</span>
+<span class="go">[&#39;__doc__&#39;, &#39;__init__&#39;, &#39;__module__&#39;, &#39;donne_moi_le_modele&#39;, &#39;nom&#39;]</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="l-attribut-special-dict">
+<h2><span class="section-number">1.6. </span>L’attribut spécial __ dict __<a class="headerlink" href="#l-attribut-special-dict" title="Permalink to this headline">¶</a></h2>
+<p>Cet attribut spécial vous donne les valeurs des attributs de l’instance:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">ma_voiture</span><span class="o">.</span><span class="vm">__dict__</span>
+<span class="go">{&#39;nom&#39;: &#39;Ferrari&#39;}</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="l-heritage-de-classe">
+<h2><span class="section-number">1.7. </span>L’héritage de classe<a class="headerlink" href="#l-heritage-de-classe" title="Permalink to this headline">¶</a></h2>
+<p>L’héritage est un concept très utile. Cela permet de créer de nouvelles classes mais avec une base existante.</p>
+<p>Gardons l’exemple de la voiture et créons une classe <strong>VoitureSport</strong> :</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">Voiture</span><span class="p">:</span>
+
+	<span class="n">roues</span> <span class="o">=</span> <span class="mi">4</span>
+	<span class="n">moteur</span> <span class="o">=</span> <span class="mi">1</span>
+
+	<span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+		<span class="bp">self</span><span class="o">.</span><span class="n">nom</span> <span class="o">=</span> <span class="s2">&quot;A déterminer&quot;</span>
+
+<span class="k">class</span> <span class="nc">VoitureSport</span><span class="p">(</span><span class="n">Voiture</span><span class="p">):</span>
+
+	<span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+		<span class="bp">self</span><span class="o">.</span><span class="n">nom</span> <span class="o">=</span> <span class="s2">&quot;Ferrari&quot;</span>
+</pre></div>
+</div>
+<p>On a indiqué que <strong>VoitureSport</strong> a hérité de classe <strong>Voiture</strong> , elle recupère donc toutes ses méthodes et ses attributs.</p>
+<p>On peut toujours instancier la classe <strong>Voiture</strong> si on le désire:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">ma_voiture</span><span class="o">=</span><span class="n">Voiture</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">ma_voiture</span><span class="o">.</span><span class="n">nom</span>
+<span class="go">&#39;A déterminer&#39;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">ma_voiture</span><span class="o">.</span><span class="n">roues</span>
+<span class="go">4</span>
+</pre></div>
+</div>
+<p>Instancions maintenant la classe <strong>VoitureSport</strong> :</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">ma_voiture_sport</span><span class="o">=</span><span class="n">VoitureSport</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">ma_voiture_sport</span><span class="o">.</span><span class="n">nom</span>
+<span class="go">&#39;Ferrari&#39;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">ma_voiture_sport</span><span class="o">.</span><span class="n">roues</span>
+<span class="go">4</span>
+</pre></div>
+</div>
+<p>On remarque tout d’abord que l’attribut <strong>roues</strong> a bien été hérité. Ensuite on remarque que la méthode <code class="docutils literal notranslate"><span class="pre">__init__</span></code> a écrasé la méthode de la classe <strong>Voiture</strong> . On parle alors de surcharge de méthode.</p>
+</div>
+<div class="section" id="polymorphisme-surcharge-de-methode">
+<h2><span class="section-number">1.8. </span>Polymorphisme / surcharge de méthode<a class="headerlink" href="#polymorphisme-surcharge-de-methode" title="Permalink to this headline">¶</a></h2>
+<p>Comme nous l’avons vu plus haut si une <strong>classe</strong> hérite d’une autre classe, <strong>elle hérite les méthodes de son parent</strong> .</p>
+<p>Exemple:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">Voiture</span><span class="p">:</span>
+
+    <span class="n">roues</span> <span class="o">=</span> <span class="mi">4</span>
+    <span class="n">moteur</span> <span class="o">=</span> <span class="mi">1</span>
+
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">nom</span> <span class="o">=</span> <span class="s2">&quot;A déterminer&quot;</span>
+        
+    <span class="k">def</span> <span class="nf">allumer</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="nb">print</span> <span class="s2">&quot;La voiture démarre&quot;</span>
+
+<span class="k">class</span> <span class="nc">VoitureSport</span><span class="p">(</span><span class="n">Voiture</span><span class="p">):</span>
+
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">nom</span> <span class="o">=</span> <span class="s2">&quot;Ferrari&quot;</span>
+
+<span class="n">ma_voiture_sport</span> <span class="o">=</span> <span class="n">VoitureSport</span><span class="p">()</span>
+<span class="n">ma_voiture_sport</span><span class="o">.</span><span class="n">allumer</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>Le résultat:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">La</span> <span class="n">voiture</span> <span class="n">démarre</span>
+</pre></div>
+</div>
+<p>Il est cependant possible d’<strong>écraser</strong> la méthode de la classe parente en la redéfinissant. On parle alors de <strong>surcharger une méthode</strong> .</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">Voiture</span><span class="p">:</span>
+
+    <span class="n">roues</span> <span class="o">=</span> <span class="mi">4</span>
+    <span class="n">moteur</span> <span class="o">=</span> <span class="mi">1</span>
+
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">nom</span> <span class="o">=</span> <span class="s2">&quot;A déterminer&quot;</span>
+        
+    <span class="k">def</span> <span class="nf">allumer</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="nb">print</span> <span class="s2">&quot;La voiture démarre&quot;</span>
+
+<span class="k">class</span> <span class="nc">VoitureSport</span><span class="p">(</span><span class="n">Voiture</span><span class="p">):</span>
+
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">nom</span> <span class="o">=</span> <span class="s2">&quot;Ferrari&quot;</span>
+        
+    <span class="k">def</span> <span class="nf">allumer</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="nb">print</span> <span class="s2">&quot;La voiture de sport démarre&quot;</span>
+
+<span class="n">ma_voiture_sport</span> <span class="o">=</span> <span class="n">VoitureSport</span><span class="p">()</span>
+<span class="n">ma_voiture_sport</span><span class="o">.</span><span class="n">allumer</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>Le résultat:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">La</span> <span class="n">voiture</span> <span class="n">de</span> <span class="n">sport</span> <span class="n">démarre</span>
+</pre></div>
+</div>
+<p>Enfin dernier point intéressant: il est possible d’appeler la méthode du parent puis de faire la spécificité de la méthode. On peut d’ailleurs appeler n’importe quelle autre méthode.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">Voiture</span><span class="p">:</span>
+
+    <span class="n">roues</span> <span class="o">=</span> <span class="mi">4</span>
+    <span class="n">moteur</span> <span class="o">=</span> <span class="mi">1</span>
+
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">nom</span> <span class="o">=</span> <span class="s2">&quot;A déterminer&quot;</span>
+        
+    <span class="k">def</span> <span class="nf">allumer</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="nb">print</span> <span class="s2">&quot;La voiture démarre&quot;</span>
+
+<span class="k">class</span> <span class="nc">VoitureSport</span><span class="p">(</span><span class="n">Voiture</span><span class="p">):</span>
+
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">nom</span> <span class="o">=</span> <span class="s2">&quot;Ferrari&quot;</span>
+        
+    <span class="k">def</span> <span class="nf">allumer</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="n">Voiture</span><span class="o">.</span><span class="n">allumer</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span>
+        <span class="nb">print</span> <span class="s2">&quot;La voiture de sport démarre&quot;</span>
+
+<span class="n">ma_voiture_sport</span> <span class="o">=</span> <span class="n">VoitureSport</span><span class="p">()</span>
+<span class="n">ma_voiture_sport</span><span class="o">.</span><span class="n">allumer</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>Le résultat:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">La</span> <span class="n">voiture</span> <span class="n">démarre</span>
+<span class="n">La</span> <span class="n">voiture</span> <span class="n">de</span> <span class="n">sport</span> <span class="n">démarre</span>
+</pre></div>
+</div>
+<p>Les classes <strong>Voiture</strong> et <strong>VoitureSport</strong> possédent donc chacune une méthode de même nom mais ces méthodes n’éffectuent pas les mêmes tâches. On parle dans ce cas de polymorphisme .</p>
+</div>
+<div class="section" id="conventions">
+<h2><span class="section-number">1.9. </span>Conventions<a class="headerlink" href="#conventions" title="Permalink to this headline">¶</a></h2>
+<p>Prenez l’habitude de nommer votre classe uniquement avec des caractères alphanumériques et commençant par une majuscule. Et à l’inverse l’instance peut être nommée sans majuscule.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">voiture_sport</span> <span class="o">=</span> <span class="n">VoitureSport</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>source : https://python.doctor/page-apprendre-programmation-orientee-objet-poo-classes-python-cours-debutants</p>
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="index.html">oriente-objet</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">1. Orienté objet (POO)</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#les-classes">1.1. Les classes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#les-objets">1.2. Les objets</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#les-methodes">1.3. Les méthodes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#les-proprietes">1.4. Les propriétés</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#la-fonction-dir">1.5. La fonction dir</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#l-attribut-special-dict">1.6. L’attribut spécial __ dict __</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#l-heritage-de-classe">1.7. L’héritage de classe</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#polymorphisme-surcharge-de-methode">1.8. Polymorphisme / surcharge de méthode</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#conventions">1.9. Conventions</a></li>
+</ul>
+</li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+      <li>Previous: <a href="index.html" title="previous chapter">Welcome to oriente-objet’s documentation!</a></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2020, Ludovic,Sabine,Daniel&Joshua.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 2.3.0</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="_sources/oriente-objet.md.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>
