@@ -1,9 +1,9 @@
 ﻿
-3- Arguments positionnels et Arguments par mot-clé :
+Arguments positionnels et Arguments par mot-clé :
 ====================================================
 
 
-3-1 Arguments positionnels:
+Arguments positionnels:
 ---------------------------
 
 
@@ -28,7 +28,7 @@ exemple:
 
 
 
-3-1 Arguments par mot-clé:
+Arguments par mot-clé:
 --------------------------
 
 
@@ -55,21 +55,21 @@ exemple :
 
 
 
-4- Variables locales et Variable globales :
+Variables locales et Variable globales :
 ============================================
 
 
-4-1 variables locales :
+variables locales :
 ------------------------
  Une variable est dite locale lorsqu’elle est créée dans une fonction. Elle n’existera et ne sera visible que lors de l’exécution de ladite fonction. 
 
 
-4-2 Variables globales : 
+Variables globales : 
 ------------------------
 Une variable est dite globale lorsqu’elle est créée dans le programme principal. Elle sera visible partout dans le programme.
 
 
-4-3 Utilisation de la Variable globale :
+Utilisation de la Variable globale :
 -----------------------------------------
 Il peut se faire par exemple que vous ayez à définir une fonction qui soit capable de modifier une variable globale. Pour atteindre ce résultat, il vous suffira d’utiliser l’instruction global. Cette instruction permet d’indiquer - à l’intérieur de la définition d’une fonction - quelles sont les variables à traiter globalement.
 
