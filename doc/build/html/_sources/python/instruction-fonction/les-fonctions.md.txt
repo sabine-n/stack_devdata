@@ -11,12 +11,12 @@ Elles rendent également le code plus lisible et plus clair en le fractionnant e
 Pour déﬁnir une fonction, Python utilise le mot-clé def et si on veut que celle-ci renvoie quelque chose, il faut utiliser le mot-clé return. 
 
 
-				*Par exemple :*
-				 >>> def carre(x):
-				  …         return x**2 
-				  …
-				 >>> print(carre(2)) 
-				 4
+	*Par exemple :*
+	>>> def carre(x):
+	…   	return x**2 
+	…
+	>>> print(carre(2)) 
+	4
 
 **Syntaxe :**
 Ainsi, une fonction est une suite d'instructions que l'on peut appeler avec un nom.

@@ -195,9 +195,6 @@
 <li class="toctree-l2"><a class="reference internal" href="../../format/format_fichier_xls.html">2. Format de fichier xls</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="../../format/format_fichier_xls.html#quest-ce-quun-fichier-xls">2.1. Qu’est ce qu’un fichier XLS ?</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../format/format_fichier_xls.html#quelle-difference-entre-xls-et-xlsx">2.2. Quelle différence entre xls et xlsx ?</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../../format/format_fichier_xls.html#quel-est-le-role-du-logiciel-excel">2.3. Quel est le rôle du logiciel Excel ?</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../../format/format_fichier_xls.html#comment-s-appelle-un-fichier-excel">2.4. Comment s”appelle un fichier Excel ?</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../../format/format_fichier_xls.html#quelles-sont-les-fonctions-excel">2.5. Quelles sont les fonctions Excel ?</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../../format/format_fichier_sql.html">3. Format de fichier .sql</a><ul>
@@ -381,15 +378,15 @@ Il est strictement obligatoire de les préciser lors de l’appel de la fonction
 De plus, il est nécessaire de respecter le même ordre lors de l’appel que dans la déﬁnition de la fonction. Dans l’exemple ci-dessus, 2 correspondra à x et 3 correspondra à y.
 Finalement, tout dépendra de leur position, d’où leur qualiﬁcation de positionnel.</p>
 <p>exemple:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>            &gt;&gt;&gt; def fois(x, y):
-            ... return x*y
-            …
-            &gt;&gt;&gt; fois(2, 3) 
-            6
-            &gt;&gt;&gt; fois(2)
-            Traceback (most recent call last):
-            File &quot;&lt;stdin&gt;&quot;, line 1, in &lt;module&gt; 
-            TypeError: fois() missing 1 required positional argument: &#39;y&#39;
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>&gt;&gt;&gt; def fois(x, y):
+... return x*y
+        …
+&gt;&gt;&gt; fois(2, 3) 
+6
+&gt;&gt;&gt; fois(2)
+Traceback (most recent call last):
+File &quot;&lt;stdin&gt;&quot;, line 1, in &lt;module&gt; 
+TypeError: fois() missing 1 required positional argument: &#39;y&#39;
 </pre></div>
 </div>
 </div>
@@ -399,17 +396,17 @@ Finalement, tout dépendra de leur position, d’où leur qualiﬁcation de posi
 Le    passage d’un tel argument lors de l’appel de la fonction est facultatif.
 Ce type d’argument ne doit pas être confondu avec les arguments positionnels présentés ci-dessus, dont la syntaxe est def fct(arg):.</p>
 <p>exemple :</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>            <span class="o">&gt;&gt;&gt;</span> <span class="k">def</span> <span class="nf">fct</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">z</span><span class="o">=</span><span class="mi">0</span><span class="p">):</span> 
-            <span class="o">...</span> <span class="k">return</span> <span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">z</span> 
-            <span class="o">...</span> 
-            <span class="o">&gt;&gt;&gt;</span> <span class="n">fct</span><span class="p">()</span> 
-            <span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span> 
-            <span class="o">&gt;&gt;&gt;</span> <span class="n">fct</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span> 
-            <span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span> 
-            <span class="o">&gt;&gt;&gt;</span> <span class="n">fct</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">8</span><span class="p">)</span> 
-            <span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span> 
-            <span class="o">&gt;&gt;&gt;</span> <span class="n">fct</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span> 
-            <span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="k">def</span> <span class="nf">fct</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">z</span><span class="o">=</span><span class="mi">0</span><span class="p">):</span> 
+<span class="gp">... </span><span class="k">return</span> <span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">z</span> 
+<span class="gp">... </span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">fct</span><span class="p">()</span> 
+<span class="go">(0, 0, 0) </span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">fct</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span> 
+<span class="go">(10, 0, 0) </span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">fct</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">8</span><span class="p">)</span> 
+<span class="go">(10, 8, 0) </span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">fct</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span> 
+<span class="go">(10, 8, 3)</span>
 </pre></div>
 </div>
 </div>
@@ -427,17 +424,17 @@ Ce type d’argument ne doit pas être confondu avec les arguments positionnels 
 <div class="section" id="utilisation-de-la-variable-globale">
 <h2><span class="section-number">8.3. </span>4-3 Utilisation de la Variable globale :<a class="headerlink" href="#utilisation-de-la-variable-globale" title="Lien permanent vers ce titre">¶</a></h2>
 <p>Il peut se faire par exemple que vous ayez à définir une fonction qui soit capable de modifier une variable globale. Pour atteindre ce résultat, il vous suffira d’utiliser l’instruction global. Cette instruction permet d’indiquer - à l’intérieur de la définition d’une fonction - quelles sont les variables à traiter globalement.</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>            <span class="k">def</span> <span class="nf">test</span><span class="p">():</span>
-                <span class="k">global</span> <span class="n">b</span>
-                <span class="n">b</span> <span class="o">=</span> <span class="mi">5</span>
-                <span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">)</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">test</span><span class="p">():</span>
+    <span class="k">global</span> <span class="n">b</span>
+    <span class="n">b</span> <span class="o">=</span> <span class="mi">5</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">)</span>
 
-                <span class="n">a</span> <span class="o">=</span> <span class="mi">2</span>
-                <span class="n">b</span> <span class="o">=</span> <span class="mi">7</span>
-                <span class="n">test</span><span class="p">()</span>
-            <span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">)</span>
-            <span class="mi">2</span> <span class="mi">5</span>
-            <span class="mi">2</span> <span class="mi">5</span>
+    <span class="n">a</span> <span class="o">=</span> <span class="mi">2</span>
+    <span class="n">b</span> <span class="o">=</span> <span class="mi">7</span>
+    <span class="n">test</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">)</span>
+<span class="mi">2</span> <span class="mi">5</span>
+<span class="mi">2</span> <span class="mi">5</span>
 </pre></div>
 </div>
 </div>
