@@ -2,7 +2,7 @@ LES FONCTIONS
 =============
 
 
-QU'EST CE QU'UNE FONCTION
+Qu'est ce que c'est qu'une fonction
 ---------------------------
 
 **Définition :**

@@ -1,5 +1,5 @@
 
-CONDITION if, else et elif
+Condition if, else et elif
 ==========================
 
 if, else
