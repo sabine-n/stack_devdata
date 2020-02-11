@@ -1,4 +1,4 @@
-LES FONCTIONS
+Les fonctions
 =============
 
 
