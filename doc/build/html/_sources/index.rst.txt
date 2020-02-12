@@ -3,11 +3,11 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-**************************   
-La Documentation Dev Data
-**************************
+***************************   
+Développeur.se Data - Stack
+***************************
 
-Bienvenue à la documentation "Developpeur.se DATA" promotion 2020.
+Bienvenue sur la documentation technique de notre environnement et nos outils de développement "Developpeur.se DATA" promotion 2020.
 
 
 SQL

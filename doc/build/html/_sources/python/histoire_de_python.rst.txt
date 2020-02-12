@@ -1,4 +1,4 @@
-Histoire de Python
+A Propos
 ==================
 
 Python est un langage de programmation objet interprété. Son origine est le langage de script du système d’exploitation Amoeba (1990). Il a été développé par Guido Von Rossum au CWI, à l’Université d’Amsterdam et nommé par rapport au Monthy Python’s Flying Circus.
