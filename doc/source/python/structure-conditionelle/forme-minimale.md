@@ -26,7 +26,7 @@ Cela étant posé, revenons à nos conditions :
 ... 
 a est supérieur à 0.
 >>>
-``` 
+```                                                                                               Source : https://openclassrooms.org
 
 Détaillons ce code, ligne par ligne :
 -------------------------------------
@@ -55,7 +55,7 @@ La première est celle de bloc d'instructions. On entend par bloc d'instructions
     # On incrémente la valeur de b
    >>>b += 1
     # On affiche les valeurs des variables
-   >>>print("a =",a,"et b =",b)
+   >>>print("a =",a,"et b =",b)                                                                   Source : https://openclassrooms.org
 ``` 
 
 La seconde notion importante est celle d'indentation. On entend par indentation un certain décalage vers la droite, obtenu par un (ou plusieurs) espaces ou tabulations.

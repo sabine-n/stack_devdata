@@ -23,7 +23,7 @@ Pour résumer, l'instruction conditionnelle en Python a la syntaxe suivante:
     >>> else:
         false-block
         several instructions that are executed
-        if the condition evaluates to False
+        if the condition evaluates to False                                                          Source : https://snakify.org/en/
 
 
 Dans cet exemple, la variable x n'est affectée -x qu'à si x < 0. En revanche, l'instruction print(x) est 
@@ -45,7 +45,7 @@ Soit dit en passant, il existe une fonction intégrée pour la valeur absolue en
 
 :: 
 
-    >>> 273
+    >>> 273                                                                                           Source : https://snakify.org/en/
 
 elif
 ----
@@ -71,7 +71,7 @@ d'en haut:
 
 :: 
 
-    >>> Quadrant II
+    >>> Quadrant II                                                                                   Source : https://snakify.org/en/
 
 CONDITIONS IMBRIQUÊES
 ---------------------
@@ -100,7 +100,7 @@ les coordonnées du point sur le plan, imprimez son quadrant.
                 print("Quadrant III")
 
 ::
-    >>> Quadrant IV
+    >>> Quadrant IV                                                                                  Source : https://snakify.org/en/
 
 
 
@@ -137,7 +137,7 @@ nous obtenons un nouvel objet: True.
 ::
 
     >>> True
-        False
+        False                                                                                         Source : https://snakify.org/en/
 
 Les objets Trueet Falseont un type spécial appelé bool. Comme chaque nom de type peut être utilisé pour 
 convertir des objets en ce type, voyons ce que cette distribution donne pour les nombres:
@@ -149,14 +149,14 @@ convertir des objets en ce type, voyons ce que cette distribution donne pour les
         print(bool(10))     
 
     >>> print(bool(''))     
-        print(bool('abc'))  
+        print(bool('abc'))     
 
 ::
 
     >>> False
         True
         False
-        True
+        True                                                                                        Source : https://snakify.org/en/
 
 Parfois, vous devez vérifier plusieurs conditions à la fois. Par exemple, vous pouvez vérifier si un nombre 
 nest divisible par 2 en utilisant la condition n % 2 == 0 ( ndonne un reste 0lors de la division par 2). Si 
@@ -183,10 +183,9 @@ Vérifions qu'au moins l'un des deux nombres se termine par 0:
         if a % 10 == 0 or b % 10 == 0:
             print('YES')
         else:
-            print('NO')
+            print('NO')                                                                             
 
 ::
     
-    >>> YES
+    >>> YES                                                                                          Source : https://snakify.org/en/
 
-Source : https://snakify.org/en/
