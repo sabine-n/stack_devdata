@@ -29,3 +29,6 @@ Le répertoire et la documentation ont été crées le 15 Janvier 2020.
 * 31/01/2020 : Ludo a rejoint l'équipe de Joshua (SQL)
 * 05/02/2020 : Organisation des groupes de la partie PYTHON dont **Hachem** est le chef d'équipe.
 * 07/02/2020 : Rendu de la version 1.0.1 est sur la branche Python -> Mise à jour attendue.
+* 12/02/2020 : Correction faites -> version 1.0.2 sur la brache python.
+* 13/02/2020 : Restitution de la partie Python.
+* 

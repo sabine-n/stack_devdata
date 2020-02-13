@@ -1,4 +1,4 @@
-Renvoi des résultat :
+Renvoi des résultat 
 ----------------------
 		
 **Python permet aux fonctions de renvoyer plusieurs objets a la fois comme sur l'exemple ci dessous**

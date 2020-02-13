@@ -17,9 +17,9 @@
 
 # -- Project information -----------------------------------------------------
 
-project = 'Ateliers'
-copyright = '2019, Sabine, hachem'
-author = 'Sabine, hachem'
+project = 'Dev Stack'
+copyright = '2020'
+author = 'Développeur.se Data Team'
 
 
 # -- General configuration ---------------------------------------------------
