@@ -379,7 +379,6 @@ autre bloc d”instructions qui ne seront exécutées que si la condition est fa
 False). Si c”est le cas ci-dessus, la condition est fausse, donc le bloc “else” est exécuté. Chaque bloc
 doit être mis en retrait à l”aide d”espaces.</p>
 <p>Pour résumer, l”instruction conditionnelle en Python a la syntaxe suivante:</p>
-<p>::</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="k">if</span> <span class="n">condition</span><span class="p">:</span>
 <span class="go">    true-block</span>
 <span class="go">    several instructions that are executed        </span>
@@ -398,13 +397,12 @@ nombre d”espaces au début de la ligne. Il est recommandé d”utiliser 4 espa
 <p>L”indentation est ce qui rend Python différent de la plupart des autres langages, dans lesquels les
 accolades {et }sont utilisés pour former les blocs.</p>
 <p>Soit dit en passant, il existe une fonction intégrée pour la valeur absolue en Python:</p>
-<p>::</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">x</span> <span class="o">=</span> <span class="o">-</span><span class="mi">273</span>
 <span class="go">    print(abs(x))</span>
-</pre></div>
-</div>
-<p>::</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="mi">273</span>                                                                                           <span class="n">Source</span> <span class="p">:</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">snakify</span><span class="o">.</span><span class="n">org</span><span class="o">/</span><span class="n">en</span><span class="o">/</span>
+
+
+
+<span class="gp">&gt;&gt;&gt; </span><span class="mi">273</span>                                                                                           <span class="n">Source</span> <span class="p">:</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">snakify</span><span class="o">.</span><span class="n">org</span><span class="o">/</span><span class="n">en</span><span class="o">/</span>
 </pre></div>
 </div>
 </div>
@@ -414,7 +412,6 @@ accolades {et }sont utilisés pour former les blocs.</p>
 utiliser l” if… elif… elseinstruction.</p>
 <p>Montrons comment cela fonctionne en réécrivant l”exemple avec le point (x, y) sur le plan et les quadrants
 d”en haut:</p>
-<p>::</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">x</span> <span class="o">=</span> <span class="o">-</span><span class="mi">5</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">y</span> <span class="o">=</span> <span class="mi">7</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="k">if</span> <span class="n">x</span> <span class="o">&gt;</span> <span class="mi">0</span> <span class="ow">and</span> <span class="n">y</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
@@ -425,10 +422,10 @@ d”en haut:</p>
 <span class="go">        print(&quot;Quadrant II&quot;)</span>
 <span class="go">    else:</span>
 <span class="go">        print(&quot;Quadrant III&quot;)</span>
-</pre></div>
-</div>
-<p>::</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">Quadrant</span> <span class="n">II</span>                                                                                   <span class="n">Source</span> <span class="p">:</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">snakify</span><span class="o">.</span><span class="n">org</span><span class="o">/</span><span class="n">en</span><span class="o">/</span>
+
+
+
+<span class="gp">&gt;&gt;&gt; </span><span class="n">Quadrant</span> <span class="n">II</span>                                                                                   <span class="n">Source</span> <span class="p">:</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">snakify</span><span class="o">.</span><span class="n">org</span><span class="o">/</span><span class="n">en</span><span class="o">/</span>
 </pre></div>
 </div>
 </div>
@@ -438,23 +435,27 @@ d”en haut:</p>
 conditionnelle. De cette façon, nous obtenons des conditions imbriquées. Les blocs de conditions internes
 sont indentés en utilisant deux fois plus d”espaces (par exemple 8 espaces). Voyons un exemple. Étant donné
 les coordonnées du point sur le plan, imprimez son quadrant.</p>
-<p>::
-&gt;&gt;&gt; x = 2
-y = -3
-if x &gt; 0:
-if y &gt; 0:
-# x is greater than 0, y is greater than 0
-print(« Quadrant I »)
-else:<br /># x is greater than 0, y is less or equal than 0
-print(« Quadrant IV »)
-else:
-if y &gt; 0:
-# x is less or equal than 0, y is greater than 0
-print(« Quadrant II »)
-else:<br /># x is less or equal than 0, y is less or equal than 0
-print(« Quadrant III »)</p>
-<p>::
-&gt;&gt;&gt; Quadrant IV                                                                                  Source : https://snakify.org/en/</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">x</span> <span class="o">=</span> <span class="mi">2</span>
+<span class="go">    y = -3</span>
+<span class="go">    if x &gt; 0:</span>
+<span class="go">        if y &gt; 0:</span>
+<span class="go">            # x is greater than 0, y is greater than 0</span>
+<span class="go">            print(&quot;Quadrant I&quot;)</span>
+<span class="go">        else:    </span>
+<span class="go">            # x is greater than 0, y is less or equal than 0</span>
+<span class="go">            print(&quot;Quadrant IV&quot;)</span>
+<span class="go">    else:</span>
+<span class="go">        if y &gt; 0:</span>
+<span class="go">            # x is less or equal than 0, y is greater than 0</span>
+<span class="go">            print(&quot;Quadrant II&quot;)</span>
+<span class="go">        else:    </span>
+<span class="go">            # x is less or equal than 0, y is less or equal than 0</span>
+<span class="go">            print(&quot;Quadrant III&quot;)</span>
+
+
+<span class="gp">&gt;&gt;&gt; </span><span class="n">Quadrant</span> <span class="n">IV</span>                                                                                  <span class="n">Source</span> <span class="p">:</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">snakify</span><span class="o">.</span><span class="n">org</span><span class="o">/</span><span class="n">en</span><span class="o">/</span>
+</pre></div>
+</div>
 </div>
 <div class="section" id="operateurs-de-comparaison">
 <h2><span class="section-number">5.4. </span>OPÊRATEURS DE COMPARAISON<a class="headerlink" href="#operateurs-de-comparaison" title="Lien permanent vers ce titre">¶</a></h2>
@@ -478,29 +479,27 @@ inégal</p>
 <p>Lorsque nous additionnons deux objets entiers en utilisant l” +opérateur, comme 2 + 5, nous obtenons un
 nouvel objet: 7. De la même manière, si l” on compare deux entiers à l” aide de l” &lt;opérateur, comme 2 &lt; 5,
 nous obtenons un nouvel objet: True.</p>
-<p>::</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="mi">2</span> <span class="o">&lt;</span> <span class="mi">5</span><span class="p">)</span>
 <span class="go">    print(2 &gt; 5)</span>
-</pre></div>
-</div>
-<p>::</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kc">True</span>
+
+
+
+<span class="gp">&gt;&gt;&gt; </span><span class="kc">True</span>
 <span class="go">    False                                                                                         Source : https://snakify.org/en/</span>
 </pre></div>
 </div>
 <p>Les objets Trueet Falseont un type spécial appelé bool. Comme chaque nom de type peut être utilisé pour
 convertir des objets en ce type, voyons ce que cette distribution donne pour les nombres:</p>
-<p>::</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="nb">bool</span><span class="p">(</span><span class="o">-</span><span class="mi">10</span><span class="p">))</span>    
 <span class="go">    print(bool(0))      </span>
 <span class="go">    print(bool(10))     </span>
 
 <span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="nb">bool</span><span class="p">(</span><span class="s1">&#39;&#39;</span><span class="p">))</span>     
 <span class="go">    print(bool(&#39;abc&#39;))     </span>
-</pre></div>
-</div>
-<p>::</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kc">False</span>
+
+
+
+<span class="gp">&gt;&gt;&gt; </span><span class="kc">False</span>
 <span class="go">    True</span>
 <span class="go">    False</span>
 <span class="go">    True                                                                                        Source : https://snakify.org/en/</span>
@@ -518,17 +517,16 @@ droit le sont True.</p>
 <p>L”opérateur notest une négation unaire, il est suivi d”une certaine valeur. Il est évalué Truesi cette
 valeur est Falseet vice versa.</p>
 <p>Vérifions qu”au moins l”un des deux nombres se termine par 0:</p>
-<p>::</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">a</span> <span class="o">=</span> <span class="mi">15</span>
 <span class="go">    b = 40</span>
 <span class="go">    if a % 10 == 0 or b % 10 == 0:</span>
 <span class="go">        print(&#39;YES&#39;)</span>
 <span class="go">    else:</span>
 <span class="go">        print(&#39;NO&#39;)                                                                             </span>
-</pre></div>
-</div>
-<p>::</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">YES</span>                                                                                          <span class="n">Source</span> <span class="p">:</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">snakify</span><span class="o">.</span><span class="n">org</span><span class="o">/</span><span class="n">en</span><span class="o">/</span>
+
+
+
+<span class="gp">&gt;&gt;&gt; </span><span class="n">YES</span>                                                                                          <span class="n">Source</span> <span class="p">:</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">snakify</span><span class="o">.</span><span class="n">org</span><span class="o">/</span><span class="n">en</span><span class="o">/</span>
 </pre></div>
 </div>
 </div>

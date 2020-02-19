@@ -14,7 +14,7 @@ doit être mis en retrait à l'aide d'espaces.
 
 Pour résumer, l'instruction conditionnelle en Python a la syntaxe suivante:
 
-::
+
 
     >>> if condition:
         true-block
@@ -38,12 +38,12 @@ accolades {et }sont utilisés pour former les blocs.
 
 Soit dit en passant, il existe une fonction intégrée pour la valeur absolue en Python:
 
-::
+
 
     >>> x = -273
         print(abs(x))
 
-:: 
+ 
 
     >>> 273                                                                                           Source : https://snakify.org/en/
 
@@ -56,7 +56,7 @@ utiliser l' if... elif... elseinstruction.
 Montrons comment cela fonctionne en réécrivant l'exemple avec le point (x, y) sur le plan et les quadrants 
 d'en haut:
 
-::
+
 
     >>> x = -5
     >>> y = 7
@@ -69,7 +69,7 @@ d'en haut:
         else:
             print("Quadrant III")
 
-:: 
+ 
 
     >>> Quadrant II                                                                                   Source : https://snakify.org/en/
 
@@ -81,7 +81,7 @@ conditionnelle. De cette façon, nous obtenons des conditions imbriquées. Les b
 sont indentés en utilisant deux fois plus d'espaces (par exemple 8 espaces). Voyons un exemple. Étant donné 
 les coordonnées du point sur le plan, imprimez son quadrant.
 
-::
+
     >>> x = 2
         y = -3
         if x > 0:
@@ -99,7 +99,7 @@ les coordonnées du point sur le plan, imprimez son quadrant.
                 # x is less or equal than 0, y is less or equal than 0
                 print("Quadrant III")
 
-::
+
     >>> Quadrant IV                                                                                  Source : https://snakify.org/en/
 
 
@@ -129,12 +129,12 @@ Lorsque nous additionnons deux objets entiers en utilisant l' +opérateur, comme
 nouvel objet: 7. De la même manière, si l' on compare deux entiers à l' aide de l' <opérateur, comme 2 < 5, 
 nous obtenons un nouvel objet: True.
 
-::
+
 
     >>> print(2 < 5)
         print(2 > 5)
 
-::
+
 
     >>> True
         False                                                                                         Source : https://snakify.org/en/
@@ -142,7 +142,7 @@ nous obtenons un nouvel objet: True.
 Les objets Trueet Falseont un type spécial appelé bool. Comme chaque nom de type peut être utilisé pour 
 convertir des objets en ce type, voyons ce que cette distribution donne pour les nombres:
 
-::
+
 
     >>> print(bool(-10))    
         print(bool(0))      
@@ -151,7 +151,7 @@ convertir des objets en ce type, voyons ce que cette distribution donne pour les
     >>> print(bool(''))     
         print(bool('abc'))     
 
-::
+
 
     >>> False
         True
@@ -176,7 +176,7 @@ valeur est Falseet vice versa.
 
 Vérifions qu'au moins l'un des deux nombres se termine par 0:
 
-:: 
+ 
     
     >>> a = 15
         b = 40
@@ -185,7 +185,7 @@ Vérifions qu'au moins l'un des deux nombres se termine par 0:
         else:
             print('NO')                                                                             
 
-::
+
     
     >>> YES                                                                                          Source : https://snakify.org/en/
 

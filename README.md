@@ -31,4 +31,4 @@ Le répertoire et la documentation ont été crées le 15 Janvier 2020.
 * 07/02/2020 : Rendu de la version 1.0.1 est sur la branche Python -> Mise à jour attendue.
 * 12/02/2020 : Correction faites -> version 1.0.2 sur la brache python.
 * 13/02/2020 : Restitution de la partie Python.
-* 
+* 12/02/2020 : Organisation des groupes de la partie PYTHON dont **ludo** est le chef d'équipe
